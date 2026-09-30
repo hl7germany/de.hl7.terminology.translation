@@ -1,0 +1,146 @@
+[
+  {
+    "outputFile": "CodeSystem-composition-attestation-mode-de-de.json",
+    "fshName": "CompositionAttestationModedeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-composition-attestation-mode-de-de.fsh",
+    "startLine": 3,
+    "endLine": 37
+  },
+  {
+    "outputFile": "CodeSystem-condition-clinical-de-de.json",
+    "fshName": "ConditionClinicalStatusdeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-condition-clinical-de-de.fsh",
+    "startLine": 3,
+    "endLine": 58
+  },
+  {
+    "outputFile": "CodeSystem-condition-ver-status-de-de.json",
+    "fshName": "ConditionVerificationStatusdeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-condition-ver-status-de-de.fsh",
+    "startLine": 3,
+    "endLine": 58
+  },
+  {
+    "outputFile": "CodeSystem-data-absent-reason-de-de.json",
+    "fshName": "DataAbsentReasondeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-data-absent-reason-de-de.fsh",
+    "startLine": 3,
+    "endLine": 103
+  },
+  {
+    "outputFile": "CodeSystem-device-nametype-de-de.json",
+    "fshName": "DeviceNametypedeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-device-nametype-de-de.fsh",
+    "startLine": 3,
+    "endLine": 58
+  },
+  {
+    "outputFile": "CodeSystem-diagnostic-report-status-de-de.json",
+    "fshName": "DiagnosticReportStatusdeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-diagnostic-report-status-de-de.fsh",
+    "startLine": 3,
+    "endLine": 78
+  },
+  {
+    "outputFile": "CodeSystem-observation-interpretation-de-de.json",
+    "fshName": "ObservationInterpretationdeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-observation-interpretation-de-de.fsh",
+    "startLine": 3,
+    "endLine": 325
+  },
+  {
+    "outputFile": "CodeSystem-observation-status-de-de.json",
+    "fshName": "ObservationStatusdeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-observation-status-de-de.fsh",
+    "startLine": 3,
+    "endLine": 63
+  },
+  {
+    "outputFile": "CodeSystem-quantity-comparator-de-de.json",
+    "fshName": "QuantityComparatordeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-quantity-comparator-de-de.fsh",
+    "startLine": 3,
+    "endLine": 53
+  },
+  {
+    "outputFile": "CodeSystem-referencerange-meaning-de-de.json",
+    "fshName": "ReferenceRangeMeaningdeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-referencerange-meaning-de-de.fsh",
+    "startLine": 3,
+    "endLine": 93
+  },
+  {
+    "outputFile": "CodeSystem-request-priority-de-de.json",
+    "fshName": "RequestPrioritydeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-request-priority-de-de.fsh",
+    "startLine": 3,
+    "endLine": 48
+  },
+  {
+    "outputFile": "CodeSystem-sex-parameter-for-clinical-use-de-de.json",
+    "fshName": "ReferenceRangeAppliesTodeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-sex-parameter-for-clinical-use-de-de.fsh",
+    "startLine": 3,
+    "endLine": 43
+  },
+  {
+    "outputFile": "CodeSystem-specimen-status-de-de.json",
+    "fshName": "SpecimenStatusdeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-specimen-status-de-de.fsh",
+    "startLine": 3,
+    "endLine": 48
+  },
+  {
+    "outputFile": "CodeSystem-v2-0203-de-de.json",
+    "fshName": "IdentifierTypedeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-v2-0203-de-de.fsh",
+    "startLine": 3,
+    "endLine": 78
+  },
+  {
+    "outputFile": "CodeSystem-v2-0373-de-de.json",
+    "fshName": "TreatmentdeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-v2-0373-de-de.fsh",
+    "startLine": 3,
+    "endLine": 68
+  },
+  {
+    "outputFile": "CodeSystem-v2-0493-de-de.json",
+    "fshName": "SpecimenConditiondeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-v2-0493-de-de.fsh",
+    "startLine": 3,
+    "endLine": 78
+  },
+  {
+    "outputFile": "CodeSystem-v2-0916-de-de.json",
+    "fshName": "RelevantClinicalInformationdeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-v2-0916-de-de.fsh",
+    "startLine": 3,
+    "endLine": 48
+  },
+  {
+    "outputFile": "CodeSystem-v3-participationtype-de-de.json",
+    "fshName": "ParticipationTypedeDE",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-v3-participationtype-de-de.fsh",
+    "startLine": 3,
+    "endLine": 33
+  }
+]

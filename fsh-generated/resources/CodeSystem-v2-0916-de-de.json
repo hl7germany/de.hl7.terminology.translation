@@ -1,0 +1,117 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "supplement",
+  "name": "RelevantClinicalInformationdeDE",
+  "id": "v2-0916-de-de",
+  "title": "Nüchternstatus",
+  "description": "Das Kodesystem Nüchternstatus (RelevantClinicalInformation) beschreibt Angaben des Patienten oder der Patientin zum Nüchternstatus.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/CodeSystem/v2-0916-de-de",
+  "concept": [
+    {
+      "code": "F",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Nüchtern"
+        }
+      ]
+    },
+    {
+      "code": "FNA",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Aufforderung zur Nüchternheit nicht erfolgt"
+        }
+      ]
+    },
+    {
+      "code": "NF",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Nicht nüchtern"
+        }
+      ]
+    },
+    {
+      "code": "NG",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Nüchternstatus nicht abgefragt"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2025-10-12",
+  "publisher": "HL7 Deutschland e.V.",
+  "language": "de-DE",
+  "supplements": "http://terminology.hl7.org/CodeSystem/v2-0916|3.0.0",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2025-10-12"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+      "valueDate": "2026-09-29"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "name": "HL7 Deutschland e.V.",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "http://hl7.de"
+          }
+        ]
+      }
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@hl7.de"
+        },
+        {
+          "system": "url",
+          "value": "https://hl7.de/"
+        }
+      ]
+    }
+  ]
+}

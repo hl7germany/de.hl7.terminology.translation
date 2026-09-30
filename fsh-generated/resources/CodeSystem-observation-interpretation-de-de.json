@@ -1,0 +1,859 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "supplement",
+  "name": "ObservationInterpretationdeDE",
+  "id": "observation-interpretation-de-de",
+  "title": "Interpretation der Beobachtung",
+  "description": "Das Kodesystem Interpretation der Beobachtung (ObservationInterpretation) beschreibt die fachliche Bewertung eines Beobachtungs- oder Untersuchungsergebnisses.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/CodeSystem/observation-interpretation-de-de",
+  "concept": [
+    {
+      "code": "<",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Messbereich unterschritten"
+        }
+      ]
+    },
+    {
+      "code": ">",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Messbereich überschritten"
+        }
+      ]
+    },
+    {
+      "code": "A",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Auffällig"
+        }
+      ]
+    },
+    {
+      "code": "AA",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Kritisch auffällig"
+        }
+      ]
+    },
+    {
+      "code": "AC",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Vorhandene antikomplementäre Substanzen"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Besser"
+        }
+      ]
+    },
+    {
+      "code": "CAR",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Träger"
+        }
+      ]
+    },
+    {
+      "code": "Carrier",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Träger"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Signifikanter Rückgang"
+        }
+      ]
+    },
+    {
+      "code": "DET",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Nachgewiesen"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Uneindeutig"
+        }
+      ]
+    },
+    {
+      "code": "EX",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Außerhalb des Schwellenwerts"
+        }
+      ]
+    },
+    {
+      "code": "EXP",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Erwartet"
+        }
+      ]
+    },
+    {
+      "code": "H",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Hoch"
+        }
+      ]
+    },
+    {
+      "code": "H>",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Signifikant hoch"
+        }
+      ]
+    },
+    {
+      "code": "HH",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Kritisch hoch"
+        }
+      ]
+    },
+    {
+      "code": "HM",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Zur medizinischen Überprüfung zurückhalten"
+        }
+      ]
+    },
+    {
+      "code": "HU",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Signifikant hoch"
+        }
+      ]
+    },
+    {
+      "code": "HX",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Oberhalb des oberen Schwellenwerts"
+        }
+      ]
+    },
+    {
+      "code": "I",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Intermediär"
+        }
+      ]
+    },
+    {
+      "code": "IE",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Evidenz unzureichend"
+        }
+      ]
+    },
+    {
+      "code": "IND",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Unbestimmbar"
+        }
+      ]
+    },
+    {
+      "code": "L",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Niedrig"
+        }
+      ]
+    },
+    {
+      "code": "L<",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Signifikant niedrig"
+        }
+      ]
+    },
+    {
+      "code": "LL",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Kritisch niedrig"
+        }
+      ]
+    },
+    {
+      "code": "LU",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Signifikant niedrig"
+        }
+      ]
+    },
+    {
+      "code": "LX",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Unterhalb des unteren Schwellenwerts"
+        }
+      ]
+    },
+    {
+      "code": "MS",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Mittlere Empfindlichkeit"
+        }
+      ]
+    },
+    {
+      "code": "NCL",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Kein CLSI definierter Grenzwert"
+        }
+      ]
+    },
+    {
+      "code": "N",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Normal"
+        }
+      ]
+    },
+    {
+      "code": "ND",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Nicht nachgewiesen"
+        }
+      ]
+    },
+    {
+      "code": "NEG",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Negativ"
+        }
+      ]
+    },
+    {
+      "code": "NR",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Nicht reaktiv"
+        }
+      ]
+    },
+    {
+      "code": "NS",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Nicht empfindlich"
+        }
+      ]
+    },
+    {
+      "code": "OBX",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Dolmetscherkennzeichen in separaten OBX Segmenten"
+        }
+      ]
+    },
+    {
+      "code": "ObservationInterpretationDetection",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Feststellungsinterpretation"
+        }
+      ]
+    },
+    {
+      "code": "ObservationInterpretationExpectation",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Erwartungsinterpretation"
+        }
+      ]
+    },
+    {
+      "code": "POS",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Positiv"
+        }
+      ]
+    },
+    {
+      "code": "QCF",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Versagen der Qualitätskontrolle"
+        }
+      ]
+    },
+    {
+      "code": "R",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Resistent"
+        }
+      ]
+    },
+    {
+      "code": "RR",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Reaktiv"
+        }
+      ]
+    },
+    {
+      "code": "ReactivityObservationInterpretation",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Reaktivitätsinterpretation"
+        }
+      ]
+    },
+    {
+      "code": "S",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Empfindlich"
+        }
+      ]
+    },
+    {
+      "code": "SDD",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Dosis- / Konzentrationsabhängige Empfindlichkeit"
+        }
+      ]
+    },
+    {
+      "code": "SYN-R",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Resistent gegenüber Substanzkombination"
+        }
+      ]
+    },
+    {
+      "code": "SYN-S",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Empfindlich gegenüber Substanzkombination"
+        }
+      ]
+    },
+    {
+      "code": "TOX",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Zytotoxische Substanz vorhanden"
+        }
+      ]
+    },
+    {
+      "code": "U",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Signifikanter Anstieg"
+        }
+      ]
+    },
+    {
+      "code": "UNE",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Unerwartet"
+        }
+      ]
+    },
+    {
+      "code": "VS",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Sehr empfindlich"
+        }
+      ]
+    },
+    {
+      "code": "W",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Schlechter"
+        }
+      ]
+    },
+    {
+      "code": "WR",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Schwach reaktiv"
+        }
+      ]
+    },
+    {
+      "code": "_GeneticObservationInterpretation",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Interpretation der genetischen Analyse"
+        }
+      ]
+    },
+    {
+      "code": "_ObservationInterpretationChange",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Änderungsverlauf"
+        }
+      ]
+    },
+    {
+      "code": "_ObservationInterpretationExceptions",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Ausnahmewertinterpretation"
+        }
+      ]
+    },
+    {
+      "code": "_ObservationInterpretationNormality",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Normalitätsinterpretation"
+        }
+      ]
+    },
+    {
+      "code": "_ObservationInterpretationSusceptibility",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Interpretation der antimikrobiellen Resistenztestung"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2025-10-12",
+  "publisher": "HL7 Deutschland e.V.",
+  "language": "de-DE",
+  "supplements": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2025-10-12"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+      "valueDate": "2026-09-29"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "name": "HL7 Deutschland e.V.",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "http://hl7.de"
+          }
+        ]
+      }
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@hl7.de"
+        },
+        {
+          "system": "url",
+          "value": "https://hl7.de/"
+        }
+      ]
+    }
+  ]
+}
