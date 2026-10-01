@@ -17,7 +17,7 @@ Description: "Das Codesystem Begründung Nichtverfügbarkeit (DataAbsentReason) 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension[0].valuePeriod.start = "2025-10-12"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate"
-* ^extension[=].valueDate = "2026-09-29"
+* ^extension[=].valueDate = "2026-10-01"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-author"
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
@@ -40,7 +40,7 @@ Description: "Das Codesystem Begründung Nichtverfügbarkeit (DataAbsentReason) 
 * #temp-unknown
 * #temp-unknown ^designation[0].language = #de-DE
 * #temp-unknown ^designation[0].use = $designation-usage|4.2.0#display
-* #temp-unknown ^designation[0].value = "Aktuell unbekannt"
+* #temp-unknown ^designation[0].value = "Temporär unbekannt"
 
 * #not-asked
 * #not-asked ^designation[0].language = #de-DE

@@ -13,11 +13,11 @@ Description: "Das Kodesystem Vergleichsoperator für Mengenangaben (QuantityOper
 * ^publisher = "HL7 Deutschland e.V."
 * ^language = #de-DE
 * ^content = #supplement
-* ^supplements = "http://hl7.org/fhir/quantity-comparator|5.0.0"
+* ^supplements = "http://hl7.org/fhir/quantity-comparator|4.0.1"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension[0].valuePeriod.start = "2025-10-12"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate"
-* ^extension[=].valueDate = "2026-09-29"
+* ^extension[=].valueDate = "2026-10-01"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-author"
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
@@ -30,7 +30,7 @@ Description: "Das Kodesystem Vergleichsoperator für Mengenangaben (QuantityOper
 * #"<"
 * #"<" ^designation[0].language = #de-DE
 * #"<" ^designation[0].use = $designation-usage|4.2.0#display
-* #"<" ^designation[0].value = "Kleiner"
+* #"<" ^designation[0].value = "Kleiner als"
 
 * #"<="
 * #"<=" ^designation[0].language = #de-DE
@@ -45,9 +45,4 @@ Description: "Das Kodesystem Vergleichsoperator für Mengenangaben (QuantityOper
 * #">"
 * #">" ^designation[0].language = #de-DE
 * #">" ^designation[0].use = $designation-usage|4.2.0#display
-* #">" ^designation[0].value = "Größer"
-
-* #ad
-* #ad ^designation[0].language = #de-DE
-* #ad ^designation[0].use = $designation-usage|4.2.0#display
-* #ad ^designation[0].value = "Auffüllen auf"
+* #">" ^designation[0].value = "Größer als"
