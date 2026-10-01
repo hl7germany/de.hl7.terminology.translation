@@ -73,7 +73,7 @@ Geprüft wurde jede Übersetzung gegen
 | quantity-comparator (5.0.0) | `<=` | Less or Equal to | Kleiner oder gleich |  |
 | quantity-comparator (5.0.0) | `>=` | Greater or Equal to | Größer oder gleich |  |
 | quantity-comparator (5.0.0) | `>` | Greater than | Größer | Vorschlag: „Größer als“. Eindeutiger, parallel zu „Größer oder gleich“. |
-| quantity-comparator (5.0.0) | `ad` | Sufficient to achieve this total quantity | Auffüllen auf |  |
+| quantity-comparator (5.0.0) | `ad` | Sufficient to achieve this total quantity | Auffüllen auf | Den Code gibt es erst ab R5. Das Supplement zeigt auf `quantity-comparator\|5.0.0` und greift in R4 nicht. Bei Umstellung auf R4 (4.0.1) entfällt der Code, siehe [Supplement-Zielversionen.md](Supplement-Zielversionen.md). |
 | referencerange-meaning (1.0.1) | `type` | Type | Generell | Vorschlag: „Allgemeiner Typ“. Gruppierungscode („General types of reference range“). „Generell“ allein sagt nicht, was gemeint ist. |
 | referencerange-meaning (1.0.1) | `endocrine` | Endocrine | Endokrinologisch adaptiert |  |
 | specimen-status (4.0.1) | `available` | Available | Verfügbar |  |
