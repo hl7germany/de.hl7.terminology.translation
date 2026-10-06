@@ -1,6 +1,6 @@
 # Übersetzungsvorschläge ohne Abstimmung mit HL7 Austria
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: Commit `05df569`
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 und PR #2
 
 Die Tabelle enthält alle Codes aus den CodeSystem-Supplements unter `input/fsh/`, für die `HL7 Übersetzungen.xlsx`
 keine abgestimmte Übersetzung enthält. Die Zuordnung zum XLSX erfolgte über die Code-System-OID,
@@ -8,7 +8,7 @@ siehe [abgleich-abgestimmt-at.md](abgleich-abgestimmt-at.md).
 
 Die Spalte *Übersetzungsvorschlag* ist die deutsche Bezeichnung (`^designation.value`, `de-DE`) aus der FSH-Datei.
 
-92 Codes. Für 24 davon steht in der Spalte *Hinweis* ein eigener Vorschlag mit Begründung:
+94 Codes. Für 24 davon steht in der Spalte *Hinweis* ein eigener Vorschlag mit Begründung:
 21 Übersetzungen aus dem FSH sollten geändert werden, 3 Codes haben im FSH keine Übersetzung.
 
 Geprüft wurde jede Übersetzung gegen
@@ -23,6 +23,7 @@ Geprüft wurde jede Übersetzung gegen
 | composition-attestation-mode (4.0.1) | `professional` | Professional | *(keine Übersetzung im FSH)* | Vorschlag: „Beruflich“. Bestätigung in beruflicher Eigenschaft. |
 | composition-attestation-mode (4.0.1) | `legal` | Legal | Rechtliche Verantwortung |  |
 | composition-attestation-mode (4.0.1) | `official` | Official | *(keine Übersetzung im FSH)* | Vorschlag: „Offiziell“. Die Organisation bestätigt, dass der Inhalt ihren Richtlinien und Verfahren entspricht. |
+| condition-clinical (3.0.0) | `unknown` | Unknown | Unbekannt |  |
 | condition-ver-status (2.0.1) | `entered-in-error` | Entered in Error | Fehleingabe |  |
 | data-absent-reason (2.0.0) | `asked-unknown` | Asked But Unknown | Erfragt, aber unbekannt |  |
 | data-absent-reason (2.0.0) | `temp-unknown` | Temporarily Unknown | Temporär unbekannt |  |
@@ -69,6 +70,7 @@ Geprüft wurde jede Übersetzung gegen
 | observation-status (4.0.1) | `corrected` | Corrected | Korrigiert |  |
 | observation-status (4.0.1) | `cancelled` | Cancelled | Storniert | Vorschlag: „Abgebrochen“. Laut Definition nicht begonnen oder nicht abgeschlossen („aborted“). Im XLSX abgestimmt für `cancelled` in DiagnosticReportStatus. |
 | observation-status (4.0.1) | `entered-in-error` | Entered in Error | Irrtümliche Eingabe | Vorschlag: „Fehleingabe“. Im XLSX durchgängig „Fehleingabe“ abgestimmt. |
+| observation-status (4.0.1) | `unknown` | Unknown | Unbekannt |  |
 | quantity-comparator (4.0.1) | `<` | Less than | Kleiner als |  |
 | quantity-comparator (4.0.1) | `<=` | Less or Equal to | Kleiner oder gleich |  |
 | quantity-comparator (4.0.1) | `>=` | Greater or Equal to | Größer oder gleich |  |
@@ -115,4 +117,4 @@ Geprüft wurde jede Übersetzung gegen
 Der englische Display stammt aus der Version des CodeSystems, die das Supplement in `^supplements` angibt:
 
 - `hl7.fhir.r4.core#4.0.1`: composition-attestation-mode, device-nametype, observation-status, quantity-comparator, specimen-status
-- `hl7.terminology#7.4.0`: condition-ver-status, data-absent-reason, v3-ObservationInterpretation, referencerange-meaning, v2-0203, v2-0373, v2-0493, v2-0916
+- `hl7.terminology#7.4.0`: condition-clinical, condition-ver-status, data-absent-reason, v3-ObservationInterpretation, referencerange-meaning, v2-0203, v2-0373, v2-0493, v2-0916

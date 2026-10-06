@@ -1,6 +1,6 @@
 # Abgleich der de-DE-Übersetzungen mit `HL7 Übersetzungen.xlsx`
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: Commit `05df569`
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 und PR #2
 
 `HL7 Übersetzungen.xlsx` enthält die mit HL7 Austria abgestimmten Übersetzungen und ist hier die Referenz.
 Geprüft wurde, ob die deutschen Bezeichnungen (`^designation.value`) in den CodeSystem-Supplements unter
@@ -8,13 +8,11 @@ Geprüft wurde, ob die deutschen Bezeichnungen (`^designation.value`) in den Cod
 
 ## Ergebnis
 
-80 Codes kommen sowohl in den FSH-Dateien als auch im XLSX vor. 79 davon stimmen wörtlich überein, einer weicht ab:
+80 Codes kommen sowohl in den FSH-Dateien als auch im XLSX vor. Alle 80 stimmen wörtlich überein.
 
-| CodeSystem | Code | de-DE im FSH | de-DE im XLSX (abgestimmt) | Fundstelle FSH | Fundstelle XLSX |
-|---|---|---|---|---|---|
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `N` | Normal | Normal (nicht numerisch) | [CodeSystem-observation-interpretation-de-de.fsh:186](../input/fsh/CodeSystem-observation-interpretation-de-de.fsh#L186) | Sheet `eHDSIObservationInterpretation`, Zelle E13 |
-
-Die englische Bezeichnung im XLSX (Spalte *Description*) lautet „Normal (applies to non-numeric results)“.
+Bis PR #2 wich `N` in v3-ObservationInterpretation ab: Im FSH stand „Normal“, abgestimmt AT ist „Normal (nicht numerisch)“.
+Die englische Bezeichnung im XLSX (Spalte *Description*) lautet „Normal (applies to non-numeric results)“. Mit PR #2 ist
+das FSH angeglichen, siehe [CodeSystem-observation-interpretation-de-de.fsh:187](../input/fsh/CodeSystem-observation-interpretation-de-de.fsh#L187).
 
 ## Zuordnung ValueSet → CodeSystem
 
@@ -27,7 +25,7 @@ XLSX-Zeile über ihre Spalte *Code System ID* (OID) einem CodeSystem zugeordnet.
 | ConditionClinicalStatusCodes | `http://hl7.org/fhir/ValueSet/condition-clinical` | `2.16.840.1.113883.4.642.4.1074` | [`http://terminology.hl7.org/CodeSystem/condition-clinical`](../input/fsh/CodeSystem-condition-clinical-de-de.fsh) | 6 | 0 |
 | DiagnosticReportStatus | `http://hl7.org/fhir/ValueSet/diagnostic-report-status` | `2.16.840.1.113883.4.642.4.236` | [`http://hl7.org/fhir/diagnostic-report-status`](../input/fsh/CodeSystem-diagnostic-report-status-de-de.fsh) | 10 | 0 |
 | eHDSICertainty | `http://terminology.ehdsi.eu/ValueSet/eHDSICertainty` | `2.16.840.1.113883.4.642.4.1075` | [`http://terminology.hl7.org/CodeSystem/condition-ver-status`](../input/fsh/CodeSystem-condition-ver-status-de-de.fsh) | 5 | 0 |
-| eHDSIObservationInterpretation | `http://terminology.ehdsi.eu/ValueSet/eHDSIObservationInterpretation` | `2.16.840.1.113883.5.83` | [`http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation`](../input/fsh/CodeSystem-observation-interpretation-de-de.fsh) | 39 | **1** |
+| eHDSIObservationInterpretation | `http://terminology.ehdsi.eu/ValueSet/eHDSIObservationInterpretation` | `2.16.840.1.113883.5.83` | [`http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation`](../input/fsh/CodeSystem-observation-interpretation-de-de.fsh) | 39 | 0 |
 | eHDSIPerformerFunction | `http://terminology.ehdsi.eu/ValueSet/eHDSIPerformerFunction` | `2.16.840.1.113883.5.90` | [`http://terminology.hl7.org/CodeSystem/v3-ParticipationType`](../input/fsh/CodeSystem-v3-participationtype-de-de.fsh) | 1 | 0 |
 | eHDSIReferenceRangeAppliesTo | `http://terminology.ehdsi.eu/ValueSet/eHDSIReferenceRangeAppliesTo` | `2.16.840.1.113883.4.642.4.2038` | [`http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use`](../input/fsh/CodeSystem-sex-parameter-for-clinical-use-de-de.fsh) | 2 | 0 |
 | eHDSIReferenceRangeMeaning | `http://terminology.ehdsi.eu/ValueSet/eHDSIReferenceRangeMeaning` | `2.16.840.1.113883.4.642.4.1124` | [`http://terminology.hl7.org/CodeSystem/referencerange-meaning`](../input/fsh/CodeSystem-referencerange-meaning-de-de.fsh) | 11 | 0 |
@@ -49,7 +47,7 @@ Hinweise zur Auflösung:
 
 - Verglichen wurden nur Codes, die in beiden Quellen vorkommen. Dass das Paket nur einen Teil des XLSX abdeckt, ist so
   erwartet und wurde nicht als Abweichung gewertet.
-- Codes, die nur in den FSH-Dateien vorkommen, wurden ebenfalls nicht gewertet. Das betrifft 89 Codes. 54 davon liegen in neun
+- Codes, die nur in den FSH-Dateien vorkommen, wurden ebenfalls nicht gewertet. Das betrifft 91 Codes. 55 davon liegen in neun
   Supplements, zu denen das XLSX gar keine Zeilen hat: composition-attestation-mode, device-nametype, observation-status,
   quantity-comparator, specimen-status, v2-0203, v2-0373, v2-0493 und v2-0916.
 - Als deutsche Übersetzung im XLSX gilt die erste Sprachspalte (Spalte E). Die verglichenen Sheets haben keine getrennte
