@@ -30,9 +30,13 @@ Der TC Terminologie reviewt die Übersetzungen anhand von [review-uebersetzungen
 Dokument stellt für jeden Code das FSH neben die Fassungen *abgestimmt AT* (`HL7 Übersetzungen.xlsx`) und
 *abgestimmt HL7 DE* (`FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv`).
 
-Zu entscheiden sind 24 Codes, bei denen das FSH einer abgestimmten Fassung widerspricht: 19, bei denen sich *abgestimmt AT*
-und *abgestimmt HL7 DE* unterscheiden, und 5, für die es nur eine Fassung *abgestimmt HL7 DE* gibt. Bisher folgt das FSH bei
-einem Widerspruch *abgestimmt AT*. Für die 5 Codes ohne Fassung *abgestimmt AT* ist es unverändert geblieben.
+Zu entscheiden sind alle Codes, deren Übersetzung nicht durch eine abgestimmte Fassung gedeckt ist (Abschnitt 1 des
+Review-Dokuments):
+
+- 24 Codes, bei denen das FSH einer abgestimmten Fassung widerspricht: 19, bei denen sich *abgestimmt AT* und
+  *abgestimmt HL7 DE* unterscheiden, und 5, für die es nur eine Fassung *abgestimmt HL7 DE* gibt. Bisher folgt das FSH bei
+  einem Widerspruch *abgestimmt AT*. Für die 5 Codes ohne Fassung *abgestimmt AT* ist es unverändert geblieben.
+- 78 Codes, für die es noch keine abgestimmte Fassung gibt.
 
 ## Offen im FSH
 
