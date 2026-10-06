@@ -5,7 +5,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-composition-attestation-mode-de-de.fsh",
     "startLine": 3,
-    "endLine": 37
+    "endLine": 38
   },
   {
     "outputFile": "CodeSystem-condition-clinical-de-de.json",
@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-condition-clinical-de-de.fsh",
     "startLine": 3,
-    "endLine": 58
+    "endLine": 64
   },
   {
     "outputFile": "CodeSystem-condition-ver-status-de-de.json",
@@ -21,7 +21,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-condition-ver-status-de-de.fsh",
     "startLine": 3,
-    "endLine": 58
+    "endLine": 59
   },
   {
     "outputFile": "CodeSystem-data-absent-reason-de-de.json",
@@ -29,7 +29,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-data-absent-reason-de-de.fsh",
     "startLine": 3,
-    "endLine": 103
+    "endLine": 104
   },
   {
     "outputFile": "CodeSystem-device-nametype-de-de.json",
@@ -37,7 +37,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-device-nametype-de-de.fsh",
     "startLine": 3,
-    "endLine": 58
+    "endLine": 59
   },
   {
     "outputFile": "CodeSystem-diagnostic-report-status-de-de.json",
@@ -45,7 +45,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-diagnostic-report-status-de-de.fsh",
     "startLine": 3,
-    "endLine": 78
+    "endLine": 79
   },
   {
     "outputFile": "CodeSystem-observation-interpretation-de-de.json",
@@ -53,7 +53,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-observation-interpretation-de-de.fsh",
     "startLine": 3,
-    "endLine": 325
+    "endLine": 326
   },
   {
     "outputFile": "CodeSystem-observation-status-de-de.json",
@@ -61,7 +61,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-observation-status-de-de.fsh",
     "startLine": 3,
-    "endLine": 63
+    "endLine": 69
   },
   {
     "outputFile": "CodeSystem-quantity-comparator-de-de.json",
@@ -69,7 +69,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-quantity-comparator-de-de.fsh",
     "startLine": 3,
-    "endLine": 48
+    "endLine": 49
   },
   {
     "outputFile": "CodeSystem-referencerange-meaning-de-de.json",
@@ -77,7 +77,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-referencerange-meaning-de-de.fsh",
     "startLine": 3,
-    "endLine": 93
+    "endLine": 94
   },
   {
     "outputFile": "CodeSystem-request-priority-de-de.json",
@@ -85,15 +85,15 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-request-priority-de-de.fsh",
     "startLine": 3,
-    "endLine": 48
+    "endLine": 49
   },
   {
     "outputFile": "CodeSystem-sex-parameter-for-clinical-use-de-de.json",
-    "fshName": "ReferenceRangeAppliesTodeDE",
+    "fshName": "SexParameterForClinicalUsedeDE",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-sex-parameter-for-clinical-use-de-de.fsh",
     "startLine": 3,
-    "endLine": 43
+    "endLine": 44
   },
   {
     "outputFile": "CodeSystem-specimen-status-de-de.json",
@@ -101,7 +101,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-specimen-status-de-de.fsh",
     "startLine": 3,
-    "endLine": 48
+    "endLine": 49
   },
   {
     "outputFile": "CodeSystem-v2-0203-de-de.json",
@@ -109,7 +109,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-v2-0203-de-de.fsh",
     "startLine": 3,
-    "endLine": 78
+    "endLine": 79
   },
   {
     "outputFile": "CodeSystem-v2-0373-de-de.json",
@@ -117,7 +117,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-v2-0373-de-de.fsh",
     "startLine": 3,
-    "endLine": 68
+    "endLine": 69
   },
   {
     "outputFile": "CodeSystem-v2-0493-de-de.json",
@@ -125,7 +125,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-v2-0493-de-de.fsh",
     "startLine": 3,
-    "endLine": 78
+    "endLine": 79
   },
   {
     "outputFile": "CodeSystem-v2-0916-de-de.json",
@@ -133,7 +133,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-v2-0916-de-de.fsh",
     "startLine": 3,
-    "endLine": 48
+    "endLine": 49
   },
   {
     "outputFile": "CodeSystem-v3-participationtype-de-de.json",
@@ -141,6 +141,6 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-v3-participationtype-de-de.fsh",
     "startLine": 3,
-    "endLine": 33
+    "endLine": 34
   }
 ]

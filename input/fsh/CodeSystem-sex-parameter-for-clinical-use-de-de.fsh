@@ -1,9 +1,9 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
-CodeSystem: ReferenceRangeAppliesTodeDE
+CodeSystem: SexParameterForClinicalUsedeDE
 Id: sex-parameter-for-clinical-use-de-de
-Title: "Kollektivbezug der Richtgrenze"
-Description: "Das Kodesystem Kollektivbezug der Richtgrenze (SexParameterforClinicalUse) definiert Parameter, die bei der klinischen Beurteilung bei Diagnostik, Befundinterpretation und Behandlung mit berücksichtigt werden sollen."
+Title: "Geschlechtsparameter für die klinische Verwendung"
+Description: "Das Kodesystem Geschlechtsparameter für die klinische Verwendung (SexParameterForClinicalUse) definiert Parameter, die bei der klinischen Beurteilung bei Diagnostik, Befundinterpretation und Behandlung mit berücksichtigt werden sollen."
 * ^url = "http://fhir.de/CodeSystem/sex-parameter-for-clinical-use-de-de"
 * ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^version = "0.1.0"
@@ -22,6 +22,7 @@ Description: "Das Kodesystem Kollektivbezug der Richtgrenze (SexParameterforClin
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -29,15 +30,15 @@ Description: "Das Kodesystem Kollektivbezug der Richtgrenze (SexParameterforClin
 
 * #female-typical
 * #female-typical ^designation[0].language = #de-DE
-* #female-typical ^designation[0].use = $designation-usage|4.2.0#display
+* #female-typical ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #female-typical ^designation[0].value = "Anwendung eines frauentypischen Settings oder Referenzbereichs"
 
 * #male-typical
 * #male-typical ^designation[0].language = #de-DE
-* #male-typical ^designation[0].use = $designation-usage|4.2.0#display
+* #male-typical ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #male-typical ^designation[0].value = "Anwendung eines männertypischen Settings oder Referenzbereichs"
 
 * #specified
 * #specified ^designation[0].language = #de-DE
-* #specified ^designation[0].use = $designation-usage|4.2.0#display
+* #specified ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #specified ^designation[0].value = "Anwendung eines spezifischen Settings oder Referenzbereichs"

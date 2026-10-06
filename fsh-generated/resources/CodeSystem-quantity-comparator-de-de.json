@@ -5,7 +5,7 @@
   "name": "QuantityComparatordeDE",
   "id": "quantity-comparator-de-de",
   "title": "Vergleichsoperator für Mengenangaben",
-  "description": "Das Kodesystem Vergleichsoperator für Mengenangaben (QuantityOperator) kennzeichnet Vergleichsoperatoren für quantitative Werte. Damit kann strukturiert beschrieben werden, wie eine Mengen- oder Messangabe im Verhältnis zu einem angegebenen Wert interpretiert werden soll.",
+  "description": "Das Kodesystem Vergleichsoperator für Mengenangaben (QuantityComparator) kennzeichnet Vergleichsoperatoren für quantitative Werte. Damit kann strukturiert beschrieben werden, wie eine Mengen- oder Messangabe im Verhältnis zu einem angegebenen Wert interpretiert werden soll.",
   "version": "0.1.0",
   "url": "http://fhir.de/CodeSystem/quantity-comparator-de-de",
   "concept": [
@@ -15,9 +15,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Kleiner als"
         }
@@ -29,9 +28,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Kleiner oder gleich"
         }
@@ -43,9 +41,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Größer oder gleich"
         }
@@ -57,9 +54,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Größer als"
         }
@@ -98,6 +94,10 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type",
+      "valueCode": "lang-pack"
     }
   ],
   "contact": [

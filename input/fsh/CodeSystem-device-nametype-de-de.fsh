@@ -1,9 +1,9 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: DeviceNametypedeDE
 Id: device-nametype-de-de
 Title: "Art der Bezeichnung des Geräts"
-Description: "Das Kodesystem Art der Bezeichnung des Gerätes (DeviceNameType) beschreibt die Art des Namens für ein Analysegerät oder Medizinprodukt, wie er von offiziellen Stellen, von Patienten oder von Laien verwendet wird."
+Description: "Das Kodesystem Art der Bezeichnung des Geräts (DeviceNameType) beschreibt die Art des Namens für ein Analysegerät oder Medizinprodukt, wie er von offiziellen Stellen, von Patienten oder von Laien verwendet wird."
 * ^url = "http://fhir.de/CodeSystem/device-nametype-de-de"
 * ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^version = "0.1.0"
@@ -22,6 +22,7 @@ Description: "Das Kodesystem Art der Bezeichnung des Gerätes (DeviceNameType) b
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -29,30 +30,30 @@ Description: "Das Kodesystem Art der Bezeichnung des Gerätes (DeviceNameType) b
 
 * #udi-label-name
 * #udi-label-name ^designation[0].language = #de-DE
-* #udi-label-name ^designation[0].use = $designation-usage|4.2.0#display
+* #udi-label-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #udi-label-name ^designation[0].value = "UDI Kennzeichnungsname"
 
 * #user-friendly-name
 * #user-friendly-name ^designation[0].language = #de-DE
-* #user-friendly-name ^designation[0].use = $designation-usage|4.2.0#display
+* #user-friendly-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #user-friendly-name ^designation[0].value = "Benutzerfreundlicher Name"
 
 * #patient-reported-name
 * #patient-reported-name ^designation[0].language = #de-DE
-* #patient-reported-name ^designation[0].use = $designation-usage|4.2.0#display
-* #patient-reported-name ^designation[0].value = "PatientInberichteter Name"
+* #patient-reported-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
+* #patient-reported-name ^designation[0].value = "Patientenberichteter Name"
 
 * #manufacturer-name
 * #manufacturer-name ^designation[0].language = #de-DE
-* #manufacturer-name ^designation[0].use = $designation-usage|4.2.0#display
+* #manufacturer-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #manufacturer-name ^designation[0].value = "Herstellername"
 
 * #model-name
 * #model-name ^designation[0].language = #de-DE
-* #model-name ^designation[0].use = $designation-usage|4.2.0#display
+* #model-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #model-name ^designation[0].value = "Modellname"
 
 * #other
 * #other ^designation[0].language = #de-DE
-* #other ^designation[0].use = $designation-usage|4.2.0#display
-* #other ^designation[0].value = "Sonstige"
+* #other ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
+* #other ^designation[0].value = "Andere"

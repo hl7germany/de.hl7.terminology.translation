@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: CompositionAttestationModedeDE
 Id: composition-attestation-mode-de-de
@@ -22,6 +22,7 @@ Description: "Das Kodesystem Freigabetyp (CompositionAttestationMode) beschreibt
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -33,7 +34,7 @@ Description: "Das Kodesystem Freigabetyp (CompositionAttestationMode) beschreibt
 
 * #legal
 * #legal ^designation[0].language = #de-DE
-* #legal ^designation[0].use = $designation-usage|4.2.0#display
+* #legal ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #legal ^designation[0].value = "Rechtliche Verantwortung"
 
 // official: keine deutsche Bezeichnung in der Quelldatei hinterlegt

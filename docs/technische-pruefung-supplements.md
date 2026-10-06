@@ -1,6 +1,6 @@
 # Technische Prüfung der Supplements
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: Commit `05df569`
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 Ein CodeSystem-Supplement gilt nur für das CodeSystem in genau der Version, die in `^supplements` steht.
 Im R4-Kontext liegen viele CodeSystems doppelt vor: im Core (`hl7.fhir.r4.core#4.0.1`) mit Version 4.0.1 und in
@@ -20,29 +20,29 @@ Erwartete Zielversion:
 |---|---|
 | Zielversion falsch, Supplement greift in R4 nie | keins mehr. quantity-comparator ist seit `05df569` korrigiert, siehe Abschnitt 1 |
 | Greift nur, wenn das verwendete THO-Release genau die Zielversion enthält | alle 10 THO-Supplements. Von den geprüften Releases enthalten nur `hl7.terminology.r4` 7.3.0 und 7.4.0 alle 10 Zielversionen |
-| Nicht als Language Pack markiert | alle 18 |
-| `designation.use` verweist auf ein CodeSystem, das es nur in THO 1.0.0 gab | alle 18 |
+| Nicht als Language Pack markiert | keins mehr. Alle 18 sind mit PR #3 markiert, siehe Abschnitt 3 |
+| `designation.use` verweist auf ein CodeSystem, das es nur in THO 1.0.0 gab | keins mehr. Mit PR #3 auf `preferredForLanguage` umgestellt, siehe Abschnitt 4 |
 
 | Supplement | `^supplements` | Herkunft | Zielversion korrekt | Zielversion enthalten in `hl7.terminology.r4` | Language Pack |
 |---|---|---|---|---|---|
-| [composition-attestation-mode](../input/fsh/CodeSystem-composition-attestation-mode-de-de.fsh) | `http://hl7.org/fhir/composition-attestation-mode\|4.0.1` | Core | ja | – (Core) | nein |
-| [condition-clinical](../input/fsh/CodeSystem-condition-clinical-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/condition-clinical\|3.0.0` | THO | ja | 6.2.0 bis 7.4.0 | nein |
-| [condition-ver-status](../input/fsh/CodeSystem-condition-ver-status-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/condition-ver-status\|2.0.1` | THO | ja | 6.2.0 bis 7.4.0 | nein |
-| [data-absent-reason](../input/fsh/CodeSystem-data-absent-reason-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/data-absent-reason\|2.0.0` | THO | ja | 7.3.0 bis 7.4.0 | nein |
-| [device-nametype](../input/fsh/CodeSystem-device-nametype-de-de.fsh) | `http://hl7.org/fhir/device-nametype\|4.0.1` | Core | ja | – (Core) | nein |
-| [diagnostic-report-status](../input/fsh/CodeSystem-diagnostic-report-status-de-de.fsh) | `http://hl7.org/fhir/diagnostic-report-status\|4.0.1` | Core | ja | – (Core) | nein |
-| [v3-ObservationInterpretation](../input/fsh/CodeSystem-observation-interpretation-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation\|4.0.0` | THO | ja | 7.1.0 bis 7.4.0 | nein |
-| [observation-status](../input/fsh/CodeSystem-observation-status-de-de.fsh) | `http://hl7.org/fhir/observation-status\|4.0.1` | Core | ja | – (Core) | nein |
-| [quantity-comparator](../input/fsh/CodeSystem-quantity-comparator-de-de.fsh) | `http://hl7.org/fhir/quantity-comparator\|4.0.1` | Core | ja | – (Core) | nein |
-| [referencerange-meaning](../input/fsh/CodeSystem-referencerange-meaning-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/referencerange-meaning\|1.0.1` | THO | ja | 6.2.0 bis 7.4.0 | nein |
-| [request-priority](../input/fsh/CodeSystem-request-priority-de-de.fsh) | `http://hl7.org/fhir/request-priority\|4.0.1` | Core | ja | – (Core) | nein |
-| [sex-parameter-for-clinical-use](../input/fsh/CodeSystem-sex-parameter-for-clinical-use-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use\|2.0.0` | THO | ja | 6.2.0 bis 7.4.0 | nein |
-| [specimen-status](../input/fsh/CodeSystem-specimen-status-de-de.fsh) | `http://hl7.org/fhir/specimen-status\|4.0.1` | Core | ja | – (Core) | nein |
-| [v2-0203](../input/fsh/CodeSystem-v2-0203-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v2-0203\|5.0.0` | THO | ja | 6.5.0 bis 7.4.0 | nein |
-| [v2-0373](../input/fsh/CodeSystem-v2-0373-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v2-0373\|3.0.0` | THO | ja | 7.1.0 bis 7.4.0 | nein |
-| [v2-0493](../input/fsh/CodeSystem-v2-0493-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v2-0493\|3.0.0` | THO | ja | 7.1.0 bis 7.4.0 | nein |
-| [v2-0916](../input/fsh/CodeSystem-v2-0916-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v2-0916\|3.0.0` | THO | ja | 7.1.0 bis 7.4.0 | nein |
-| [v3-ParticipationType](../input/fsh/CodeSystem-v3-participationtype-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v3-ParticipationType\|7.0.0` | THO | ja | 7.3.0 bis 7.4.0 | nein |
+| [composition-attestation-mode](../input/fsh/CodeSystem-composition-attestation-mode-de-de.fsh) | `http://hl7.org/fhir/composition-attestation-mode\|4.0.1` | Core | ja | – (Core) | ja |
+| [condition-clinical](../input/fsh/CodeSystem-condition-clinical-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/condition-clinical\|3.0.0` | THO | ja | 6.2.0 bis 7.4.0 | ja |
+| [condition-ver-status](../input/fsh/CodeSystem-condition-ver-status-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/condition-ver-status\|2.0.1` | THO | ja | 6.2.0 bis 7.4.0 | ja |
+| [data-absent-reason](../input/fsh/CodeSystem-data-absent-reason-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/data-absent-reason\|2.0.0` | THO | ja | 7.3.0 bis 7.4.0 | ja |
+| [device-nametype](../input/fsh/CodeSystem-device-nametype-de-de.fsh) | `http://hl7.org/fhir/device-nametype\|4.0.1` | Core | ja | – (Core) | ja |
+| [diagnostic-report-status](../input/fsh/CodeSystem-diagnostic-report-status-de-de.fsh) | `http://hl7.org/fhir/diagnostic-report-status\|4.0.1` | Core | ja | – (Core) | ja |
+| [v3-ObservationInterpretation](../input/fsh/CodeSystem-observation-interpretation-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation\|4.0.0` | THO | ja | 7.1.0 bis 7.4.0 | ja |
+| [observation-status](../input/fsh/CodeSystem-observation-status-de-de.fsh) | `http://hl7.org/fhir/observation-status\|4.0.1` | Core | ja | – (Core) | ja |
+| [quantity-comparator](../input/fsh/CodeSystem-quantity-comparator-de-de.fsh) | `http://hl7.org/fhir/quantity-comparator\|4.0.1` | Core | ja | – (Core) | ja |
+| [referencerange-meaning](../input/fsh/CodeSystem-referencerange-meaning-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/referencerange-meaning\|1.0.1` | THO | ja | 6.2.0 bis 7.4.0 | ja |
+| [request-priority](../input/fsh/CodeSystem-request-priority-de-de.fsh) | `http://hl7.org/fhir/request-priority\|4.0.1` | Core | ja | – (Core) | ja |
+| [sex-parameter-for-clinical-use](../input/fsh/CodeSystem-sex-parameter-for-clinical-use-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use\|2.0.0` | THO | ja | 6.2.0 bis 7.4.0 | ja |
+| [specimen-status](../input/fsh/CodeSystem-specimen-status-de-de.fsh) | `http://hl7.org/fhir/specimen-status\|4.0.1` | Core | ja | – (Core) | ja |
+| [v2-0203](../input/fsh/CodeSystem-v2-0203-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v2-0203\|5.0.0` | THO | ja | 6.5.0 bis 7.4.0 | ja |
+| [v2-0373](../input/fsh/CodeSystem-v2-0373-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v2-0373\|3.0.0` | THO | ja | 7.1.0 bis 7.4.0 | ja |
+| [v2-0493](../input/fsh/CodeSystem-v2-0493-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v2-0493\|3.0.0` | THO | ja | 7.1.0 bis 7.4.0 | ja |
+| [v2-0916](../input/fsh/CodeSystem-v2-0916-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v2-0916\|3.0.0` | THO | ja | 7.1.0 bis 7.4.0 | ja |
+| [v3-ParticipationType](../input/fsh/CodeSystem-v3-participationtype-de-de.fsh) | `http://terminology.hl7.org/CodeSystem/v3-ParticipationType\|7.0.0` | THO | ja | 7.3.0 bis 7.4.0 | ja |
 
 ## 1. Zielversion quantity-comparator (behoben)
 
@@ -99,12 +99,18 @@ Nach Tests mit dem FHIR Validator 6.10.4 (nicht Teil dieser Prüfung) lädt der 
 Version die höchste Version. Dann greifen alle 10. Bei Paketen mit eigener, älterer THO-Abhängigkeit gilt dagegen deren
 Version.
 
-## 3. Keine Markierung als Language Pack
+## 3. Markierung als Language Pack (umgesetzt mit PR #3)
 
-Keines der 18 Supplements trägt die Extension `http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type` mit
+Bis PR #3 trug keines der 18 Supplements die Extension `http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type` mit
 dem Wert `lang-pack`. Seit Februar 2026 wenden FHIR Validator, IG Publisher und tx.fhir.org ein Supplement nur noch an,
 wenn ein ValueSet oder ein Operations-Parameter es referenziert oder wenn es als Language Pack markiert ist. Ohne
 Markierung werden die Übersetzungen also nicht automatisch verwendet.
+
+Mit PR #3 tragen alle 18 Supplements die Extension mit `valueCode` `lang-pack`. So setzt sie auch der IG Publisher beim
+Parameter `lang-pack = true`. Sie wird über das RuleSet `LanguagePack` in `input/fsh/RuleSets.fsh` direkt nach den
+vorhandenen Extension-Regeln eingefügt. Test mit dem FHIR Validator 6.10.4 (R4, `hl7.terminology.r4#7.4.0`, offline,
+Supplements als Paket geladen): Instanzen mit `language = de-DE` und deutschen Displays validieren mit Markierung ohne
+Fehler, ohne Markierung wird jedes deutsche Display als „Wrong Display Name“ abgelehnt.
 
 Hinweise zur Umsetzung:
 
@@ -114,12 +120,14 @@ Hinweise zur Umsetzung:
   RuleSet mit `^extension[+]`, muss nach den vorhandenen Extension-Regeln stehen, sonst wird sie von `[0]` überschrieben.
 - Die Extension ist in keinem Extensions-Paket im lokalen Cache definiert, auch nicht in
   `hl7.fhir.uv.extensions.r4#5.3.0`. Validator und tx.fhir.org werten sie aus, die Validierung des Supplements selbst
-  meldet sie aber als unbekannt.
+  meldet sie aber als unbekannt („could not be found so is not allowed here“).
 
-## 4. `designation.use` verweist auf ein CodeSystem, das es in THO nicht mehr gibt
+## 4. `designation.use` (umgestellt mit PR #3)
 
-Alle 18 Supplements setzen `^designation[0].use = $designation-usage|4.2.0#display` mit
-`Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage`.
+Bis PR #3 setzten alle 18 Supplements `^designation[0].use = $designation-usage|4.2.0#display` mit
+`Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage`. Mit PR #3 verwenden alle
+Designations `http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra#preferredForLanguage`, die zweite Variante unter
+„Korrekte Befüllung in R4“.
 
 Dieses CodeSystem gab es nur in HL7 Terminology 1.0.0 (Mai 2020): Version 4.2.0, Status `draft`, ein einziger Code
 `display`. Ab THO 2.0.0 ist es nicht mehr enthalten. Die Seiten für 2.0.0, 3.0.0 und 7.4.0 liefern 404, und in
@@ -140,8 +148,8 @@ Meldungen zu `designation.use`.
 
 | `designation.use` | Meldungen je Designation |
 |---|---|
-| `designation-usage\|4.2.0#display` (heute) | 1 Fehler („No definition could be found for URL value …“), 2 Warnungen |
-| `hl7TermMaintInfra#preferredForLanguage` | 1 Warnung: Code nicht im ValueSet `designation-use\|4.0.1` (Binding extensible) |
+| `designation-usage\|4.2.0#display` (bis PR #3) | 1 Fehler („No definition could be found for URL value …“), 2 Warnungen |
+| `hl7TermMaintInfra#preferredForLanguage` (seit PR #3) | 1 Warnung: Code nicht im ValueSet `designation-use\|4.0.1` (Binding extensible) |
 | ohne `use` | keine |
 
 Laut Quellcode des Validators (`ValueSetValidator`) spielt `use` bei der Prüfung des Displays einer Instanz keine Rolle,
@@ -194,11 +202,15 @@ Zur Einordnung, wie andere Herausgeber es machen: HL7 Schweiz (`ch.fhir.ig.ch-te
 tx.fhir.org (`fhir.tx.support`, R5) setzen kein `use`. ANS Frankreich (`ans.fr.terminologies`) und gematik
 (`de.gematik.terminology`) verwenden SNOMED Synonym, Dänemark (`hl7.fhir.dk.core`) beides gemischt.
 
-## 5. Am Rand: nicht übersetzte Codes
+## 5. Nicht übersetzte Codes `unknown` (ergänzt mit PR #3)
 
-- condition-clinical: THO kennt seit jeher zusätzlich den Code `unknown`, R4 Core nicht. Das Supplement übersetzt
+- condition-clinical: THO kennt seit jeher zusätzlich den Code `unknown`, R4 Core nicht. Das Supplement übersetzte
   alle R4-Codes, aber nicht `unknown`.
-- observation-status: Der R4-Code `unknown` ist nicht übersetzt.
+- observation-status: Der R4-Code `unknown` war nicht übersetzt.
+
+In R4-Instanzen ist `unknown` jeweils gültig: `Condition.clinicalStatus` und `Observation.status` sind required
+gebunden, und das ValueSet von condition-clinical schließt das CodeSystem ohne Version ein, mit THO also Version 3.0.0.
+Mit PR #3 ist `unknown` in beiden Supplements als „Unbekannt“ übersetzt.
 
 ## 6. device-nametype: Nachfolger in THO unter eigener URL
 
@@ -235,5 +247,7 @@ bräuchte es deshalb ein eigenes Supplement für `http://terminology.hl7.org/Cod
 - `designation.use` wurde zusätzlich mit dem FHIR Validator 6.10.4 getestet (siehe Abschnitt 4), dazu der Quellcode
   von `ValueSetValidator` und `ValueSetExpander` in org.hl7.fhir.core gelesen. Die Praxis anderer Herausgeber stammt
   aus den CodeSystems mit `content = supplement` im XIG (packages2.fhir.org), jeweils in der neuesten Paketversion.
-- Nicht selbst geprüft wurde das Verhalten der Werkzeuge bei Zielversion und Language Pack (Validator, IG Publisher,
-  tx.fhir.org). Die Regeln dazu stammen aus Tests mit dem FHIR Validator 6.10.4, Stand 30.09.2026.
+- Die Wirkung der Language-Pack-Markierung und der Umstellung von `designation.use` wurde mit dem FHIR Validator 6.10.4
+  getestet (Abschnitte 3 und 4). Nicht selbst geprüft wurde das Verhalten der Werkzeuge bei der Auflösung der
+  Zielversion (Validator, IG Publisher, tx.fhir.org). Die Regeln dazu stammen aus Tests mit dem FHIR Validator 6.10.4,
+  Stand 30.09.2026.

@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: TreatmentdeDE
 Id: v2-0373-de-de
@@ -22,6 +22,7 @@ Description: "Das Kodesystem Probenverarbeitungsmethode (Treatment) beschreibt B
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -29,40 +30,40 @@ Description: "Das Kodesystem Probenverarbeitungsmethode (Treatment) beschreibt B
 
 * #ACID
 * #ACID ^designation[0].language = #de-DE
-* #ACID ^designation[0].use = $designation-usage|4.2.0#display
-* #ACID ^designation[0].value = "Aufsäuerung"
+* #ACID ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
+* #ACID ^designation[0].value = "Ansäuerung"
 
 * #ALK
 * #ALK ^designation[0].language = #de-DE
-* #ALK ^designation[0].use = $designation-usage|4.2.0#display
+* #ALK ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #ALK ^designation[0].value = "Alkalisierung"
 
 * #DEFB
 * #DEFB ^designation[0].language = #de-DE
-* #DEFB ^designation[0].use = $designation-usage|4.2.0#display
+* #DEFB ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #DEFB ^designation[0].value = "Defibrinierung"
 
 * #FILT
 * #FILT ^designation[0].language = #de-DE
-* #FILT ^designation[0].use = $designation-usage|4.2.0#display
+* #FILT ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #FILT ^designation[0].value = "Filtration"
 
 * #LDLP
 * #LDLP ^designation[0].language = #de-DE
-* #LDLP ^designation[0].use = $designation-usage|4.2.0#display
+* #LDLP ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #LDLP ^designation[0].value = "LDL-Ausfällung"
 
 * #NEUT
 * #NEUT ^designation[0].language = #de-DE
-* #NEUT ^designation[0].use = $designation-usage|4.2.0#display
+* #NEUT ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #NEUT ^designation[0].value = "Neutralisierung"
 
 * #RECA
 * #RECA ^designation[0].language = #de-DE
-* #RECA ^designation[0].use = $designation-usage|4.2.0#display
-* #RECA ^designation[0].value = "Rekalkifizierung"
+* #RECA ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
+* #RECA ^designation[0].value = "Rekalzifizierung"
 
 * #UFIL
 * #UFIL ^designation[0].language = #de-DE
-* #UFIL ^designation[0].use = $designation-usage|4.2.0#display
+* #UFIL ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #UFIL ^designation[0].value = "Ultrafiltration"

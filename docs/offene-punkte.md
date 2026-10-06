@@ -1,40 +1,86 @@
 # Offene Punkte vor dem Release
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: Commit `05df569`
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details stehen in den verlinkten Dokumenten.
 
-## Übersetzungen
+## Zeitplan
 
-| Nr. | Punkt | Umfang | Details |
-|---|---|---|---|
-| 1 | `N` in v3-ObservationInterpretation weicht von der Fassung abgestimmt AT ab: im FSH „Normal“, abgestimmt AT „Normal (nicht numerisch)“. | 1 Code | [abgleich-abgestimmt-at.md](abgleich-abgestimmt-at.md) |
-| 2 | FSH-Übersetzungen ohne Abstimmung mit HL7 Austria, darunter alle Codes von 9 Supplements. | 89 Codes | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md) |
-| 3 | Änderungsvorschläge zu FSH-Übersetzungen aus der Prüfung der nicht abgestimmten Codes. | 21 Codes | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md), Spalte *Hinweis* |
-| 4 | Keine Übersetzung für `personal`, `professional` und `official` in composition-attestation-mode. Vorschläge liegen vor. | 3 Codes | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md) |
-| 5 | `unknown` ist nicht übersetzt, in condition-clinical (nur in THO, Zielversion 3.0.0) und in observation-status (R4 4.0.1). In R4-Instanzen ist der Code jeweils gültig, beide Elemente sind *required* gebunden. Eine Übersetzung ist nicht vorgeschrieben, ohne sie erscheint aber das englische Display. Naheliegend ist „Unbekannt“, wie bei `unknown` in anderen Status-CodeSystems abgestimmt AT. | 2 Codes | [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 5 |
-| 6 | Abweichungen zwischen abgestimmt MIO und dem FSH: Bei 19 Codes entspricht das FSH abgestimmt AT, bei 5 gibt es keine Fassung abgestimmt AT. | 24 Codes | [abgleich-abgestimmt-mio.md](abgleich-abgestimmt-mio.md) |
+- Bis Mittwoch, 07.10.2026: letzte Änderungen für das erste Package per Pull Request auf GitHub. GitHub ist die Source of
+  Truth.
+- Danach: Veröffentlichung des Package für das Ballot.
+- Q1 2027: Ballot des Translation Package.
 
-## Technik
+## Im TC Terminologie abgestimmte Regeln für Supplements
 
-| Nr. | Punkt | Umfang | Details |
-|---|---|---|---|
-| 7 | Kein Supplement ist als Language Pack markiert (Extension `codesystem-supplement-type` mit `lang-pack`). | alle 18 | [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 3 |
-| 8 | `designation.use` verweist auf `http://terminology.hl7.org/CodeSystem/designation-usage`, das es nur in THO 1.0.0 gab. Zu entscheiden ist, ob `use` entfällt oder `hl7TermMaintInfra#preferredForLanguage` gesetzt wird. | alle 18 | [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 4 |
-| 9 | v2-0203 hat `Title: "IdentifierTypedeDE"`. Die übrigen 17 Supplements haben einen deutschen Titel. | 1 Datei | [CodeSystem-v2-0203-de-de.fsh:5](../input/fsh/CodeSystem-v2-0203-de-de.fsh#L5) |
-| 10 | Der Name `ReferenceRangeAppliesTodeDE` passt nicht zum CodeSystem sex-parameter-for-clinical-use. | 1 Datei | [CodeSystem-sex-parameter-for-clinical-use-de-de.fsh:3](../input/fsh/CodeSystem-sex-parameter-for-clinical-use-de-de.fsh#L3) |
+| Regel | Stand |
+|---|---|
+| URL beginnt mit `http://terminology.hl7.org/`: auf die THO-Version zeigen, nie auf die Core-Kopie 4.0.1 | erfüllt, alle 10 THO-Supplements zeigen auf die Version aus `hl7.terminology.r4#7.4.0` |
+| URL beginnt mit `http://hl7.org/fhir/`: auf die Core-Version zeigen, in R4 also 4.0.1 | erfüllt, alle 8 Core-Supplements |
+| Als Language Pack markieren (Extension `codesystem-supplement-type` mit `lang-pack`) | erfüllt mit PR #3, alle 18 |
+| Versionen nachziehen: bei jedem THO-Release prüfen, ob sich die Version eines Ziel-CodeSystems geändert hat | derzeit stimmig mit THO 7.4.0. Daueraufgabe, siehe [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 2 |
+
+## Festlegungen
+
+- `lastReviewDate` wird für die Änderungen aus PR #3 nicht angepasst.
+
+## Review im TC Terminologie
+
+Der TC Terminologie reviewt die Übersetzungen anhand von [review-uebersetzungen.md](review-uebersetzungen.md). Das
+Dokument stellt für jeden Code das FSH neben die Fassungen *abgestimmt AT* (`HL7 Übersetzungen.xlsx`) und
+*abgestimmt HL7 DE* (`FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv`).
+
+Zu entscheiden sind alle Codes, deren Übersetzung nicht durch eine abgestimmte Fassung gedeckt ist (Abschnitt 1 des
+Review-Dokuments):
+
+- 24 Codes, bei denen das FSH einer abgestimmten Fassung widerspricht: 19, bei denen sich *abgestimmt AT* und
+  *abgestimmt HL7 DE* unterscheiden, und 5, für die es nur eine Fassung *abgestimmt HL7 DE* gibt. Bisher folgt das FSH bei
+  einem Widerspruch *abgestimmt AT*. Für die 5 Codes ohne Fassung *abgestimmt AT* ist es unverändert geblieben.
+- 78 Codes, für die es noch keine abgestimmte Fassung gibt.
+  Darunter v2-0203 `PLAC`: Im FSH steht „Identifikator des Auftraggebers“, de.basisprofil.r4 1.6.0 übersetzt „Auftragsnummer“.
+
+## Offen im FSH
+
+| Nr. | Punkt | Details |
+|---|---|---|
+| 1 | Die Extension `codesystem-supplement-type` ist in keinem veröffentlichten Extensions-Paket definiert. Die Validierung der Supplements selbst meldet sie deshalb als unbekannt. Klärung bei HL7 International (Zulip oder Jira). | [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 3 |
+
+Die FSH-Dateien widersprechen sonst weder einander noch den mit HL7 Austria abgestimmten Übersetzungen. Gleiche englische
+Begriffe sind in allen 18 Supplements gleich übersetzt.
+
+## Für die Abstimmung mit HL7 Austria
+
+| Punkt | Umfang | Details |
+|---|---|---|
+| FSH-Übersetzungen ohne Fassung *abgestimmt AT*, darunter alle Codes von 9 Supplements | 91 Codes | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md) |
+| Änderungsvorschläge zu FSH-Übersetzungen | 11 Codes | ebenda, Spalte *Hinweis* |
+| Keine Übersetzung für `personal`, `professional` und `official` in composition-attestation-mode; Vorschläge liegen vor | 3 Codes | ebenda |
 
 ## Für die Release Notes
 
 - Die 10 THO-Supplements sind an eine bestimmte CodeSystem-Version gebunden. Alle 10 greifen nur mit
   `hl7.terminology.r4` 7.3.0 oder 7.4.0, siehe [technische-pruefung-supplements.md](technische-pruefung-supplements.md),
   Abschnitt 2.
+- `designation.use` ist `hl7TermMaintInfra#preferredForLanguage`. In R4 liegt der Code außerhalb des extensible
+  gebundenen ValueSets `designation-use|4.0.1`, der Validator gibt dazu je Designation eine Warnung aus. Siehe
+  [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 4.
 - device-nametype: Das Supplement ist für R4 korrekt. Ab R6 bindet `Device.name.type` an die THO-Fassung unter eigener
   URL, siehe [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 6.
 
 ## Erledigt
 
-- quantity-comparator zeigt seit `05df569` auf `|4.0.1`, der R5-Code `ad` ist entfernt.
-- Mit `05df569` übernommen: `<` „Kleiner als“, `>` „Größer als“ (quantity-comparator) und `entered-in-error`
-  „Fehleingabe“ (specimen-status).
-- `fsh-generated` ist neu erzeugt und passt zum FSH-Stand `05df569`.
+| Punkt | Umgesetzt mit |
+|---|---|
+| quantity-comparator zeigt auf `\|4.0.1`, der R5-Code `ad` ist entfernt | Commit `05df569` |
+| `<` „Kleiner als“, `>` „Größer als“ (quantity-comparator), `entered-in-error` „Fehleingabe“ (specimen-status) | Commit `05df569` |
+| `fsh-generated` passt wieder zu `input/fsh` | Commit `00b0a53`, danach in PR #3 neu erzeugt |
+| Alle 18 Supplements als Language Pack markiert | PR #3 |
+| `designation.use` von `designation-usage\|4.2.0#display` auf `hl7TermMaintInfra#preferredForLanguage` umgestellt | PR #3 |
+| `unknown` in condition-clinical und observation-status als „Unbekannt“ übersetzt | PR #3 |
+| `N` in v3-ObservationInterpretation an abgestimmt AT angeglichen: „Normal (nicht numerisch)“ | PR #3 |
+| Name und Titel des Supplements für sex-parameter-for-clinical-use: `SexParameterForClinicalUsedeDE`, „Geschlechtsparameter für die klinische Verwendung“ (vorher „Kollektivbezug der Richtgrenze“) | PR #3 |
+| observation-status einheitlich mit diagnostic-report-status und abgestimmt AT: `final` „Final“, `amended` „Überarbeitet“, `cancelled` „Abgebrochen“, `entered-in-error` „Fehleingabe“ | PR #3 |
+| device-nametype: `other` „Andere“, `patient-reported-name` „Patientenberichteter Name“ | PR #3 |
+| v2-0203 `RI` „Ressourcen-Identifikator“, v2-0373 `ACID` „Ansäuerung“, `RECA` „Rekalzifizierung“ | PR #3 |
+| v3-ObservationInterpretation `OBX`: „Bewertung in separaten OBX-Segmenten“ statt „Dolmetscherkennzeichen in separaten OBX Segmenten“. „Bewertung“ wie der deutsche v2-Begriff für OBX-8 („Bewertung des Ergebnisses“) | PR #3 |
+| Kopfdaten: Title v2-0203 „Typ des Identifiers“; Descriptions von data-absent-reason (Bedeutung und „Kodesystem“), quantity-comparator, request-priority, referencerange-meaning und device-nametype | PR #3 |

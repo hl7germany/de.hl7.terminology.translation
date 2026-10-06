@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: ConditionClinicalStatusdeDE
 Id: condition-clinical-de-de
@@ -22,6 +22,7 @@ Description: "Das Kodesystem Diagnose Klinischer Status (ConditionClinicalStatus
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -29,30 +30,35 @@ Description: "Das Kodesystem Diagnose Klinischer Status (ConditionClinicalStatus
 
 * #active
 * #active ^designation[0].language = #de-DE
-* #active ^designation[0].use = $designation-usage|4.2.0#display
+* #active ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #active ^designation[0].value = "Aktiv"
 
 * #recurrence
 * #recurrence ^designation[0].language = #de-DE
-* #recurrence ^designation[0].use = $designation-usage|4.2.0#display
+* #recurrence ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #recurrence ^designation[0].value = "Wiederholtes Auftreten"
 
 * #relapse
 * #relapse ^designation[0].language = #de-DE
-* #relapse ^designation[0].use = $designation-usage|4.2.0#display
+* #relapse ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #relapse ^designation[0].value = "Rezidiv / Rückfall"
 
 * #inactive
 * #inactive ^designation[0].language = #de-DE
-* #inactive ^designation[0].use = $designation-usage|4.2.0#display
+* #inactive ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #inactive ^designation[0].value = "Inaktiv"
 
 * #remission
 * #remission ^designation[0].language = #de-DE
-* #remission ^designation[0].use = $designation-usage|4.2.0#display
+* #remission ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #remission ^designation[0].value = "Remission"
 
 * #resolved
 * #resolved ^designation[0].language = #de-DE
-* #resolved ^designation[0].use = $designation-usage|4.2.0#display
+* #resolved ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #resolved ^designation[0].value = "Nicht mehr vorhanden"
+
+* #unknown
+* #unknown ^designation[0].language = #de-DE
+* #unknown ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
+* #unknown ^designation[0].value = "Unbekannt"

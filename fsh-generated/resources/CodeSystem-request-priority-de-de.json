@@ -5,7 +5,7 @@
   "name": "RequestPrioritydeDE",
   "id": "request-priority-de-de",
   "title": "Dringlichkeit der Anforderung",
-  "description": "Das Kodesystem Dringlichkeit der Anforderung (Request Priority) kennzeichnet die Priorität bzw. Dringlichkeit einer Anforderung, eines Auftrags oder einer Anfrage.",
+  "description": "Das Kodesystem Dringlichkeit der Anforderung (RequestPriority) kennzeichnet die Priorität bzw. Dringlichkeit einer Anforderung, eines Auftrags oder einer Anfrage.",
   "version": "0.1.0",
   "url": "http://fhir.de/CodeSystem/request-priority-de-de",
   "concept": [
@@ -15,9 +15,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Routine"
         }
@@ -29,9 +28,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Dringend"
         }
@@ -43,9 +41,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Sehr dringend"
         }
@@ -57,9 +54,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Notfall"
         }
@@ -98,6 +94,10 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type",
+      "valueCode": "lang-pack"
     }
   ],
   "contact": [
