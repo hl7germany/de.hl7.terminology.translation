@@ -1,6 +1,6 @@
 Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
 
-CodeSystem: ReferenceRangeAppliesTodeDE
+CodeSystem: SexParameterForClinicalUsedeDE
 Id: sex-parameter-for-clinical-use-de-de
 Title: "Kollektivbezug der Richtgrenze"
 Description: "Das Kodesystem Kollektivbezug der Richtgrenze (SexParameterforClinicalUse) definiert Parameter, die bei der klinischen Beurteilung bei Diagnostik, Befundinterpretation und Behandlung mit berücksichtigt werden sollen."

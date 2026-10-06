@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "supplement",
-  "name": "ReferenceRangeAppliesTodeDE",
+  "name": "SexParameterForClinicalUsedeDE",
   "id": "sex-parameter-for-clinical-use-de-de",
   "title": "Kollektivbezug der Richtgrenze",
   "description": "Das Kodesystem Kollektivbezug der Richtgrenze (SexParameterforClinicalUse) definiert Parameter, die bei der klinischen Beurteilung bei Diagnostik, Befundinterpretation und Behandlung mit berücksichtigt werden sollen.",

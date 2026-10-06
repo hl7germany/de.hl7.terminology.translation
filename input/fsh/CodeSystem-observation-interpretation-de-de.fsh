@@ -184,7 +184,7 @@ Description: "Das Kodesystem Interpretation der Beobachtung (ObservationInterpre
 * #N
 * #N ^designation[0].language = #de-DE
 * #N ^designation[0].use = $designation-usage|4.2.0#display
-* #N ^designation[0].value = "Normal"
+* #N ^designation[0].value = "Normal (nicht numerisch)"
 
 * #ND
 * #ND ^designation[0].language = #de-DE

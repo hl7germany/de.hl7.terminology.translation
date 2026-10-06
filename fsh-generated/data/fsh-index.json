@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-condition-clinical-de-de.fsh",
     "startLine": 3,
-    "endLine": 59
+    "endLine": 64
   },
   {
     "outputFile": "CodeSystem-condition-ver-status-de-de.json",
@@ -61,7 +61,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-observation-status-de-de.fsh",
     "startLine": 3,
-    "endLine": 64
+    "endLine": 69
   },
   {
     "outputFile": "CodeSystem-quantity-comparator-de-de.json",
@@ -89,7 +89,7 @@
   },
   {
     "outputFile": "CodeSystem-sex-parameter-for-clinical-use-de-de.json",
-    "fshName": "ReferenceRangeAppliesTodeDE",
+    "fshName": "SexParameterForClinicalUsedeDE",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-sex-parameter-for-clinical-use-de-de.fsh",
     "startLine": 3,

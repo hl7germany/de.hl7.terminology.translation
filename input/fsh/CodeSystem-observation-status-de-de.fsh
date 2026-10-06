@@ -62,3 +62,8 @@ Description: "Das Kodesystem Status der Beobachtung (ObservationStatus) beschrei
 * #entered-in-error ^designation[0].language = #de-DE
 * #entered-in-error ^designation[0].use = $designation-usage|4.2.0#display
 * #entered-in-error ^designation[0].value = "Irrtümliche Eingabe"
+
+* #unknown
+* #unknown ^designation[0].language = #de-DE
+* #unknown ^designation[0].use = $designation-usage|4.2.0#display
+* #unknown ^designation[0].value = "Unbekannt"

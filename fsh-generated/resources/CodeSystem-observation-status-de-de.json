@@ -106,6 +106,20 @@
           "value": "Irrtümliche Eingabe"
         }
       ]
+    },
+    {
+      "code": "unknown",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "display",
+            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
+            "version": "4.2.0"
+          },
+          "value": "Unbekannt"
+        }
+      ]
     }
   ],
   "meta": {

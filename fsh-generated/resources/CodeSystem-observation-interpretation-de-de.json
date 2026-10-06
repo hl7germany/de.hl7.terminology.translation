@@ -425,7 +425,7 @@
             "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
             "version": "4.2.0"
           },
-          "value": "Normal"
+          "value": "Normal (nicht numerisch)"
         }
       ]
     },

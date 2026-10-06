@@ -57,3 +57,8 @@ Description: "Das Kodesystem Diagnose Klinischer Status (ConditionClinicalStatus
 * #resolved ^designation[0].language = #de-DE
 * #resolved ^designation[0].use = $designation-usage|4.2.0#display
 * #resolved ^designation[0].value = "Nicht mehr vorhanden"
+
+* #unknown
+* #unknown ^designation[0].language = #de-DE
+* #unknown ^designation[0].use = $designation-usage|4.2.0#display
+* #unknown ^designation[0].value = "Unbekannt"
