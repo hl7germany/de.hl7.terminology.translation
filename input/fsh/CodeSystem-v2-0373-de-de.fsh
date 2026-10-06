@@ -31,7 +31,7 @@ Description: "Das Kodesystem Probenverarbeitungsmethode (Treatment) beschreibt B
 * #ACID
 * #ACID ^designation[0].language = #de-DE
 * #ACID ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #ACID ^designation[0].value = "Aufsäuerung"
+* #ACID ^designation[0].value = "Ansäuerung"
 
 * #ALK
 * #ALK ^designation[0].language = #de-DE
@@ -61,7 +61,7 @@ Description: "Das Kodesystem Probenverarbeitungsmethode (Treatment) beschreibt B
 * #RECA
 * #RECA ^designation[0].language = #de-DE
 * #RECA ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #RECA ^designation[0].value = "Rekalkifizierung"
+* #RECA ^designation[0].value = "Rekalzifizierung"
 
 * #UFIL
 * #UFIL ^designation[0].language = #de-DE

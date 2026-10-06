@@ -3,7 +3,7 @@ Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintIn
 CodeSystem: QuantityComparatordeDE
 Id: quantity-comparator-de-de
 Title: "Vergleichsoperator für Mengenangaben"
-Description: "Das Kodesystem Vergleichsoperator für Mengenangaben (QuantityOperator) kennzeichnet Vergleichsoperatoren für quantitative Werte. Damit kann strukturiert beschrieben werden, wie eine Mengen- oder Messangabe im Verhältnis zu einem angegebenen Wert interpretiert werden soll."
+Description: "Das Kodesystem Vergleichsoperator für Mengenangaben (QuantityComparator) kennzeichnet Vergleichsoperatoren für quantitative Werte. Damit kann strukturiert beschrieben werden, wie eine Mengen- oder Messangabe im Verhältnis zu einem angegebenen Wert interpretiert werden soll."
 * ^url = "http://fhir.de/CodeSystem/quantity-comparator-de-de"
 * ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^version = "0.1.0"

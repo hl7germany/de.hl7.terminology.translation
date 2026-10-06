@@ -18,7 +18,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "Aufsäuerung"
+          "value": "Ansäuerung"
         }
       ]
     },
@@ -96,7 +96,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "Rekalkifizierung"
+          "value": "Rekalzifizierung"
         }
       ]
     },

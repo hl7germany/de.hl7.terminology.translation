@@ -41,12 +41,12 @@ Description: "Das Kodesystem Status der Beobachtung (ObservationStatus) beschrei
 * #final
 * #final ^designation[0].language = #de-DE
 * #final ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #final ^designation[0].value = "Abgeschlossen"
+* #final ^designation[0].value = "Final"
 
 * #amended
 * #amended ^designation[0].language = #de-DE
 * #amended ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #amended ^designation[0].value = "Geändert"
+* #amended ^designation[0].value = "Überarbeitet"
 
 * #corrected
 * #corrected ^designation[0].language = #de-DE
@@ -56,12 +56,12 @@ Description: "Das Kodesystem Status der Beobachtung (ObservationStatus) beschrei
 * #cancelled
 * #cancelled ^designation[0].language = #de-DE
 * #cancelled ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #cancelled ^designation[0].value = "Storniert"
+* #cancelled ^designation[0].value = "Abgebrochen"
 
 * #entered-in-error
 * #entered-in-error ^designation[0].language = #de-DE
 * #entered-in-error ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #entered-in-error ^designation[0].value = "Irrtümliche Eingabe"
+* #entered-in-error ^designation[0].value = "Fehleingabe"
 
 * #unknown
 * #unknown ^designation[0].language = #de-DE

@@ -5,7 +5,7 @@
   "name": "DataAbsentReasondeDE",
   "id": "data-absent-reason-de-de",
   "title": "Begründung Nichtverfügbarkeit",
-  "description": "Das Codesystem Begründung Nichtverfügbarkeit (DataAbsentReason) dient zur standardisierten Angabe eines Grundes, warum ein erwarteter Datenwert nicht vorhanden ist und übermittelt werden kann.",
+  "description": "Das Kodesystem Begründung Nichtverfügbarkeit (DataAbsentReason) dient zur standardisierten Angabe eines Grundes, warum ein erwarteter Datenwert nicht vorhanden ist und nicht übermittelt werden kann.",
   "version": "0.1.0",
   "url": "http://fhir.de/CodeSystem/data-absent-reason-de-de",
   "concept": [

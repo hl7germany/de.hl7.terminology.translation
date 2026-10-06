@@ -5,7 +5,7 @@
   "name": "DeviceNametypedeDE",
   "id": "device-nametype-de-de",
   "title": "Art der Bezeichnung des Geräts",
-  "description": "Das Kodesystem Art der Bezeichnung des Gerätes (DeviceNameType) beschreibt die Art des Namens für ein Analysegerät oder Medizinprodukt, wie er von offiziellen Stellen, von Patienten oder von Laien verwendet wird.",
+  "description": "Das Kodesystem Art der Bezeichnung des Geräts (DeviceNameType) beschreibt die Art des Namens für ein Analysegerät oder Medizinprodukt, wie er von offiziellen Stellen, von Patienten oder von Laien verwendet wird.",
   "version": "0.1.0",
   "url": "http://fhir.de/CodeSystem/device-nametype-de-de",
   "concept": [
@@ -44,7 +44,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "PatientInberichteter Name"
+          "value": "Patientenberichteter Name"
         }
       ]
     },
@@ -83,7 +83,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "Sonstige"
+          "value": "Andere"
         }
       ]
     }

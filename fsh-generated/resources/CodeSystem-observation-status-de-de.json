@@ -44,7 +44,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "Abgeschlossen"
+          "value": "Final"
         }
       ]
     },
@@ -57,7 +57,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "Geändert"
+          "value": "Überarbeitet"
         }
       ]
     },
@@ -83,7 +83,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "Storniert"
+          "value": "Abgebrochen"
         }
       ]
     },
@@ -96,7 +96,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "Irrtümliche Eingabe"
+          "value": "Fehleingabe"
         }
       ]
     },

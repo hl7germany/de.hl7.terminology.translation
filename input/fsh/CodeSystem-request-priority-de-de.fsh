@@ -3,7 +3,7 @@ Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintIn
 CodeSystem: RequestPrioritydeDE
 Id: request-priority-de-de
 Title: "Dringlichkeit der Anforderung"
-Description: "Das Kodesystem Dringlichkeit der Anforderung (Request Priority) kennzeichnet die Priorität bzw. Dringlichkeit einer Anforderung, eines Auftrags oder einer Anfrage."
+Description: "Das Kodesystem Dringlichkeit der Anforderung (RequestPriority) kennzeichnet die Priorität bzw. Dringlichkeit einer Anforderung, eines Auftrags oder einer Anfrage."
 * ^url = "http://fhir.de/CodeSystem/request-priority-de-de"
 * ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^version = "0.1.0"

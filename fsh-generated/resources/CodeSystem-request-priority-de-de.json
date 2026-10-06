@@ -5,7 +5,7 @@
   "name": "RequestPrioritydeDE",
   "id": "request-priority-de-de",
   "title": "Dringlichkeit der Anforderung",
-  "description": "Das Kodesystem Dringlichkeit der Anforderung (Request Priority) kennzeichnet die Priorität bzw. Dringlichkeit einer Anforderung, eines Auftrags oder einer Anfrage.",
+  "description": "Das Kodesystem Dringlichkeit der Anforderung (RequestPriority) kennzeichnet die Priorität bzw. Dringlichkeit einer Anforderung, eines Auftrags oder einer Anfrage.",
   "version": "0.1.0",
   "url": "http://fhir.de/CodeSystem/request-priority-de-de",
   "concept": [

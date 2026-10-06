@@ -5,7 +5,7 @@
   "name": "ReferenceRangeMeaningdeDE",
   "id": "referencerange-meaning-de-de",
   "title": "Richtgrenzen-Typ",
-  "description": "Das Kodesystem Richtgrenzen-Typ (ReferenceRangeMeaning) definiert Kodes zur Kennzeichnung des erwarteten Referenzbereichs oder Zielwerts für eine spezifische Zielpopulation.",
+  "description": "Das Kodesystem Richtgrenzen-Typ (ObservationReferenceRangeMeaningCodes) definiert Kodes zur Kennzeichnung des erwarteten Referenzbereichs oder Zielwerts für eine spezifische Zielpopulation.",
   "version": "0.1.0",
   "url": "http://fhir.de/CodeSystem/referencerange-meaning-de-de",
   "concept": [

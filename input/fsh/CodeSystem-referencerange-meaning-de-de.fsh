@@ -3,7 +3,7 @@ Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintIn
 CodeSystem: ReferenceRangeMeaningdeDE
 Id: referencerange-meaning-de-de
 Title: "Richtgrenzen-Typ"
-Description: "Das Kodesystem Richtgrenzen-Typ (ReferenceRangeMeaning) definiert Kodes zur Kennzeichnung des erwarteten Referenzbereichs oder Zielwerts für eine spezifische Zielpopulation."
+Description: "Das Kodesystem Richtgrenzen-Typ (ObservationReferenceRangeMeaningCodes) definiert Kodes zur Kennzeichnung des erwarteten Referenzbereichs oder Zielwerts für eine spezifische Zielpopulation."
 * ^url = "http://fhir.de/CodeSystem/referencerange-meaning-de-de"
 * ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^version = "0.1.0"

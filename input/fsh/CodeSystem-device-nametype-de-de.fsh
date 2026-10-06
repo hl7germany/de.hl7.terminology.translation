@@ -3,7 +3,7 @@ Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintIn
 CodeSystem: DeviceNametypedeDE
 Id: device-nametype-de-de
 Title: "Art der Bezeichnung des Geräts"
-Description: "Das Kodesystem Art der Bezeichnung des Gerätes (DeviceNameType) beschreibt die Art des Namens für ein Analysegerät oder Medizinprodukt, wie er von offiziellen Stellen, von Patienten oder von Laien verwendet wird."
+Description: "Das Kodesystem Art der Bezeichnung des Geräts (DeviceNameType) beschreibt die Art des Namens für ein Analysegerät oder Medizinprodukt, wie er von offiziellen Stellen, von Patienten oder von Laien verwendet wird."
 * ^url = "http://fhir.de/CodeSystem/device-nametype-de-de"
 * ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^version = "0.1.0"
@@ -41,7 +41,7 @@ Description: "Das Kodesystem Art der Bezeichnung des Gerätes (DeviceNameType) b
 * #patient-reported-name
 * #patient-reported-name ^designation[0].language = #de-DE
 * #patient-reported-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #patient-reported-name ^designation[0].value = "PatientInberichteter Name"
+* #patient-reported-name ^designation[0].value = "Patientenberichteter Name"
 
 * #manufacturer-name
 * #manufacturer-name ^designation[0].language = #de-DE
@@ -56,4 +56,4 @@ Description: "Das Kodesystem Art der Bezeichnung des Gerätes (DeviceNameType) b
 * #other
 * #other ^designation[0].language = #de-DE
 * #other ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #other ^designation[0].value = "Sonstige"
+* #other ^designation[0].value = "Andere"

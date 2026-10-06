@@ -2,7 +2,7 @@ Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintIn
 
 CodeSystem: IdentifierTypedeDE
 Id: v2-0203-de-de
-Title: "IdentifierTypedeDE"
+Title: "Typ des Identifiers"
 Description: "Das Kodesystem Typ des Identifiers (IdentifierType) beschreibt standardisierte Typen von Identifikatoren zur eindeutigen Kennzeichnung von Personen, Organisationen, Versicherungen, Fällen, Dokumenten, Proben und anderen Entitäten im Gesundheitswesen."
 * ^url = "http://fhir.de/CodeSystem/v2-0203-de-de"
 * ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
@@ -76,4 +76,4 @@ Description: "Das Kodesystem Typ des Identifiers (IdentifierType) beschreibt sta
 * #RI
 * #RI ^designation[0].language = #de-DE
 * #RI ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #RI ^designation[0].value = "Identifier der Quelle"
+* #RI ^designation[0].value = "Ressourcen-Identifikator"

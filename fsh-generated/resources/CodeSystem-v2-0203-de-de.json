@@ -4,7 +4,7 @@
   "content": "supplement",
   "name": "IdentifierTypedeDE",
   "id": "v2-0203-de-de",
-  "title": "IdentifierTypedeDE",
+  "title": "Typ des Identifiers",
   "description": "Das Kodesystem Typ des Identifiers (IdentifierType) beschreibt standardisierte Typen von Identifikatoren zur eindeutigen Kennzeichnung von Personen, Organisationen, Versicherungen, Fällen, Dokumenten, Proben und anderen Entitäten im Gesundheitswesen.",
   "version": "0.1.0",
   "url": "http://fhir.de/CodeSystem/v2-0203-de-de",
@@ -135,7 +135,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "Identifier der Quelle"
+          "value": "Ressourcen-Identifikator"
         }
       ]
     }

@@ -3,7 +3,7 @@ Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintIn
 CodeSystem: DataAbsentReasondeDE
 Id: data-absent-reason-de-de
 Title: "Begründung Nichtverfügbarkeit"
-Description: "Das Codesystem Begründung Nichtverfügbarkeit (DataAbsentReason) dient zur standardisierten Angabe eines Grundes, warum ein erwarteter Datenwert nicht vorhanden ist und übermittelt werden kann."
+Description: "Das Kodesystem Begründung Nichtverfügbarkeit (DataAbsentReason) dient zur standardisierten Angabe eines Grundes, warum ein erwarteter Datenwert nicht vorhanden ist und nicht übermittelt werden kann."
 * ^url = "http://fhir.de/CodeSystem/data-absent-reason-de-de"
 * ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^version = "0.1.0"
