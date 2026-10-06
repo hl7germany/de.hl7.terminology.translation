@@ -1,13 +1,13 @@
-# Abgleich der de-DE-Übersetzungen mit `FHIR CodeSystem Übersetzungen.csv`
+# Abgleich der de-DE-Übersetzungen mit den von HL7 Deutschland abgestimmten Übersetzungen
 
 Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
 
-Die Datei `FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv` enthält deutsche Übersetzungen für
-25 CodeSystems. Ihre Spalten sind *Name*, *Codesystem URL*, *Code*, *Display*, *vorläufige Übersetzung*,
+Die Datei `FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv` enthält die von HL7 Deutschland abgestimmten
+deutschen Übersetzungen für 25 CodeSystems. Ihre Spalten sind *Name*, *Codesystem URL*, *Code*, *Display*, *vorläufige Übersetzung*,
 *Änderungsvorschlag MIO* und *Begründung*. Verglichen wurde die Spalte *vorläufige Übersetzung* mit der deutschen
 Bezeichnung (`^designation.value`) in den CodeSystem-Supplements unter `input/fsh/`.
 
-In den Tabellen heißt die Spalte *vorläufige Übersetzung* der CSV **abgestimmt MIO**. Zur Einordnung steht in der
+In den Tabellen heißt die Spalte *vorläufige Übersetzung* der CSV **abgestimmt HL7 DE**. Zur Einordnung steht in der
 Spalte **abgestimmt AT** die mit HL7 Austria abgestimmte Übersetzung aus `HL7 Übersetzungen.xlsx`, sofern es eine gibt.
 
 ## Ergebnis
@@ -22,17 +22,19 @@ Spalte **abgestimmt AT** die mit HL7 Austria abgestimmte Übersetzung aus `HL7 �
 | nur in der CSV | 1 |
 | nur im FSH | 14 |
 
-Bei 20 der 25 inhaltlichen Abweichungen entspricht das FSH *abgestimmt AT*, und *abgestimmt MIO* weicht davon ab.
+Bei 20 der 25 inhaltlichen Abweichungen entspricht das FSH *abgestimmt AT*, und *abgestimmt HL7 DE* weicht davon ab.
+Eine davon, `luteal`, ist nur ein Tippfehler in der CSV („Gelkörperphase“). Das Review-Dokument zählt sie deshalb nicht als
+Entscheidungspunkt.
 Für die übrigen 5 gibt es keine Übersetzung *abgestimmt AT*.
 
-Festlegung: Widersprechen sich *abgestimmt AT* und *abgestimmt MIO*, gilt *abgestimmt AT*. Für die 5 Codes ohne Fassung
-*abgestimmt AT* bleibt das FSH vorerst unverändert.
+Bisher folgt das FSH bei einem Widerspruch *abgestimmt AT*. Für die 5 Codes ohne Fassung *abgestimmt AT* ist es
+unverändert geblieben. Darüber entscheidet der TC Terminologie im Review, siehe [review-uebersetzungen.md](review-uebersetzungen.md).
 
 ## 1. Inhaltlich abweichende Übersetzungen
 
 ### 1a. FSH entspricht abgestimmt AT (20 Codes)
 
-| CodeSystem | Code | FSH = abgestimmt AT | abgestimmt MIO | Anmerkung in der CSV | Fundstelle |
+| CodeSystem | Code | FSH = abgestimmt AT | abgestimmt HL7 DE | Anmerkung in der CSV | Fundstelle |
 |---|---|---|---|---|---|
 | condition-clinical | `relapse` | Rezidiv / Rückfall | Rezidiv |  | [CodeSystem-condition-clinical-de-de.fsh:44](../input/fsh/CodeSystem-condition-clinical-de-de.fsh#L44), CSV Zeile 34 |
 | diagnostic-report-status | `final` | Final | Endgültig | Begründung: „Im klinischen Alltag ist "endgültig" gebräuchliche das Pendent zu "vorläufig", um den Status von Arztbriefen und Befunden zu beschreiben.“ | [CodeSystem-diagnostic-report-status-de-de.fsh:49](../input/fsh/CodeSystem-diagnostic-report-status-de-de.fsh#L49), CSV Zeile 52 |
@@ -57,7 +59,7 @@ Festlegung: Widersprechen sich *abgestimmt AT* und *abgestimmt MIO*, gilt *abges
 
 ### 1b. Keine Übersetzung abgestimmt AT (5 Codes)
 
-| CodeSystem | Code | FSH | abgestimmt MIO | Anmerkung in der CSV | Fundstelle |
+| CodeSystem | Code | FSH | abgestimmt HL7 DE | Anmerkung in der CSV | Fundstelle |
 |---|---|---|---|---|---|
 | device-nametype | `user-friendly-name` | Benutzerfreundlicher Name | Gebräuchlicher Name |  | [CodeSystem-device-nametype-de-de.fsh:39](../input/fsh/CodeSystem-device-nametype-de-de.fsh#L39), CSV Zeile 47 |
 | device-nametype | `patient-reported-name` | Patientenberichteter Name | Von Patient:in angegebener Name | Änderungsvorschlag MIO: „Von Patient/Patientin angegebener Name (AT)“ Begründung: „Gechlechterneurtral, "patientenberichtet" kein gebräuchlicher Begriff“ | [CodeSystem-device-nametype-de-de.fsh:44](../input/fsh/CodeSystem-device-nametype-de-de.fsh#L44), CSV Zeile 48 |
@@ -69,7 +71,7 @@ Zu diesen Codes enthält [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzu
 
 ## 2. Nur Schreibweise verschieden (3 Codes)
 
-| CodeSystem | Code | FSH | abgestimmt MIO | abgestimmt AT | Fundstelle |
+| CodeSystem | Code | FSH | abgestimmt HL7 DE | abgestimmt AT | Fundstelle |
 |---|---|---|---|---|---|
 | condition-clinical | `resolved` | Nicht mehr vorhanden | Nicht mehr Vorhanden | Nicht mehr vorhanden | [CodeSystem-condition-clinical-de-de.fsh:59](../input/fsh/CodeSystem-condition-clinical-de-de.fsh#L59), CSV Zeile 37 |
 | v3-ObservationInterpretation | `HH` | Kritisch hoch | Kritisch Hoch | Kritisch hoch | [CodeSystem-observation-interpretation-de-de.fsh:113](../input/fsh/CodeSystem-observation-interpretation-de-de.fsh#L113), CSV Zeile 182 |
@@ -77,7 +79,7 @@ Zu diesen Codes enthält [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzu
 
 ## 3. Codes nur in der CSV (1)
 
-| CodeSystem | Code | abgestimmt MIO | Hinweis | Fundstelle |
+| CodeSystem | Code | abgestimmt HL7 DE | Hinweis | Fundstelle |
 |---|---|---|---|---|
 | device-nametype | `registered-name` | Eingetragener Name | Den Code gibt es erst in R5 (device-nametype 5.0.0). Das Supplement ergänzt die R4-Version 4.0.1, dort fehlt er. | CSV Zeile 46 |
 

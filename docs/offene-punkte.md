@@ -22,9 +22,17 @@ Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details st
 
 ## Festlegungen
 
-- Widersprechen sich die Fassungen *abgestimmt AT* und *abgestimmt MIO*, gilt *abgestimmt AT*. Für Codes, die nur eine
-  Fassung *abgestimmt MIO* haben, bleibt das FSH vorerst unverändert. Siehe [abgleich-abgestimmt-mio.md](abgleich-abgestimmt-mio.md).
 - `lastReviewDate` wird für die Änderungen aus PR #3 nicht angepasst.
+
+## Review im TC Terminologie
+
+Der TC Terminologie reviewt die Übersetzungen anhand von [review-uebersetzungen.md](review-uebersetzungen.md). Das
+Dokument stellt für jeden Code das FSH neben die Fassungen *abgestimmt AT* (`HL7 Übersetzungen.xlsx`) und
+*abgestimmt HL7 DE* (`FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv`).
+
+Zu entscheiden sind 24 Codes, bei denen das FSH einer abgestimmten Fassung widerspricht: 19, bei denen sich *abgestimmt AT*
+und *abgestimmt HL7 DE* unterscheiden, und 5, für die es nur eine Fassung *abgestimmt HL7 DE* gibt. Bisher folgt das FSH bei
+einem Widerspruch *abgestimmt AT*. Für die 5 Codes ohne Fassung *abgestimmt AT* ist es unverändert geblieben.
 
 ## Offen im FSH
 
@@ -42,7 +50,6 @@ Begriffe sind in allen 18 Supplements gleich übersetzt.
 | FSH-Übersetzungen ohne Fassung *abgestimmt AT*, darunter alle Codes von 9 Supplements | 91 Codes | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md) |
 | Änderungsvorschläge zu FSH-Übersetzungen | 11 Codes | ebenda, Spalte *Hinweis* |
 | Keine Übersetzung für `personal`, `professional` und `official` in composition-attestation-mode; Vorschläge liegen vor | 3 Codes | ebenda |
-| Codes mit Fassung *abgestimmt MIO*, aber ohne Fassung *abgestimmt AT*, bei denen das FSH von MIO abweicht | 5 Codes | [abgleich-abgestimmt-mio.md](abgleich-abgestimmt-mio.md), Abschnitt 1b |
 
 ## Für die Release Notes
 
