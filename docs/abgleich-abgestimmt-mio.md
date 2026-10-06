@@ -1,6 +1,6 @@
 # Abgleich der de-DE-Übersetzungen mit `FHIR CodeSystem Übersetzungen.csv`
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 und PR #2
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 bis PR #3
 
 Die Datei `FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv` enthält deutsche Übersetzungen für
 25 CodeSystems. Ihre Spalten sind *Name*, *Codesystem URL*, *Code*, *Display*, *vorläufige Übersetzung*,
@@ -24,6 +24,9 @@ Spalte **abgestimmt AT** die mit HL7 Austria abgestimmte Übersetzung aus `HL7 �
 
 Bei 20 der 25 inhaltlichen Abweichungen entspricht das FSH *abgestimmt AT*, und *abgestimmt MIO* weicht davon ab.
 Für die übrigen 5 gibt es keine Übersetzung *abgestimmt AT*.
+
+Festlegung: Widersprechen sich *abgestimmt AT* und *abgestimmt MIO*, gilt *abgestimmt AT*. Für die 5 Codes ohne Fassung
+*abgestimmt AT* bleibt das FSH vorerst unverändert.
 
 ## 1. Inhaltlich abweichende Übersetzungen
 
@@ -57,7 +60,7 @@ Für die übrigen 5 gibt es keine Übersetzung *abgestimmt AT*.
 | CodeSystem | Code | FSH | abgestimmt MIO | Anmerkung in der CSV | Fundstelle |
 |---|---|---|---|---|---|
 | device-nametype | `user-friendly-name` | Benutzerfreundlicher Name | Gebräuchlicher Name |  | [CodeSystem-device-nametype-de-de.fsh:39](../input/fsh/CodeSystem-device-nametype-de-de.fsh#L39), CSV Zeile 47 |
-| device-nametype | `patient-reported-name` | PatientInberichteter Name | Von Patient:in angegebener Name | Änderungsvorschlag MIO: „Von Patient/Patientin angegebener Name (AT)“ Begründung: „Gechlechterneurtral, "patientenberichtet" kein gebräuchlicher Begriff“ | [CodeSystem-device-nametype-de-de.fsh:44](../input/fsh/CodeSystem-device-nametype-de-de.fsh#L44), CSV Zeile 48 |
+| device-nametype | `patient-reported-name` | Patientenberichteter Name | Von Patient:in angegebener Name | Änderungsvorschlag MIO: „Von Patient/Patientin angegebener Name (AT)“ Begründung: „Gechlechterneurtral, "patientenberichtet" kein gebräuchlicher Begriff“ | [CodeSystem-device-nametype-de-de.fsh:44](../input/fsh/CodeSystem-device-nametype-de-de.fsh#L44), CSV Zeile 48 |
 | referencerange-meaning | `type` | Generell | Typ |  | [CodeSystem-referencerange-meaning-de-de.fsh:34](../input/fsh/CodeSystem-referencerange-meaning-de-de.fsh#L34), CSV Zeile 127 |
 | referencerange-meaning | `endocrine` | Endokrinologisch adaptiert | Endokrin |  | [CodeSystem-referencerange-meaning-de-de.fsh:69](../input/fsh/CodeSystem-referencerange-meaning-de-de.fsh#L69), CSV Zeile 134 |
 | v3-ObservationInterpretation | `_ObservationInterpretationSusceptibility` | Interpretation der antimikrobiellen Resistenztestung | Interperation der antimikrobiellen Empfindlichkeit |  | [CodeSystem-observation-interpretation-de-de.fsh:326](../input/fsh/CodeSystem-observation-interpretation-de-de.fsh#L326), CSV Zeile 189 |

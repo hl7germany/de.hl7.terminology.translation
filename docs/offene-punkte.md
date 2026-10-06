@@ -1,6 +1,6 @@
 # Offene Punkte vor dem Release
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 und PR #2
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 bis PR #3
 
 Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details stehen in den verlinkten Dokumenten.
 
@@ -20,16 +20,30 @@ Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details st
 | Als Language Pack markieren (Extension `codesystem-supplement-type` mit `lang-pack`) | erfüllt mit PR #1, alle 18 |
 | Versionen nachziehen: bei jedem THO-Release prüfen, ob sich die Version eines Ziel-CodeSystems geändert hat | derzeit stimmig mit THO 7.4.0. Daueraufgabe, siehe [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 2 |
 
-## Offen
+## Festlegungen
 
-| Nr. | Punkt | Umfang | Details |
-|---|---|---|---|
-| 1 | FSH-Übersetzungen ohne Abstimmung mit HL7 Austria, darunter alle Codes von 9 Supplements und die mit PR #2 ergänzten `unknown`. | 91 Codes | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md) |
-| 2 | Änderungsvorschläge zu FSH-Übersetzungen aus der Prüfung der nicht abgestimmten Codes. | 21 Codes | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md), Spalte *Hinweis* |
-| 3 | Keine Übersetzung für `personal`, `professional` und `official` in composition-attestation-mode. Vorschläge liegen vor. | 3 Codes | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md) |
-| 4 | Abweichungen zwischen abgestimmt MIO und dem FSH: Bei 20 Codes entspricht das FSH abgestimmt AT, bei 5 gibt es keine Fassung abgestimmt AT. | 25 Codes | [abgleich-abgestimmt-mio.md](abgleich-abgestimmt-mio.md) |
-| 5 | v2-0203 hat `Title: "IdentifierTypedeDE"`, die übrigen 17 Supplements haben einen deutschen Titel. In PR #2 bewusst nicht geändert. | 1 Datei | [CodeSystem-v2-0203-de-de.fsh:5](../input/fsh/CodeSystem-v2-0203-de-de.fsh#L5) |
-| 6 | Die Extension `codesystem-supplement-type` ist in keinem veröffentlichten Extensions-Paket definiert. Die Validierung der Supplements selbst meldet sie deshalb als unbekannt. Klärung bei HL7 International (Zulip oder Jira). | extern | [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 3 |
+- Widersprechen sich die Fassungen *abgestimmt AT* und *abgestimmt MIO*, gilt *abgestimmt AT*. Für Codes, die nur eine
+  Fassung *abgestimmt MIO* haben, bleibt das FSH vorerst unverändert. Siehe [abgleich-abgestimmt-mio.md](abgleich-abgestimmt-mio.md).
+- `lastReviewDate` wird für die Änderungen aus PR #1 bis PR #3 nicht angepasst.
+
+## Offen im FSH
+
+| Nr. | Punkt | Details |
+|---|---|---|
+| 1 | `OBX` in v3-ObservationInterpretation: „Dolmetscherkennzeichen in separaten OBX Segmenten“ ist falsch, „interpretation qualifiers“ sind keine Dolmetscher. Die neue Formulierung muss diskutiert werden. Der Code ist deprecated. | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md) |
+| 2 | Die Extension `codesystem-supplement-type` ist in keinem veröffentlichten Extensions-Paket definiert. Die Validierung der Supplements selbst meldet sie deshalb als unbekannt. Klärung bei HL7 International (Zulip oder Jira). | [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 3 |
+
+Die FSH-Dateien widersprechen sonst weder einander noch den mit HL7 Austria abgestimmten Übersetzungen. Gleiche englische
+Begriffe sind in allen 18 Supplements gleich übersetzt.
+
+## Für die Abstimmung mit HL7 Austria
+
+| Punkt | Umfang | Details |
+|---|---|---|
+| FSH-Übersetzungen ohne Fassung *abgestimmt AT*, darunter alle Codes von 9 Supplements | 91 Codes | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md) |
+| Änderungsvorschläge zu FSH-Übersetzungen | 11 Codes | ebenda, Spalte *Hinweis* |
+| Keine Übersetzung für `personal`, `professional` und `official` in composition-attestation-mode; Vorschläge liegen vor | 3 Codes | ebenda |
+| Codes mit Fassung *abgestimmt MIO*, aber ohne Fassung *abgestimmt AT*, bei denen das FSH von MIO abweicht | 5 Codes | [abgleich-abgestimmt-mio.md](abgleich-abgestimmt-mio.md), Abschnitt 1b |
 
 ## Für die Release Notes
 
@@ -48,9 +62,13 @@ Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details st
 |---|---|
 | quantity-comparator zeigt auf `\|4.0.1`, der R5-Code `ad` ist entfernt | Commit `05df569` |
 | `<` „Kleiner als“, `>` „Größer als“ (quantity-comparator), `entered-in-error` „Fehleingabe“ (specimen-status) | Commit `05df569` |
-| `fsh-generated` passt wieder zu `input/fsh` | Commit `00b0a53`, danach in PR #1 und PR #2 neu erzeugt |
+| `fsh-generated` passt wieder zu `input/fsh` | Commit `00b0a53`, danach in PR #1 bis PR #3 neu erzeugt |
 | Alle 18 Supplements als Language Pack markiert | PR #1 |
 | `designation.use` von `designation-usage\|4.2.0#display` auf `hl7TermMaintInfra#preferredForLanguage` umgestellt | PR #2 |
 | `unknown` in condition-clinical und observation-status als „Unbekannt“ übersetzt | PR #2 |
 | `N` in v3-ObservationInterpretation an abgestimmt AT angeglichen: „Normal (nicht numerisch)“ | PR #2 |
 | Name und Titel des Supplements für sex-parameter-for-clinical-use: `SexParameterForClinicalUsedeDE`, „Geschlechtsparameter für die klinische Verwendung“ (vorher „Kollektivbezug der Richtgrenze“) | PR #2 |
+| observation-status einheitlich mit diagnostic-report-status und abgestimmt AT: `final` „Final“, `amended` „Überarbeitet“, `cancelled` „Abgebrochen“, `entered-in-error` „Fehleingabe“ | PR #3 |
+| device-nametype: `other` „Andere“, `patient-reported-name` „Patientenberichteter Name“ | PR #3 |
+| v2-0203 `RI` „Ressourcen-Identifikator“, v2-0373 `ACID` „Ansäuerung“, `RECA` „Rekalzifizierung“ | PR #3 |
+| Kopfdaten: Title v2-0203 „Typ des Identifiers“; Descriptions von data-absent-reason (Bedeutung und „Kodesystem“), quantity-comparator, request-priority, referencerange-meaning und device-nametype | PR #3 |

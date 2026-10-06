@@ -1,6 +1,6 @@
 # Abgleich der de-DE-Übersetzungen mit `HL7 Übersetzungen.xlsx`
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 und PR #2
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 bis PR #3
 
 `HL7 Übersetzungen.xlsx` enthält die mit HL7 Austria abgestimmten Übersetzungen und ist hier die Referenz.
 Geprüft wurde, ob die deutschen Bezeichnungen (`^designation.value`) in den CodeSystem-Supplements unter

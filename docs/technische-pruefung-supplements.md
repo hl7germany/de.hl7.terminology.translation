@@ -1,6 +1,6 @@
 # Technische Prüfung der Supplements
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 und PR #2
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 bis PR #3
 
 Ein CodeSystem-Supplement gilt nur für das CodeSystem in genau der Version, die in `^supplements` steht.
 Im R4-Kontext liegen viele CodeSystems doppelt vor: im Core (`hl7.fhir.r4.core#4.0.1`) mit Version 4.0.1 und in
