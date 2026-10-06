@@ -53,4 +53,4 @@ Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details st
 | `designation.use` von `designation-usage\|4.2.0#display` auf `hl7TermMaintInfra#preferredForLanguage` umgestellt | PR #2 |
 | `unknown` in condition-clinical und observation-status als „Unbekannt“ übersetzt | PR #2 |
 | `N` in v3-ObservationInterpretation an abgestimmt AT angeglichen: „Normal (nicht numerisch)“ | PR #2 |
-| Name des Supplements für sex-parameter-for-clinical-use: `SexParameterForClinicalUsedeDE` | PR #2 |
+| Name und Titel des Supplements für sex-parameter-for-clinical-use: `SexParameterForClinicalUsedeDE`, „Geschlechtsparameter für die klinische Verwendung“ (vorher „Kollektivbezug der Richtgrenze“) | PR #2 |

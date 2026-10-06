@@ -4,8 +4,8 @@
   "content": "supplement",
   "name": "SexParameterForClinicalUsedeDE",
   "id": "sex-parameter-for-clinical-use-de-de",
-  "title": "Kollektivbezug der Richtgrenze",
-  "description": "Das Kodesystem Kollektivbezug der Richtgrenze (SexParameterforClinicalUse) definiert Parameter, die bei der klinischen Beurteilung bei Diagnostik, Befundinterpretation und Behandlung mit berücksichtigt werden sollen.",
+  "title": "Geschlechtsparameter für die klinische Verwendung",
+  "description": "Das Kodesystem Geschlechtsparameter für die klinische Verwendung (SexParameterForClinicalUse) definiert Parameter, die bei der klinischen Beurteilung bei Diagnostik, Befundinterpretation und Behandlung mit berücksichtigt werden sollen.",
   "version": "0.1.0",
   "url": "http://fhir.de/CodeSystem/sex-parameter-for-clinical-use-de-de",
   "concept": [

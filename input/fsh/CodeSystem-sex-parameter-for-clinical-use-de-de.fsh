@@ -2,8 +2,8 @@ Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintIn
 
 CodeSystem: SexParameterForClinicalUsedeDE
 Id: sex-parameter-for-clinical-use-de-de
-Title: "Kollektivbezug der Richtgrenze"
-Description: "Das Kodesystem Kollektivbezug der Richtgrenze (SexParameterforClinicalUse) definiert Parameter, die bei der klinischen Beurteilung bei Diagnostik, Befundinterpretation und Behandlung mit berücksichtigt werden sollen."
+Title: "Geschlechtsparameter für die klinische Verwendung"
+Description: "Das Kodesystem Geschlechtsparameter für die klinische Verwendung (SexParameterForClinicalUse) definiert Parameter, die bei der klinischen Beurteilung bei Diagnostik, Befundinterpretation und Behandlung mit berücksichtigt werden sollen."
 * ^url = "http://fhir.de/CodeSystem/sex-parameter-for-clinical-use-de-de"
 * ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^version = "0.1.0"
