@@ -163,7 +163,7 @@ abgestimmten Fassungen noch der Bedeutung der englischen Codes widerspricht.
 | CodeSystem | Code | vorher | jetzt im FSH | abgestimmt AT | abgestimmt HL7 DE | Grund |
 |---|---|---|---|---|---|---|
 | condition-clinical | `unknown` | – | Unbekannt | – | Unbekannt | In R4-Instanzen gültig (`Condition.clinicalStatus` required gebunden) und Teil der Zielversion 3.0.0. „Unbekannt“ wie abgestimmt HL7 DE und wie `unknown` in anderen Status-CodeSystems (abgestimmt AT). |
-| device-nametype | `patient-reported-name` | PatientInberichteter Name | Patientenberichteter Name | – | Von Patient:in angegebener Name | Tippfehler („PatientInberichteter“). |
+| device-nametype | `patient-reported-name` | PatientInberichteter Name | Patientenberichteter Name | – | Von Patient:in angegebener Name | Im TC-Terminologie-Call am 01.10.2026 festgelegt: „Patientenberichteter Name“ statt der gegenderten Form mit Binnen-I. |
 | device-nametype | `other` | Sonstige | Andere | – | – | „Andere“ ist abgestimmt AT für `other` (AdministrativeGender) und `OTH` (NullFlavor, ExceptionalValue). |
 | v3-ObservationInterpretation | `N` | Normal | Normal (nicht numerisch) | Normal (nicht numerisch) | Normal | An abgestimmt AT angeglichen. |
 | v3-ObservationInterpretation | `OBX` | Dolmetscherkennzeichen in separaten OBX Segmenten | Bewertung in separaten OBX-Segmenten | – | – | „Interpretation qualifiers“ sind keine Dolmetscher. „Bewertung“ wie der deutsche v2-Begriff für OBX-8 („Bewertung des Ergebnisses“). |
@@ -172,7 +172,7 @@ abgestimmten Fassungen noch der Bedeutung der englischen Codes widerspricht.
 | observation-status | `cancelled` | Storniert | Abgebrochen | – | – | Einheitlich mit diagnostic-report-status (abgestimmt AT). Definition: „The observation is unavailable because the measurement was not started or not completed (also sometimes called "aborted").“ |
 | observation-status | `entered-in-error` | Irrtümliche Eingabe | Fehleingabe | – | – | Einheitlich mit condition-ver-status, diagnostic-report-status, specimen-status und abgestimmt AT (CompositionStatus, MedicationRequestStatus, MedicationStatusCodes). |
 | observation-status | `unknown` | – | Unbekannt | – | – | In R4-Instanzen gültig (`Observation.status` required gebunden). „Unbekannt“ wie `unknown` in anderen Status-CodeSystems (abgestimmt AT). |
-| v2-0203 | `RI` | Identifier der Quelle | Ressourcen-Identifikator | – | – | „Resource identifier“: Ressource, nicht Quelle. „Identifikator“ wie bei `FILL` und `PLAC`. |
+| v2-0203 | `RI` | Identifier der Quelle | Ressourcen-Identifikator | – | – | Laut v2-Kommentar sind „resources“ zum Beispiel Personen, Tiere, ein Untersuchungsraum oder eine Organisation, also Ressourcen und keine Quelle. Dazu „Identifikator“ statt des englischen „Identifier“. |
 | v2-0373 | `ACID` | Aufsäuerung | Ansäuerung | – | – | Fachbegriff „Ansäuerung“. |
 | v2-0373 | `RECA` | Rekalkifizierung | Rekalzifizierung | – | – | Übliche Schreibweise (vgl. Rekalzifizierungszeit). |
 
