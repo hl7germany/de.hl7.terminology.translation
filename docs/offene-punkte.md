@@ -37,6 +37,7 @@ Review-Dokuments):
   *abgestimmt HL7 DE* unterscheiden, und 5, für die es nur eine Fassung *abgestimmt HL7 DE* gibt. Bisher folgt das FSH bei
   einem Widerspruch *abgestimmt AT*. Für die 5 Codes ohne Fassung *abgestimmt AT* ist es unverändert geblieben.
 - 78 Codes, für die es noch keine abgestimmte Fassung gibt.
+  Darunter v2-0203 `PLAC`: Im FSH steht „Identifikator des Auftraggebers“, de.basisprofil.r4 1.6.0 übersetzt „Auftragsnummer“.
 
 ## Offen im FSH
 

@@ -127,7 +127,7 @@ Entwurf für das Package oder, wo der Hinweis es sagt, aus PR #3.
 | v2-0203 | `FILL` | Filler Identifier | Identifikator des Auftragnehmers |  |
 | v2-0203 | `LACSN` | Laboratory Accession ID | Laborzugangs-ID | Vorschlag: „Laboreingangs-ID“ |
 | v2-0203 | `MCN` | Microchip Number | Mikrochip-Nummer |  |
-| v2-0203 | `PLAC` | Placer Identifier | Identifikator des Auftraggebers |  |
+| v2-0203 | `PLAC` | Placer Identifier | Identifikator des Auftraggebers | de.basisprofil.r4 1.6.0 übersetzt „Auftragsnummer“. Dessen Supplement zeigt ohne Version auf v2-0203, bei gemeinsamer Verwendung gibt es zwei deutsche Displays. Bei einer Angleichung das Gegenstück `FILL` mitbedenken |
 | v2-0203 | `SID` | Specimen ID | Proben-ID |  |
 | v2-0203 | `SNO` | Serial Number | Seriennummer |  |
 | v2-0203 | `USID` | Unique Specimen ID | Eindeutige Proben-ID |  |
@@ -419,7 +419,7 @@ abgestimmten Fassungen noch der Bedeutung der englischen Codes widerspricht.
 | `FILL` | Filler Identifier | Identifikator des Auftragnehmers | – | – | nicht abgestimmt |  |
 | `LACSN` | Laboratory Accession ID | Laborzugangs-ID | – | – | nicht abgestimmt | Vorschlag: „Laboreingangs-ID“ |
 | `MCN` | Microchip Number | Mikrochip-Nummer | – | – | nicht abgestimmt |  |
-| `PLAC` | Placer Identifier | Identifikator des Auftraggebers | – | – | nicht abgestimmt |  |
+| `PLAC` | Placer Identifier | Identifikator des Auftraggebers | – | – | nicht abgestimmt | de.basisprofil.r4 1.6.0 übersetzt „Auftragsnummer“. Dessen Supplement zeigt ohne Version auf v2-0203, bei gemeinsamer Verwendung gibt es zwei deutsche Displays. Bei einer Angleichung das Gegenstück `FILL` mitbedenken |
 | `SID` | Specimen ID | Proben-ID | – | – | nicht abgestimmt |  |
 | `SNO` | Serial Number | Seriennummer | – | – | nicht abgestimmt |  |
 | `USID` | Unique Specimen ID | Eindeutige Proben-ID | – | – | nicht abgestimmt |  |
@@ -494,4 +494,5 @@ Begründungen aus der Spalte *Begründung* der CSV, wörtlich übernommen.
 - Englisch: Display aus der Version des CodeSystems, die das Supplement in `^supplements` angibt (`hl7.fhir.r4.core#4.0.1` bzw. `hl7.terminology.r4#7.4.0`).
 - abgestimmt AT: `HL7 Übersetzungen.xlsx`, Zuordnung über die Code-System-OID, Details in [abgleich-abgestimmt-at.md](abgleich-abgestimmt-at.md).
 - abgestimmt HL7 DE: `FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv`, Zuordnung über die CodeSystem-URL. In der CSV stehen `<` und `>` als `kleinerals` und `größerals` und `unknown` als `unkown`, diese Codes sind entsprechend zugeordnet. Details in [abgleich-abgestimmt-hl7de.md](abgleich-abgestimmt-hl7de.md).
+- de.basisprofil.r4 1.6.0 (neueste Version): enthält deutsche Bezeichnungen nur für v2-0203. Einziger Unterschied zum FSH ist `PLAC`, als Hinweis vermerkt.
 - Verglichen wurde wörtlich nach Entfernen von Leerzeichen am Anfang und Ende.
