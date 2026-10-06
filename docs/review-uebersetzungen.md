@@ -46,7 +46,7 @@ eine Fassung abgestimmt HL7 DE, ist das FSH bisher unverändert geblieben.
 |---|---|---|---|---|---|---|---|
 | condition-clinical | `relapse` | Relapse | Rezidiv / Rückfall | Rezidiv / Rückfall | Rezidiv | AT ≠ HL7 DE |  |
 | device-nametype | `user-friendly-name` | User Friendly name | Benutzerfreundlicher Name | – | Gebräuchlicher Name | ≠ HL7 DE |  |
-| device-nametype | `patient-reported-name` | Patient Reported name | Patientenberichteter Name | – | Von Patient:in angegebener Name | ≠ HL7 DE | in PR #3 geändert, vorher „PatientInberichteter Name“; Änderungsvorschlag MIO: „Von Patient/Patientin angegebener Name (AT)“; Anm. 2 |
+| device-nametype | `patient-reported-name` | Patient Reported name | Patientenberichteter Name | – | Von Patient:in angegebener Name | ≠ HL7 DE | in PR #3 geändert, vorher „PatientInberichteter Name“, Grund siehe Abschnitt 2; Änderungsvorschlag MIO: „Von Patient/Patientin angegebener Name (AT)“; Anm. 2 |
 | diagnostic-report-status | `final` | Final | Final | Final | Endgültig | AT ≠ HL7 DE | Anm. 4 |
 | v3-ObservationInterpretation | `<` | Off scale low | Messbereich unterschritten | Messbereich unterschritten | Unterhalb der analytischen Grenze | AT ≠ HL7 DE | in der CSV als `kleinerals` |
 | v3-ObservationInterpretation | `>` | Off scale high | Messbereich überschritten | Messbereich überschritten | Oberhalb der analytischen Grenze | AT ≠ HL7 DE | in der CSV als `größerals` |
@@ -58,7 +58,7 @@ eine Fassung abgestimmt HL7 DE, ist das FSH bisher unverändert geblieben.
 | v3-ObservationInterpretation | `HX` | above high threshold | Oberhalb des oberen Schwellenwerts | Oberhalb des oberen Schwellenwerts | Oberhalb des oberen Grenzwertes | AT ≠ HL7 DE |  |
 | v3-ObservationInterpretation | `LX` | below low threshold | Unterhalb des unteren Schwellenwerts | Unterhalb des unteren Schwellenwerts | Unterhalb des unteren Grenzwertes | AT ≠ HL7 DE |  |
 | v3-ObservationInterpretation | `NCL` | No CLSI defined breakpoint | Kein CLSI definierter Grenzwert | Kein CLSI definierter Grenzwert | Kein CLSI definierter Schwellenwert für Empfindlichkeit verfügbar | AT ≠ HL7 DE |  |
-| v3-ObservationInterpretation | `N` | Normal | Normal (nicht numerisch) | Normal (nicht numerisch) | Normal | AT ≠ HL7 DE | in PR #3 geändert, vorher „Normal“ |
+| v3-ObservationInterpretation | `N` | Normal | Normal (nicht numerisch) | Normal (nicht numerisch) | Normal | AT ≠ HL7 DE | in PR #3 geändert, vorher „Normal“, Grund siehe Abschnitt 2 |
 | v3-ObservationInterpretation | `_ObservationInterpretationSusceptibility` | ObservationInterpretationSusceptibility | Interpretation der antimikrobiellen Resistenztestung | – | Interperation der antimikrobiellen Empfindlichkeit | ≠ HL7 DE | Tippfehler in der CSV: „Interperation“ statt „Interpretation“ |
 | referencerange-meaning | `type` | Type | Generell | – | Typ | ≠ HL7 DE | Vorschlag: „Allgemeiner Typ“ |
 | referencerange-meaning | `normal` | Normal Range | Normalbereich | Normalbereich | Referenzbereich | AT ≠ HL7 DE |  |
@@ -95,25 +95,25 @@ Entwurf für das Package oder, wo der Hinweis es sagt, aus PR #3.
 | device-nametype | `udi-label-name` | UDI Label name | UDI Kennzeichnungsname | Vorschlag: „UDI-Kennzeichnungsname“ |
 | device-nametype | `manufacturer-name` | Manufacturer name | Herstellername |  |
 | device-nametype | `model-name` | Model name | Modellname |  |
-| device-nametype | `other` | other | Andere | in PR #3 geändert, vorher „Sonstige“ |
+| device-nametype | `other` | other | Andere | in PR #3 geändert, vorher „Sonstige“, Grund siehe Abschnitt 2 |
 | v3-ObservationInterpretation | `AC` | Anti-complementary substances present | Vorhandene antikomplementäre Substanzen | Vorschlag: „Antikomplementäre Substanzen vorhanden“; Code ist deprecated |
 | v3-ObservationInterpretation | `Carrier` | Carrier | Träger | Code ist deprecated |
 | v3-ObservationInterpretation | `H>` | Significantly high | Signifikant hoch | Code ist deprecated |
 | v3-ObservationInterpretation | `HM` | Hold for Medical Review | Zur medizinischen Überprüfung zurückhalten | Code ist deprecated |
 | v3-ObservationInterpretation | `L<` | Significantly low | Signifikant niedrig | Code ist deprecated |
 | v3-ObservationInterpretation | `MS` | moderately susceptible | Mittlere Empfindlichkeit | Vorschlag: „Mäßig empfindlich“; Code ist deprecated |
-| v3-ObservationInterpretation | `OBX` | Interpretation qualifiers in separate OBX segments | Bewertung in separaten OBX-Segmenten | in PR #3 geändert, vorher „Dolmetscherkennzeichen in separaten OBX Segmenten“; Code ist deprecated |
+| v3-ObservationInterpretation | `OBX` | Interpretation qualifiers in separate OBX segments | Bewertung in separaten OBX-Segmenten | in PR #3 geändert, vorher „Dolmetscherkennzeichen in separaten OBX Segmenten“, Grund siehe Abschnitt 2; Code ist deprecated |
 | v3-ObservationInterpretation | `QCF` | Quality control failure | Versagen der Qualitätskontrolle | Vorschlag: „Qualitätskontrolle fehlgeschlagen“; Code ist deprecated |
 | v3-ObservationInterpretation | `TOX` | Cytotoxic substance present | Zytotoxische Substanz vorhanden | Code ist deprecated |
 | v3-ObservationInterpretation | `VS` | very susceptible | Sehr empfindlich | Code ist deprecated |
 | observation-status | `registered` | Registered | Registriert |  |
 | observation-status | `preliminary` | Preliminary | Vorläufig |  |
-| observation-status | `final` | Final | Final | in PR #3 geändert, vorher „Abgeschlossen“ |
-| observation-status | `amended` | Amended | Überarbeitet | in PR #3 geändert, vorher „Geändert“ |
+| observation-status | `final` | Final | Final | in PR #3 geändert, vorher „Abgeschlossen“, Grund siehe Abschnitt 2 |
+| observation-status | `amended` | Amended | Überarbeitet | in PR #3 geändert, vorher „Geändert“, Grund siehe Abschnitt 2 |
 | observation-status | `corrected` | Corrected | Korrigiert |  |
-| observation-status | `cancelled` | Cancelled | Abgebrochen | in PR #3 geändert, vorher „Storniert“ |
-| observation-status | `entered-in-error` | Entered in Error | Fehleingabe | in PR #3 geändert, vorher „Irrtümliche Eingabe“ |
-| observation-status | `unknown` | Unknown | Unbekannt | neu in PR #3 |
+| observation-status | `cancelled` | Cancelled | Abgebrochen | in PR #3 geändert, vorher „Storniert“, Grund siehe Abschnitt 2 |
+| observation-status | `entered-in-error` | Entered in Error | Fehleingabe | in PR #3 geändert, vorher „Irrtümliche Eingabe“, Grund siehe Abschnitt 2 |
+| observation-status | `unknown` | Unknown | Unbekannt | neu in PR #3, Grund siehe Abschnitt 2 |
 | quantity-comparator | `<` | Less than | Kleiner als |  |
 | quantity-comparator | `<=` | Less or Equal to | Kleiner oder gleich |  |
 | quantity-comparator | `>=` | Greater or Equal to | Größer oder gleich |  |
@@ -131,14 +131,14 @@ Entwurf für das Package oder, wo der Hinweis es sagt, aus PR #3.
 | v2-0203 | `SID` | Specimen ID | Proben-ID |  |
 | v2-0203 | `SNO` | Serial Number | Seriennummer |  |
 | v2-0203 | `USID` | Unique Specimen ID | Eindeutige Proben-ID |  |
-| v2-0203 | `RI` | Resource identifier | Ressourcen-Identifikator | in PR #3 geändert, vorher „Identifier der Quelle“ |
-| v2-0373 | `ACID` | Acidification | Ansäuerung | in PR #3 geändert, vorher „Aufsäuerung“ |
+| v2-0203 | `RI` | Resource identifier | Ressourcen-Identifikator | in PR #3 geändert, vorher „Identifier der Quelle“, Grund siehe Abschnitt 2 |
+| v2-0373 | `ACID` | Acidification | Ansäuerung | in PR #3 geändert, vorher „Aufsäuerung“, Grund siehe Abschnitt 2 |
 | v2-0373 | `ALK` | Alkalization | Alkalisierung |  |
 | v2-0373 | `DEFB` | Defibrination | Defibrinierung |  |
 | v2-0373 | `FILT` | Filtration | Filtration |  |
 | v2-0373 | `LDLP` | LDL Precipitation | LDL-Ausfällung |  |
 | v2-0373 | `NEUT` | Neutralization | Neutralisierung |  |
-| v2-0373 | `RECA` | Recalification | Rekalzifizierung | in PR #3 geändert, vorher „Rekalkifizierung“ |
+| v2-0373 | `RECA` | Recalification | Rekalzifizierung | in PR #3 geändert, vorher „Rekalkifizierung“, Grund siehe Abschnitt 2 |
 | v2-0373 | `UFIL` | Ultrafiltration | Ultrafiltration |  |
 | v2-0493 | `AUT` | Autolyzed | Autolysiert |  |
 | v2-0493 | `CFU` | Centrifuged | Zentrifugiert |  |
@@ -157,23 +157,24 @@ Entwurf für das Package oder, wo der Hinweis es sagt, aus PR #3.
 
 ## 2. Änderungen mit PR #3
 
-Diese 13 Übersetzungen hat PR #3 geändert oder ergänzt. Gründe stehen in der Beschreibung von PR #3.
+Diese 13 Übersetzungen hat PR #3 geändert oder ergänzt. Ziel war, dass das FSH weder sich selbst noch den
+abgestimmten Fassungen noch der Bedeutung der englischen Codes widerspricht.
 
-| CodeSystem | Code | vorher | jetzt im FSH | abgestimmt AT | abgestimmt HL7 DE |
-|---|---|---|---|---|---|
-| condition-clinical | `unknown` | – | Unbekannt | – | Unbekannt |
-| device-nametype | `patient-reported-name` | PatientInberichteter Name | Patientenberichteter Name | – | Von Patient:in angegebener Name |
-| device-nametype | `other` | Sonstige | Andere | – | – |
-| v3-ObservationInterpretation | `N` | Normal | Normal (nicht numerisch) | Normal (nicht numerisch) | Normal |
-| v3-ObservationInterpretation | `OBX` | Dolmetscherkennzeichen in separaten OBX Segmenten | Bewertung in separaten OBX-Segmenten | – | – |
-| observation-status | `final` | Abgeschlossen | Final | – | – |
-| observation-status | `amended` | Geändert | Überarbeitet | – | – |
-| observation-status | `cancelled` | Storniert | Abgebrochen | – | – |
-| observation-status | `entered-in-error` | Irrtümliche Eingabe | Fehleingabe | – | – |
-| observation-status | `unknown` | – | Unbekannt | – | – |
-| v2-0203 | `RI` | Identifier der Quelle | Ressourcen-Identifikator | – | – |
-| v2-0373 | `ACID` | Aufsäuerung | Ansäuerung | – | – |
-| v2-0373 | `RECA` | Rekalkifizierung | Rekalzifizierung | – | – |
+| CodeSystem | Code | vorher | jetzt im FSH | abgestimmt AT | abgestimmt HL7 DE | Grund |
+|---|---|---|---|---|---|---|
+| condition-clinical | `unknown` | – | Unbekannt | – | Unbekannt | In R4-Instanzen gültig (`Condition.clinicalStatus` required gebunden) und Teil der Zielversion 3.0.0. „Unbekannt“ wie abgestimmt HL7 DE und wie `unknown` in anderen Status-CodeSystems (abgestimmt AT). |
+| device-nametype | `patient-reported-name` | PatientInberichteter Name | Patientenberichteter Name | – | Von Patient:in angegebener Name | Tippfehler („PatientInberichteter“). |
+| device-nametype | `other` | Sonstige | Andere | – | – | „Andere“ ist abgestimmt AT für `other` (AdministrativeGender) und `OTH` (NullFlavor, ExceptionalValue). |
+| v3-ObservationInterpretation | `N` | Normal | Normal (nicht numerisch) | Normal (nicht numerisch) | Normal | An abgestimmt AT angeglichen. |
+| v3-ObservationInterpretation | `OBX` | Dolmetscherkennzeichen in separaten OBX Segmenten | Bewertung in separaten OBX-Segmenten | – | – | „Interpretation qualifiers“ sind keine Dolmetscher. „Bewertung“ wie der deutsche v2-Begriff für OBX-8 („Bewertung des Ergebnisses“). |
+| observation-status | `final` | Abgeschlossen | Final | – | – | Einheitlich mit diagnostic-report-status (abgestimmt AT). „Abgeschlossen“ ist abgestimmt AT für `completed`. |
+| observation-status | `amended` | Geändert | Überarbeitet | – | – | Einheitlich mit diagnostic-report-status (abgestimmt AT). |
+| observation-status | `cancelled` | Storniert | Abgebrochen | – | – | Einheitlich mit diagnostic-report-status (abgestimmt AT). Definition: „The observation is unavailable because the measurement was not started or not completed (also sometimes called "aborted").“ |
+| observation-status | `entered-in-error` | Irrtümliche Eingabe | Fehleingabe | – | – | Einheitlich mit condition-ver-status, diagnostic-report-status, specimen-status und abgestimmt AT (CompositionStatus, MedicationRequestStatus, MedicationStatusCodes). |
+| observation-status | `unknown` | – | Unbekannt | – | – | In R4-Instanzen gültig (`Observation.status` required gebunden). „Unbekannt“ wie `unknown` in anderen Status-CodeSystems (abgestimmt AT). |
+| v2-0203 | `RI` | Identifier der Quelle | Ressourcen-Identifikator | – | – | „Resource identifier“: Ressource, nicht Quelle. „Identifikator“ wie bei `FILL` und `PLAC`. |
+| v2-0373 | `ACID` | Aufsäuerung | Ansäuerung | – | – | Fachbegriff „Ansäuerung“. |
+| v2-0373 | `RECA` | Rekalkifizierung | Rekalzifizierung | – | – | Übliche Schreibweise (vgl. Rekalzifizierungszeit). |
 
 ## 3. Alle Codes je CodeSystem
 
@@ -197,7 +198,7 @@ Diese 13 Übersetzungen hat PR #3 geändert oder ergänzt. Gründe stehen in der
 | `inactive` | Inactive | Inaktiv | Inaktiv | Inaktiv | gleich |  |
 | `remission` | Remission | Remission | Remission | Remission | gleich |  |
 | `resolved` | Resolved | Nicht mehr vorhanden | Nicht mehr vorhanden | Nicht mehr Vorhanden | Schreibweise |  |
-| `unknown` | Unknown | Unbekannt | – | Unbekannt | gleich | neu in PR #3; in der CSV als `unkown` |
+| `unknown` | Unknown | Unbekannt | – | Unbekannt | gleich | neu in PR #3, Grund siehe Abschnitt 2; in der CSV als `unkown` |
 
 ### Diagnosesicherheit (`condition-ver-status`)
 
@@ -242,10 +243,10 @@ Diese 13 Übersetzungen hat PR #3 geändert oder ergänzt. Gründe stehen in der
 |---|---|---|---|---|---|---|
 | `udi-label-name` | UDI Label name | UDI Kennzeichnungsname | – | – | nicht abgestimmt | Vorschlag: „UDI-Kennzeichnungsname“ |
 | `user-friendly-name` | User Friendly name | Benutzerfreundlicher Name | – | Gebräuchlicher Name | ≠ HL7 DE |  |
-| `patient-reported-name` | Patient Reported name | Patientenberichteter Name | – | Von Patient:in angegebener Name | ≠ HL7 DE | in PR #3 geändert, vorher „PatientInberichteter Name“; Änderungsvorschlag MIO: „Von Patient/Patientin angegebener Name (AT)“; Anm. 2 |
+| `patient-reported-name` | Patient Reported name | Patientenberichteter Name | – | Von Patient:in angegebener Name | ≠ HL7 DE | in PR #3 geändert, vorher „PatientInberichteter Name“, Grund siehe Abschnitt 2; Änderungsvorschlag MIO: „Von Patient/Patientin angegebener Name (AT)“; Anm. 2 |
 | `manufacturer-name` | Manufacturer name | Herstellername | – | – | nicht abgestimmt |  |
 | `model-name` | Model name | Modellname | – | – | nicht abgestimmt |  |
-| `other` | other | Andere | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Sonstige“ |
+| `other` | other | Andere | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Sonstige“, Grund siehe Abschnitt 2 |
 | `registered-name` | – | – | – | Eingetragener Name | nur CSV | Code gibt es in dieser CodeSystem-Version nicht (R5-Code); CSV Zeile 46 |
 
 ### Status des Untersuchungsbefunds (`diagnostic-report-status`)
@@ -300,12 +301,12 @@ Diese 13 Übersetzungen hat PR #3 geändert oder ergänzt. Gründe stehen in der
 | `LX` | below low threshold | Unterhalb des unteren Schwellenwerts | Unterhalb des unteren Schwellenwerts | Unterhalb des unteren Grenzwertes | AT ≠ HL7 DE |  |
 | `MS` | moderately susceptible | Mittlere Empfindlichkeit | – | – | nicht abgestimmt | Vorschlag: „Mäßig empfindlich“; Code ist deprecated |
 | `NCL` | No CLSI defined breakpoint | Kein CLSI definierter Grenzwert | Kein CLSI definierter Grenzwert | Kein CLSI definierter Schwellenwert für Empfindlichkeit verfügbar | AT ≠ HL7 DE |  |
-| `N` | Normal | Normal (nicht numerisch) | Normal (nicht numerisch) | Normal | AT ≠ HL7 DE | in PR #3 geändert, vorher „Normal“ |
+| `N` | Normal | Normal (nicht numerisch) | Normal (nicht numerisch) | Normal | AT ≠ HL7 DE | in PR #3 geändert, vorher „Normal“, Grund siehe Abschnitt 2 |
 | `ND` | Not detected | Nicht nachgewiesen | Nicht nachgewiesen | Nicht nachgewiesen | gleich |  |
 | `NEG` | Negative | Negativ | Negativ | Negativ | gleich |  |
 | `NR` | Non-reactive | Nicht reaktiv | Nicht reaktiv | Nicht reaktiv | gleich |  |
 | `NS` | Non-susceptible | Nicht empfindlich | Nicht empfindlich | Nicht empfindlich | gleich |  |
-| `OBX` | Interpretation qualifiers in separate OBX segments | Bewertung in separaten OBX-Segmenten | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Dolmetscherkennzeichen in separaten OBX Segmenten“; Code ist deprecated |
+| `OBX` | Interpretation qualifiers in separate OBX segments | Bewertung in separaten OBX-Segmenten | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Dolmetscherkennzeichen in separaten OBX Segmenten“, Grund siehe Abschnitt 2; Code ist deprecated |
 | `ObservationInterpretationDetection` | ObservationInterpretationDetection | Feststellungsinterpretation | – | Feststellungsinterpretation | gleich |  |
 | `ObservationInterpretationExpectation` | ObservationInterpretationExpectation | Erwartungsinterpretation | – | Erwartungsinterpretation | gleich |  |
 | `POS` | Positive | Positiv | Positiv | Positiv | gleich |  |
@@ -337,12 +338,12 @@ Diese 13 Übersetzungen hat PR #3 geändert oder ergänzt. Gründe stehen in der
 |---|---|---|---|---|---|---|
 | `registered` | Registered | Registriert | – | – | nicht abgestimmt |  |
 | `preliminary` | Preliminary | Vorläufig | – | – | nicht abgestimmt |  |
-| `final` | Final | Final | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Abgeschlossen“ |
-| `amended` | Amended | Überarbeitet | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Geändert“ |
+| `final` | Final | Final | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Abgeschlossen“, Grund siehe Abschnitt 2 |
+| `amended` | Amended | Überarbeitet | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Geändert“, Grund siehe Abschnitt 2 |
 | `corrected` | Corrected | Korrigiert | – | – | nicht abgestimmt |  |
-| `cancelled` | Cancelled | Abgebrochen | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Storniert“ |
-| `entered-in-error` | Entered in Error | Fehleingabe | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Irrtümliche Eingabe“ |
-| `unknown` | Unknown | Unbekannt | – | – | nicht abgestimmt | neu in PR #3 |
+| `cancelled` | Cancelled | Abgebrochen | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Storniert“, Grund siehe Abschnitt 2 |
+| `entered-in-error` | Entered in Error | Fehleingabe | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Irrtümliche Eingabe“, Grund siehe Abschnitt 2 |
+| `unknown` | Unknown | Unbekannt | – | – | nicht abgestimmt | neu in PR #3, Grund siehe Abschnitt 2 |
 
 ### Vergleichsoperator für Mengenangaben (`quantity-comparator`)
 
@@ -422,7 +423,7 @@ Diese 13 Übersetzungen hat PR #3 geändert oder ergänzt. Gründe stehen in der
 | `SID` | Specimen ID | Proben-ID | – | – | nicht abgestimmt |  |
 | `SNO` | Serial Number | Seriennummer | – | – | nicht abgestimmt |  |
 | `USID` | Unique Specimen ID | Eindeutige Proben-ID | – | – | nicht abgestimmt |  |
-| `RI` | Resource identifier | Ressourcen-Identifikator | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Identifier der Quelle“ |
+| `RI` | Resource identifier | Ressourcen-Identifikator | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Identifier der Quelle“, Grund siehe Abschnitt 2 |
 
 ### Probenverarbeitungsmethode (`v2-0373`)
 
@@ -430,13 +431,13 @@ Diese 13 Übersetzungen hat PR #3 geändert oder ergänzt. Gründe stehen in der
 
 | Code | Englisch | FSH | abgestimmt AT | abgestimmt HL7 DE | Status | Hinweis |
 |---|---|---|---|---|---|---|
-| `ACID` | Acidification | Ansäuerung | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Aufsäuerung“ |
+| `ACID` | Acidification | Ansäuerung | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Aufsäuerung“, Grund siehe Abschnitt 2 |
 | `ALK` | Alkalization | Alkalisierung | – | – | nicht abgestimmt |  |
 | `DEFB` | Defibrination | Defibrinierung | – | – | nicht abgestimmt |  |
 | `FILT` | Filtration | Filtration | – | – | nicht abgestimmt |  |
 | `LDLP` | LDL Precipitation | LDL-Ausfällung | – | – | nicht abgestimmt |  |
 | `NEUT` | Neutralization | Neutralisierung | – | – | nicht abgestimmt |  |
-| `RECA` | Recalification | Rekalzifizierung | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Rekalkifizierung“ |
+| `RECA` | Recalification | Rekalzifizierung | – | – | nicht abgestimmt | in PR #3 geändert, vorher „Rekalkifizierung“, Grund siehe Abschnitt 2 |
 | `UFIL` | Ultrafiltration | Ultrafiltration | – | – | nicht abgestimmt |  |
 
 ### Probenzustand (`v2-0493`)
