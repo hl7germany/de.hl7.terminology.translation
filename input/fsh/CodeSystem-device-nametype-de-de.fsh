@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: DeviceNametypedeDE
 Id: device-nametype-de-de
@@ -30,30 +30,30 @@ Description: "Das Kodesystem Art der Bezeichnung des Gerätes (DeviceNameType) b
 
 * #udi-label-name
 * #udi-label-name ^designation[0].language = #de-DE
-* #udi-label-name ^designation[0].use = $designation-usage|4.2.0#display
+* #udi-label-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #udi-label-name ^designation[0].value = "UDI Kennzeichnungsname"
 
 * #user-friendly-name
 * #user-friendly-name ^designation[0].language = #de-DE
-* #user-friendly-name ^designation[0].use = $designation-usage|4.2.0#display
+* #user-friendly-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #user-friendly-name ^designation[0].value = "Benutzerfreundlicher Name"
 
 * #patient-reported-name
 * #patient-reported-name ^designation[0].language = #de-DE
-* #patient-reported-name ^designation[0].use = $designation-usage|4.2.0#display
+* #patient-reported-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #patient-reported-name ^designation[0].value = "PatientInberichteter Name"
 
 * #manufacturer-name
 * #manufacturer-name ^designation[0].language = #de-DE
-* #manufacturer-name ^designation[0].use = $designation-usage|4.2.0#display
+* #manufacturer-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #manufacturer-name ^designation[0].value = "Herstellername"
 
 * #model-name
 * #model-name ^designation[0].language = #de-DE
-* #model-name ^designation[0].use = $designation-usage|4.2.0#display
+* #model-name ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #model-name ^designation[0].value = "Modellname"
 
 * #other
 * #other ^designation[0].language = #de-DE
-* #other ^designation[0].use = $designation-usage|4.2.0#display
+* #other ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #other ^designation[0].value = "Sonstige"

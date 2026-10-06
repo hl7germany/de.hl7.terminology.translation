@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: RequestPrioritydeDE
 Id: request-priority-de-de
@@ -30,20 +30,20 @@ Description: "Das Kodesystem Dringlichkeit der Anforderung (Request Priority) ke
 
 * #routine
 * #routine ^designation[0].language = #de-DE
-* #routine ^designation[0].use = $designation-usage|4.2.0#display
+* #routine ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #routine ^designation[0].value = "Routine"
 
 * #urgent
 * #urgent ^designation[0].language = #de-DE
-* #urgent ^designation[0].use = $designation-usage|4.2.0#display
+* #urgent ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #urgent ^designation[0].value = "Dringend"
 
 * #asap
 * #asap ^designation[0].language = #de-DE
-* #asap ^designation[0].use = $designation-usage|4.2.0#display
+* #asap ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #asap ^designation[0].value = "Sehr dringend"
 
 * #stat
 * #stat ^designation[0].language = #de-DE
-* #stat ^designation[0].use = $designation-usage|4.2.0#display
+* #stat ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #stat ^designation[0].value = "Notfall"

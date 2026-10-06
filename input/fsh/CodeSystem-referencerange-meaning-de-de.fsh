@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: ReferenceRangeMeaningdeDE
 Id: referencerange-meaning-de-de
@@ -30,65 +30,65 @@ Description: "Das Kodesystem Richtgrenzen-Typ (ReferenceRangeMeaning) definiert 
 
 * #type
 * #type ^designation[0].language = #de-DE
-* #type ^designation[0].use = $designation-usage|4.2.0#display
+* #type ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #type ^designation[0].value = "Generell"
 
 * #normal
 * #normal ^designation[0].language = #de-DE
-* #normal ^designation[0].use = $designation-usage|4.2.0#display
+* #normal ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #normal ^designation[0].value = "Normalbereich"
 
 * #recommended
 * #recommended ^designation[0].language = #de-DE
-* #recommended ^designation[0].use = $designation-usage|4.2.0#display
+* #recommended ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #recommended ^designation[0].value = "Empfohlener Bereich"
 
 * #treatment
 * #treatment ^designation[0].language = #de-DE
-* #treatment ^designation[0].use = $designation-usage|4.2.0#display
+* #treatment ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #treatment ^designation[0].value = "Behandlungsbereich"
 
 * #therapeutic
 * #therapeutic ^designation[0].language = #de-DE
-* #therapeutic ^designation[0].use = $designation-usage|4.2.0#display
+* #therapeutic ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #therapeutic ^designation[0].value = "Therapeutischer Zielwert"
 
 * #pre
 * #pre ^designation[0].language = #de-DE
-* #pre ^designation[0].use = $designation-usage|4.2.0#display
+* #pre ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #pre ^designation[0].value = "Prätherapeutischer Zielwert"
 
 * #post
 * #post ^designation[0].language = #de-DE
-* #post ^designation[0].use = $designation-usage|4.2.0#display
+* #post ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #post ^designation[0].value = "Posttherapeutischer Zielwert"
 
 * #endocrine
 * #endocrine ^designation[0].language = #de-DE
-* #endocrine ^designation[0].use = $designation-usage|4.2.0#display
+* #endocrine ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #endocrine ^designation[0].value = "Endokrinologisch adaptiert"
 
 * #pre-puberty
 * #pre-puberty ^designation[0].language = #de-DE
-* #pre-puberty ^designation[0].use = $designation-usage|4.2.0#display
+* #pre-puberty ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #pre-puberty ^designation[0].value = "Präpubertär"
 
 * #follicular
 * #follicular ^designation[0].language = #de-DE
-* #follicular ^designation[0].use = $designation-usage|4.2.0#display
+* #follicular ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #follicular ^designation[0].value = "Follikelphase"
 
 * #midcycle
 * #midcycle ^designation[0].language = #de-DE
-* #midcycle ^designation[0].use = $designation-usage|4.2.0#display
+* #midcycle ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #midcycle ^designation[0].value = "Zyklusmitte"
 
 * #luteal
 * #luteal ^designation[0].language = #de-DE
-* #luteal ^designation[0].use = $designation-usage|4.2.0#display
+* #luteal ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #luteal ^designation[0].value = "Gelbkörperphase"
 
 * #postmenopausal
 * #postmenopausal ^designation[0].language = #de-DE
-* #postmenopausal ^designation[0].use = $designation-usage|4.2.0#display
+* #postmenopausal ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #postmenopausal ^designation[0].value = "Postmenopausal"

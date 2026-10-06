@@ -15,9 +15,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Anwendung eines frauentypischen Settings oder Referenzbereichs"
         }
@@ -29,9 +28,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Anwendung eines männertypischen Settings oder Referenzbereichs"
         }
@@ -43,9 +41,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Anwendung eines spezifischen Settings oder Referenzbereichs"
         }

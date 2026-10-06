@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: SexParameterForClinicalUsedeDE
 Id: sex-parameter-for-clinical-use-de-de
@@ -30,15 +30,15 @@ Description: "Das Kodesystem Kollektivbezug der Richtgrenze (SexParameterforClin
 
 * #female-typical
 * #female-typical ^designation[0].language = #de-DE
-* #female-typical ^designation[0].use = $designation-usage|4.2.0#display
+* #female-typical ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #female-typical ^designation[0].value = "Anwendung eines frauentypischen Settings oder Referenzbereichs"
 
 * #male-typical
 * #male-typical ^designation[0].language = #de-DE
-* #male-typical ^designation[0].use = $designation-usage|4.2.0#display
+* #male-typical ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #male-typical ^designation[0].value = "Anwendung eines männertypischen Settings oder Referenzbereichs"
 
 * #specified
 * #specified ^designation[0].language = #de-DE
-* #specified ^designation[0].use = $designation-usage|4.2.0#display
+* #specified ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #specified ^designation[0].value = "Anwendung eines spezifischen Settings oder Referenzbereichs"

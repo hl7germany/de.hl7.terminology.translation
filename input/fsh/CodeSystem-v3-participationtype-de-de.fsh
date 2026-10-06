@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: ParticipationTypedeDE
 Id: v3-participationtype-de-de
@@ -30,5 +30,5 @@ Description: "Das Kodesystem Art der Beteiligung (ParticipationType) beschreibt 
 
 * #VRF
 * #VRF ^designation[0].language = #de-DE
-* #VRF ^designation[0].use = $designation-usage|4.2.0#display
+* #VRF ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #VRF ^designation[0].value = "Verifizierende Person"

@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: SpecimenStatusdeDE
 Id: specimen-status-de-de
@@ -30,20 +30,20 @@ Description: "Das Kodesystem Status des Probenmaterials (SpecimenStatus) beschre
 
 * #available
 * #available ^designation[0].language = #de-DE
-* #available ^designation[0].use = $designation-usage|4.2.0#display
+* #available ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #available ^designation[0].value = "Verfügbar"
 
 * #unavailable
 * #unavailable ^designation[0].language = #de-DE
-* #unavailable ^designation[0].use = $designation-usage|4.2.0#display
+* #unavailable ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #unavailable ^designation[0].value = "Nicht verfügbar"
 
 * #unsatisfactory
 * #unsatisfactory ^designation[0].language = #de-DE
-* #unsatisfactory ^designation[0].use = $designation-usage|4.2.0#display
+* #unsatisfactory ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #unsatisfactory ^designation[0].value = "Nicht geeignet"
 
 * #entered-in-error
 * #entered-in-error ^designation[0].language = #de-DE
-* #entered-in-error ^designation[0].use = $designation-usage|4.2.0#display
+* #entered-in-error ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #entered-in-error ^designation[0].value = "Fehleingabe"

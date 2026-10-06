@@ -15,9 +15,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Registriert"
         }
@@ -29,9 +28,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Vorläufig"
         }
@@ -43,9 +41,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Abgeschlossen"
         }
@@ -57,9 +54,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Geändert"
         }
@@ -71,9 +67,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Korrigiert"
         }
@@ -85,9 +80,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Storniert"
         }
@@ -99,9 +93,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Irrtümliche Eingabe"
         }
@@ -113,9 +106,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Unbekannt"
         }

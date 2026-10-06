@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: DataAbsentReasondeDE
 Id: data-absent-reason-de-de
@@ -30,75 +30,75 @@ Description: "Das Codesystem Begründung Nichtverfügbarkeit (DataAbsentReason) 
 
 * #unknown
 * #unknown ^designation[0].language = #de-DE
-* #unknown ^designation[0].use = $designation-usage|4.2.0#display
+* #unknown ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #unknown ^designation[0].value = "Unbekannt"
 
 * #asked-unknown
 * #asked-unknown ^designation[0].language = #de-DE
-* #asked-unknown ^designation[0].use = $designation-usage|4.2.0#display
+* #asked-unknown ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #asked-unknown ^designation[0].value = "Erfragt, aber unbekannt"
 
 * #temp-unknown
 * #temp-unknown ^designation[0].language = #de-DE
-* #temp-unknown ^designation[0].use = $designation-usage|4.2.0#display
+* #temp-unknown ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #temp-unknown ^designation[0].value = "Temporär unbekannt"
 
 * #not-asked
 * #not-asked ^designation[0].language = #de-DE
-* #not-asked ^designation[0].use = $designation-usage|4.2.0#display
+* #not-asked ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #not-asked ^designation[0].value = "Nicht erfragt"
 
 * #asked-declined
 * #asked-declined ^designation[0].language = #de-DE
-* #asked-declined ^designation[0].use = $designation-usage|4.2.0#display
+* #asked-declined ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #asked-declined ^designation[0].value = "Erfragt, aber abgelehnt"
 
 * #masked
 * #masked ^designation[0].language = #de-DE
-* #masked ^designation[0].use = $designation-usage|4.2.0#display
+* #masked ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #masked ^designation[0].value = "Maskiert / vertraulich"
 
 * #not-applicable
 * #not-applicable ^designation[0].language = #de-DE
-* #not-applicable ^designation[0].use = $designation-usage|4.2.0#display
+* #not-applicable ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #not-applicable ^designation[0].value = "Nicht anwendbar"
 
 * #unsupported
 * #unsupported ^designation[0].language = #de-DE
-* #unsupported ^designation[0].use = $designation-usage|4.2.0#display
+* #unsupported ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #unsupported ^designation[0].value = "Nicht unterstützt"
 
 * #as-text
 * #as-text ^designation[0].language = #de-DE
-* #as-text ^designation[0].use = $designation-usage|4.2.0#display
+* #as-text ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #as-text ^designation[0].value = "Als Text"
 
 * #error
 * #error ^designation[0].language = #de-DE
-* #error ^designation[0].use = $designation-usage|4.2.0#display
+* #error ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #error ^designation[0].value = "Fehler"
 
 * #not-a-number
 * #not-a-number ^designation[0].language = #de-DE
-* #not-a-number ^designation[0].use = $designation-usage|4.2.0#display
+* #not-a-number ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #not-a-number ^designation[0].value = "Keine Zahl"
 
 * #negative-infinity
 * #negative-infinity ^designation[0].language = #de-DE
-* #negative-infinity ^designation[0].use = $designation-usage|4.2.0#display
+* #negative-infinity ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #negative-infinity ^designation[0].value = "Negativ unendlich"
 
 * #positive-infinity
 * #positive-infinity ^designation[0].language = #de-DE
-* #positive-infinity ^designation[0].use = $designation-usage|4.2.0#display
+* #positive-infinity ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #positive-infinity ^designation[0].value = "Positiv unendlich"
 
 * #not-performed
 * #not-performed ^designation[0].language = #de-DE
-* #not-performed ^designation[0].use = $designation-usage|4.2.0#display
+* #not-performed ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #not-performed ^designation[0].value = "Nicht durchgeführt"
 
 * #not-permitted
 * #not-permitted ^designation[0].language = #de-DE
-* #not-permitted ^designation[0].use = $designation-usage|4.2.0#display
+* #not-permitted ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #not-permitted ^designation[0].value = "Nicht erlaubt"

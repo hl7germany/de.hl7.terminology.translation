@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: QuantityComparatordeDE
 Id: quantity-comparator-de-de
@@ -30,20 +30,20 @@ Description: "Das Kodesystem Vergleichsoperator für Mengenangaben (QuantityOper
 
 * #"<"
 * #"<" ^designation[0].language = #de-DE
-* #"<" ^designation[0].use = $designation-usage|4.2.0#display
+* #"<" ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #"<" ^designation[0].value = "Kleiner als"
 
 * #"<="
 * #"<=" ^designation[0].language = #de-DE
-* #"<=" ^designation[0].use = $designation-usage|4.2.0#display
+* #"<=" ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #"<=" ^designation[0].value = "Kleiner oder gleich"
 
 * #">="
 * #">=" ^designation[0].language = #de-DE
-* #">=" ^designation[0].use = $designation-usage|4.2.0#display
+* #">=" ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #">=" ^designation[0].value = "Größer oder gleich"
 
 * #">"
 * #">" ^designation[0].language = #de-DE
-* #">" ^designation[0].use = $designation-usage|4.2.0#display
+* #">" ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #">" ^designation[0].value = "Größer als"

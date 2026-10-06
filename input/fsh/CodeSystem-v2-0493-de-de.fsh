@@ -1,4 +1,4 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
+Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
 
 CodeSystem: SpecimenConditiondeDE
 Id: v2-0493-de-de
@@ -30,50 +30,50 @@ Description: "Das Kodesystem Probenzustand (SpecimenCondition) beschreibt den Zu
 
 * #AUT
 * #AUT ^designation[0].language = #de-DE
-* #AUT ^designation[0].use = $designation-usage|4.2.0#display
+* #AUT ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #AUT ^designation[0].value = "Autolysiert"
 
 * #CFU
 * #CFU ^designation[0].language = #de-DE
-* #CFU ^designation[0].use = $designation-usage|4.2.0#display
+* #CFU ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #CFU ^designation[0].value = "Zentrifugiert"
 
 * #CLOT
 * #CLOT ^designation[0].language = #de-DE
-* #CLOT ^designation[0].use = $designation-usage|4.2.0#display
+* #CLOT ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #CLOT ^designation[0].value = "Verklumpt"
 
 * #CON
 * #CON ^designation[0].language = #de-DE
-* #CON ^designation[0].use = $designation-usage|4.2.0#display
+* #CON ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #CON ^designation[0].value = "Kontaminiert"
 
 * #COOL
 * #COOL ^designation[0].language = #de-DE
-* #COOL ^designation[0].use = $designation-usage|4.2.0#display
+* #COOL ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #COOL ^designation[0].value = "Gekühlt"
 
 * #FROZ
 * #FROZ ^designation[0].language = #de-DE
-* #FROZ ^designation[0].use = $designation-usage|4.2.0#display
+* #FROZ ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #FROZ ^designation[0].value = "Gefroren"
 
 * #HEM
 * #HEM ^designation[0].language = #de-DE
-* #HEM ^designation[0].use = $designation-usage|4.2.0#display
+* #HEM ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #HEM ^designation[0].value = "Hämolysiert"
 
 * #LIVE
 * #LIVE ^designation[0].language = #de-DE
-* #LIVE ^designation[0].use = $designation-usage|4.2.0#display
+* #LIVE ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #LIVE ^designation[0].value = "Lebendig"
 
 * #ROOM
 * #ROOM ^designation[0].language = #de-DE
-* #ROOM ^designation[0].use = $designation-usage|4.2.0#display
+* #ROOM ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #ROOM ^designation[0].value = "Raumtemperatur"
 
 * #SNR
 * #SNR ^designation[0].language = #de-DE
-* #SNR ^designation[0].use = $designation-usage|4.2.0#display
+* #SNR ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #SNR ^designation[0].value = "Probe nicht erhalten"

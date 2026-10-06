@@ -15,9 +15,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Kleiner als"
         }
@@ -29,9 +28,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Kleiner oder gleich"
         }
@@ -43,9 +41,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Größer oder gleich"
         }
@@ -57,9 +54,8 @@
         {
           "language": "de-DE",
           "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
+            "code": "preferredForLanguage",
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
           "value": "Größer als"
         }
