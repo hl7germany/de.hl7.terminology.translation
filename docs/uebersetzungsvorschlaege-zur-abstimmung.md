@@ -1,6 +1,6 @@
 # Übersetzungsvorschläge ohne Abstimmung mit HL7 Austria
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 bis PR #3
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 Die Tabelle enthält alle Codes aus den CodeSystem-Supplements unter `input/fsh/`, für die `HL7 Übersetzungen.xlsx`
 keine abgestimmte Übersetzung enthält. Die Zuordnung zum XLSX erfolgte über die Code-System-OID,

@@ -1,6 +1,6 @@
 # Abgleich der de-DE-Übersetzungen mit `HL7 Übersetzungen.xlsx`
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 bis PR #3
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 `HL7 Übersetzungen.xlsx` enthält die mit HL7 Austria abgestimmten Übersetzungen und ist hier die Referenz.
 Geprüft wurde, ob die deutschen Bezeichnungen (`^designation.value`) in den CodeSystem-Supplements unter
@@ -10,8 +10,8 @@ Geprüft wurde, ob die deutschen Bezeichnungen (`^designation.value`) in den Cod
 
 80 Codes kommen sowohl in den FSH-Dateien als auch im XLSX vor. Alle 80 stimmen wörtlich überein.
 
-Bis PR #2 wich `N` in v3-ObservationInterpretation ab: Im FSH stand „Normal“, abgestimmt AT ist „Normal (nicht numerisch)“.
-Die englische Bezeichnung im XLSX (Spalte *Description*) lautet „Normal (applies to non-numeric results)“. Mit PR #2 ist
+Bis PR #3 wich `N` in v3-ObservationInterpretation ab: Im FSH stand „Normal“, abgestimmt AT ist „Normal (nicht numerisch)“.
+Die englische Bezeichnung im XLSX (Spalte *Description*) lautet „Normal (applies to non-numeric results)“. Mit PR #3 ist
 das FSH angeglichen, siehe [CodeSystem-observation-interpretation-de-de.fsh:187](../input/fsh/CodeSystem-observation-interpretation-de-de.fsh#L187).
 
 ## Zuordnung ValueSet → CodeSystem

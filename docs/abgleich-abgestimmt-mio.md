@@ -1,6 +1,6 @@
 # Abgleich der de-DE-Übersetzungen mit `FHIR CodeSystem Übersetzungen.csv`
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 bis PR #3
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 Die Datei `FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv` enthält deutsche Übersetzungen für
 25 CodeSystems. Ihre Spalten sind *Name*, *Codesystem URL*, *Code*, *Display*, *vorläufige Übersetzung*,

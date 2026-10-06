@@ -1,6 +1,6 @@
 # Technische Prüfung der Supplements
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 bis PR #3
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 Ein CodeSystem-Supplement gilt nur für das CodeSystem in genau der Version, die in `^supplements` steht.
 Im R4-Kontext liegen viele CodeSystems doppelt vor: im Core (`hl7.fhir.r4.core#4.0.1`) mit Version 4.0.1 und in
@@ -20,8 +20,8 @@ Erwartete Zielversion:
 |---|---|
 | Zielversion falsch, Supplement greift in R4 nie | keins mehr. quantity-comparator ist seit `05df569` korrigiert, siehe Abschnitt 1 |
 | Greift nur, wenn das verwendete THO-Release genau die Zielversion enthält | alle 10 THO-Supplements. Von den geprüften Releases enthalten nur `hl7.terminology.r4` 7.3.0 und 7.4.0 alle 10 Zielversionen |
-| Nicht als Language Pack markiert | keins mehr. Alle 18 sind mit PR #1 markiert, siehe Abschnitt 3 |
-| `designation.use` verweist auf ein CodeSystem, das es nur in THO 1.0.0 gab | keins mehr. Mit PR #2 auf `preferredForLanguage` umgestellt, siehe Abschnitt 4 |
+| Nicht als Language Pack markiert | keins mehr. Alle 18 sind mit PR #3 markiert, siehe Abschnitt 3 |
+| `designation.use` verweist auf ein CodeSystem, das es nur in THO 1.0.0 gab | keins mehr. Mit PR #3 auf `preferredForLanguage` umgestellt, siehe Abschnitt 4 |
 
 | Supplement | `^supplements` | Herkunft | Zielversion korrekt | Zielversion enthalten in `hl7.terminology.r4` | Language Pack |
 |---|---|---|---|---|---|
@@ -99,14 +99,14 @@ Nach Tests mit dem FHIR Validator 6.10.4 (nicht Teil dieser Prüfung) lädt der 
 Version die höchste Version. Dann greifen alle 10. Bei Paketen mit eigener, älterer THO-Abhängigkeit gilt dagegen deren
 Version.
 
-## 3. Markierung als Language Pack (umgesetzt mit PR #1)
+## 3. Markierung als Language Pack (umgesetzt mit PR #3)
 
-Bis PR #1 trug keines der 18 Supplements die Extension `http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type` mit
+Bis PR #3 trug keines der 18 Supplements die Extension `http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type` mit
 dem Wert `lang-pack`. Seit Februar 2026 wenden FHIR Validator, IG Publisher und tx.fhir.org ein Supplement nur noch an,
 wenn ein ValueSet oder ein Operations-Parameter es referenziert oder wenn es als Language Pack markiert ist. Ohne
 Markierung werden die Übersetzungen also nicht automatisch verwendet.
 
-Mit PR #1 tragen alle 18 Supplements die Extension mit `valueCode` `lang-pack`. So setzt sie auch der IG Publisher beim
+Mit PR #3 tragen alle 18 Supplements die Extension mit `valueCode` `lang-pack`. So setzt sie auch der IG Publisher beim
 Parameter `lang-pack = true`. Sie wird über das RuleSet `LanguagePack` in `input/fsh/RuleSets.fsh` direkt nach den
 vorhandenen Extension-Regeln eingefügt. Test mit dem FHIR Validator 6.10.4 (R4, `hl7.terminology.r4#7.4.0`, offline,
 Supplements als Paket geladen): Instanzen mit `language = de-DE` und deutschen Displays validieren mit Markierung ohne
@@ -122,10 +122,10 @@ Hinweise zur Umsetzung:
   `hl7.fhir.uv.extensions.r4#5.3.0`. Validator und tx.fhir.org werten sie aus, die Validierung des Supplements selbst
   meldet sie aber als unbekannt („could not be found so is not allowed here“).
 
-## 4. `designation.use` (umgestellt mit PR #2)
+## 4. `designation.use` (umgestellt mit PR #3)
 
-Bis PR #2 setzten alle 18 Supplements `^designation[0].use = $designation-usage|4.2.0#display` mit
-`Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage`. Mit PR #2 verwenden alle
+Bis PR #3 setzten alle 18 Supplements `^designation[0].use = $designation-usage|4.2.0#display` mit
+`Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage`. Mit PR #3 verwenden alle
 Designations `http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra#preferredForLanguage`, die zweite Variante unter
 „Korrekte Befüllung in R4“.
 
@@ -148,8 +148,8 @@ Meldungen zu `designation.use`.
 
 | `designation.use` | Meldungen je Designation |
 |---|---|
-| `designation-usage\|4.2.0#display` (bis PR #2) | 1 Fehler („No definition could be found for URL value …“), 2 Warnungen |
-| `hl7TermMaintInfra#preferredForLanguage` (seit PR #2) | 1 Warnung: Code nicht im ValueSet `designation-use\|4.0.1` (Binding extensible) |
+| `designation-usage\|4.2.0#display` (bis PR #3) | 1 Fehler („No definition could be found for URL value …“), 2 Warnungen |
+| `hl7TermMaintInfra#preferredForLanguage` (seit PR #3) | 1 Warnung: Code nicht im ValueSet `designation-use\|4.0.1` (Binding extensible) |
 | ohne `use` | keine |
 
 Laut Quellcode des Validators (`ValueSetValidator`) spielt `use` bei der Prüfung des Displays einer Instanz keine Rolle,
@@ -202,7 +202,7 @@ Zur Einordnung, wie andere Herausgeber es machen: HL7 Schweiz (`ch.fhir.ig.ch-te
 tx.fhir.org (`fhir.tx.support`, R5) setzen kein `use`. ANS Frankreich (`ans.fr.terminologies`) und gematik
 (`de.gematik.terminology`) verwenden SNOMED Synonym, Dänemark (`hl7.fhir.dk.core`) beides gemischt.
 
-## 5. Nicht übersetzte Codes `unknown` (ergänzt mit PR #2)
+## 5. Nicht übersetzte Codes `unknown` (ergänzt mit PR #3)
 
 - condition-clinical: THO kennt seit jeher zusätzlich den Code `unknown`, R4 Core nicht. Das Supplement übersetzte
   alle R4-Codes, aber nicht `unknown`.
@@ -210,7 +210,7 @@ tx.fhir.org (`fhir.tx.support`, R5) setzen kein `use`. ANS Frankreich (`ans.fr.t
 
 In R4-Instanzen ist `unknown` jeweils gültig: `Condition.clinicalStatus` und `Observation.status` sind required
 gebunden, und das ValueSet von condition-clinical schließt das CodeSystem ohne Version ein, mit THO also Version 3.0.0.
-Mit PR #2 ist `unknown` in beiden Supplements als „Unbekannt“ übersetzt.
+Mit PR #3 ist `unknown` in beiden Supplements als „Unbekannt“ übersetzt.
 
 ## 6. device-nametype: Nachfolger in THO unter eigener URL
 

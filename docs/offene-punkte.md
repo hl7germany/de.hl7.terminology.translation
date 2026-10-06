@@ -1,6 +1,6 @@
 # Offene Punkte vor dem Release
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #1 bis PR #3
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details stehen in den verlinkten Dokumenten.
 
@@ -17,14 +17,14 @@ Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details st
 |---|---|
 | URL beginnt mit `http://terminology.hl7.org/`: auf die THO-Version zeigen, nie auf die Core-Kopie 4.0.1 | erfüllt, alle 10 THO-Supplements zeigen auf die Version aus `hl7.terminology.r4#7.4.0` |
 | URL beginnt mit `http://hl7.org/fhir/`: auf die Core-Version zeigen, in R4 also 4.0.1 | erfüllt, alle 8 Core-Supplements |
-| Als Language Pack markieren (Extension `codesystem-supplement-type` mit `lang-pack`) | erfüllt mit PR #1, alle 18 |
+| Als Language Pack markieren (Extension `codesystem-supplement-type` mit `lang-pack`) | erfüllt mit PR #3, alle 18 |
 | Versionen nachziehen: bei jedem THO-Release prüfen, ob sich die Version eines Ziel-CodeSystems geändert hat | derzeit stimmig mit THO 7.4.0. Daueraufgabe, siehe [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 2 |
 
 ## Festlegungen
 
 - Widersprechen sich die Fassungen *abgestimmt AT* und *abgestimmt MIO*, gilt *abgestimmt AT*. Für Codes, die nur eine
   Fassung *abgestimmt MIO* haben, bleibt das FSH vorerst unverändert. Siehe [abgleich-abgestimmt-mio.md](abgleich-abgestimmt-mio.md).
-- `lastReviewDate` wird für die Änderungen aus PR #1 bis PR #3 nicht angepasst.
+- `lastReviewDate` wird für die Änderungen aus PR #3 nicht angepasst.
 
 ## Offen im FSH
 
@@ -61,12 +61,12 @@ Begriffe sind in allen 18 Supplements gleich übersetzt.
 |---|---|
 | quantity-comparator zeigt auf `\|4.0.1`, der R5-Code `ad` ist entfernt | Commit `05df569` |
 | `<` „Kleiner als“, `>` „Größer als“ (quantity-comparator), `entered-in-error` „Fehleingabe“ (specimen-status) | Commit `05df569` |
-| `fsh-generated` passt wieder zu `input/fsh` | Commit `00b0a53`, danach in PR #1 bis PR #3 neu erzeugt |
-| Alle 18 Supplements als Language Pack markiert | PR #1 |
-| `designation.use` von `designation-usage\|4.2.0#display` auf `hl7TermMaintInfra#preferredForLanguage` umgestellt | PR #2 |
-| `unknown` in condition-clinical und observation-status als „Unbekannt“ übersetzt | PR #2 |
-| `N` in v3-ObservationInterpretation an abgestimmt AT angeglichen: „Normal (nicht numerisch)“ | PR #2 |
-| Name und Titel des Supplements für sex-parameter-for-clinical-use: `SexParameterForClinicalUsedeDE`, „Geschlechtsparameter für die klinische Verwendung“ (vorher „Kollektivbezug der Richtgrenze“) | PR #2 |
+| `fsh-generated` passt wieder zu `input/fsh` | Commit `00b0a53`, danach in PR #3 neu erzeugt |
+| Alle 18 Supplements als Language Pack markiert | PR #3 |
+| `designation.use` von `designation-usage\|4.2.0#display` auf `hl7TermMaintInfra#preferredForLanguage` umgestellt | PR #3 |
+| `unknown` in condition-clinical und observation-status als „Unbekannt“ übersetzt | PR #3 |
+| `N` in v3-ObservationInterpretation an abgestimmt AT angeglichen: „Normal (nicht numerisch)“ | PR #3 |
+| Name und Titel des Supplements für sex-parameter-for-clinical-use: `SexParameterForClinicalUsedeDE`, „Geschlechtsparameter für die klinische Verwendung“ (vorher „Kollektivbezug der Richtgrenze“) | PR #3 |
 | observation-status einheitlich mit diagnostic-report-status und abgestimmt AT: `final` „Final“, `amended` „Überarbeitet“, `cancelled` „Abgebrochen“, `entered-in-error` „Fehleingabe“ | PR #3 |
 | device-nametype: `other` „Andere“, `patient-reported-name` „Patientenberichteter Name“ | PR #3 |
 | v2-0203 `RI` „Ressourcen-Identifikator“, v2-0373 `ACID` „Ansäuerung“, `RECA` „Rekalzifizierung“ | PR #3 |
