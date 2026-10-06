@@ -19,7 +19,7 @@
             "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
             "version": "4.2.0"
           },
-          "value": "Kleiner"
+          "value": "Kleiner als"
         }
       ]
     },
@@ -61,21 +61,7 @@
             "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
             "version": "4.2.0"
           },
-          "value": "Größer"
-        }
-      ]
-    },
-    {
-      "code": "ad",
-      "designation": [
-        {
-          "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
-          "value": "Auffüllen auf"
+          "value": "Größer als"
         }
       ]
     }
@@ -89,7 +75,7 @@
   "date": "2025-10-12",
   "publisher": "HL7 Deutschland e.V.",
   "language": "de-DE",
-  "supplements": "http://hl7.org/fhir/quantity-comparator|5.0.0",
+  "supplements": "http://hl7.org/fhir/quantity-comparator|4.0.1",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
@@ -99,7 +85,7 @@
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
-      "valueDate": "2026-09-29"
+      "valueDate": "2026-10-01"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",

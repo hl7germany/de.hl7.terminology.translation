@@ -1,15 +1,15 @@
 # Übersetzungsvorschläge ohne Abstimmung mit HL7 Austria
 
-Stand: 01.10.2026 · Branch `feature/translation-de-de`, Commit `b4f5200`
+Stand: 06.10.2026 · geprüfter FSH-Stand: Commit `05df569`
 
 Die Tabelle enthält alle Codes aus den CodeSystem-Supplements unter `input/fsh/`, für die `HL7 Übersetzungen.xlsx`
 keine abgestimmte Übersetzung enthält. Die Zuordnung zum XLSX erfolgte über die Code-System-OID,
-siehe [Abgleich-Uebersetzungen-XLSX.md](Abgleich-Uebersetzungen-XLSX.md).
+siehe [abgleich-abgestimmt-at.md](abgleich-abgestimmt-at.md).
 
 Die Spalte *Übersetzungsvorschlag* ist die deutsche Bezeichnung (`^designation.value`, `de-DE`) aus der FSH-Datei.
 
-93 Codes. Für 27 davon steht in der Spalte *Hinweis* ein eigener Vorschlag mit Begründung:
-24 Übersetzungen aus dem FSH sollten geändert werden, 3 Codes haben im FSH keine Übersetzung.
+92 Codes. Für 24 davon steht in der Spalte *Hinweis* ein eigener Vorschlag mit Begründung:
+21 Übersetzungen aus dem FSH sollten geändert werden, 3 Codes haben im FSH keine Übersetzung.
 
 Geprüft wurde jede Übersetzung gegen
 
@@ -25,7 +25,7 @@ Geprüft wurde jede Übersetzung gegen
 | composition-attestation-mode (4.0.1) | `official` | Official | *(keine Übersetzung im FSH)* | Vorschlag: „Offiziell“. Die Organisation bestätigt, dass der Inhalt ihren Richtlinien und Verfahren entspricht. |
 | condition-ver-status (2.0.1) | `entered-in-error` | Entered in Error | Fehleingabe |  |
 | data-absent-reason (2.0.0) | `asked-unknown` | Asked But Unknown | Erfragt, aber unbekannt |  |
-| data-absent-reason (2.0.0) | `temp-unknown` | Temporarily Unknown | Aktuell unbekannt |  |
+| data-absent-reason (2.0.0) | `temp-unknown` | Temporarily Unknown | Temporär unbekannt |  |
 | data-absent-reason (2.0.0) | `not-asked` | Not Asked | Nicht erfragt |  |
 | data-absent-reason (2.0.0) | `asked-declined` | Asked But Declined | Erfragt, aber abgelehnt |  |
 | data-absent-reason (2.0.0) | `masked` | Masked | Maskiert / vertraulich |  |
@@ -69,17 +69,16 @@ Geprüft wurde jede Übersetzung gegen
 | observation-status (4.0.1) | `corrected` | Corrected | Korrigiert |  |
 | observation-status (4.0.1) | `cancelled` | Cancelled | Storniert | Vorschlag: „Abgebrochen“. Laut Definition nicht begonnen oder nicht abgeschlossen („aborted“). Im XLSX abgestimmt für `cancelled` in DiagnosticReportStatus. |
 | observation-status (4.0.1) | `entered-in-error` | Entered in Error | Irrtümliche Eingabe | Vorschlag: „Fehleingabe“. Im XLSX durchgängig „Fehleingabe“ abgestimmt. |
-| quantity-comparator (5.0.0) | `<` | Less than | Kleiner | Vorschlag: „Kleiner als“. Eindeutiger, parallel zu „Kleiner oder gleich“. |
-| quantity-comparator (5.0.0) | `<=` | Less or Equal to | Kleiner oder gleich |  |
-| quantity-comparator (5.0.0) | `>=` | Greater or Equal to | Größer oder gleich |  |
-| quantity-comparator (5.0.0) | `>` | Greater than | Größer | Vorschlag: „Größer als“. Eindeutiger, parallel zu „Größer oder gleich“. |
-| quantity-comparator (5.0.0) | `ad` | Sufficient to achieve this total quantity | Auffüllen auf | Den Code gibt es erst ab R5. Das Supplement zeigt auf `quantity-comparator\|5.0.0` und greift in R4 nicht. Bei Umstellung auf R4 (4.0.1) entfällt der Code, siehe [Supplement-Zielversionen.md](Supplement-Zielversionen.md). |
+| quantity-comparator (4.0.1) | `<` | Less than | Kleiner als |  |
+| quantity-comparator (4.0.1) | `<=` | Less or Equal to | Kleiner oder gleich |  |
+| quantity-comparator (4.0.1) | `>=` | Greater or Equal to | Größer oder gleich |  |
+| quantity-comparator (4.0.1) | `>` | Greater than | Größer als |  |
 | referencerange-meaning (1.0.1) | `type` | Type | Generell | Vorschlag: „Allgemeiner Typ“. Gruppierungscode („General types of reference range“). „Generell“ allein sagt nicht, was gemeint ist. |
 | referencerange-meaning (1.0.1) | `endocrine` | Endocrine | Endokrinologisch adaptiert |  |
 | specimen-status (4.0.1) | `available` | Available | Verfügbar |  |
 | specimen-status (4.0.1) | `unavailable` | Unavailable | Nicht verfügbar |  |
 | specimen-status (4.0.1) | `unsatisfactory` | Unsatisfactory | Nicht geeignet |  |
-| specimen-status (4.0.1) | `entered-in-error` | Entered in Error | Irrtümliche Eingabe | Vorschlag: „Fehleingabe“. Im XLSX durchgängig „Fehleingabe“ abgestimmt. |
+| specimen-status (4.0.1) | `entered-in-error` | Entered in Error | Fehleingabe |  |
 | v2-0203 (5.0.0) | `ACSN` | Accession ID | Eingangs-ID |  |
 | v2-0203 (5.0.0) | `BSNR` | Primary physician office number | Betriebsstättennummer |  |
 | v2-0203 (5.0.0) | `FILL` | Filler Identifier | Identifikator des Auftragnehmers |  |
@@ -115,6 +114,5 @@ Geprüft wurde jede Übersetzung gegen
 
 Der englische Display stammt aus der Version des CodeSystems, die das Supplement in `^supplements` angibt:
 
-- `hl7.fhir.r4.core#4.0.1`: composition-attestation-mode, device-nametype, observation-status, specimen-status
+- `hl7.fhir.r4.core#4.0.1`: composition-attestation-mode, device-nametype, observation-status, quantity-comparator, specimen-status
 - `hl7.terminology#7.4.0`: condition-ver-status, data-absent-reason, v3-ObservationInterpretation, referencerange-meaning, v2-0203, v2-0373, v2-0493, v2-0916
-- `hl7.fhir.r5.core#5.0.0`: quantity-comparator
