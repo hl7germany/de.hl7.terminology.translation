@@ -30,8 +30,7 @@ Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details st
 
 | Nr. | Punkt | Details |
 |---|---|---|
-| 1 | `OBX` in v3-ObservationInterpretation: „Dolmetscherkennzeichen in separaten OBX Segmenten“ ist falsch, „interpretation qualifiers“ sind keine Dolmetscher. Die neue Formulierung muss diskutiert werden. Der Code ist deprecated. | [uebersetzungsvorschlaege-zur-abstimmung.md](uebersetzungsvorschlaege-zur-abstimmung.md) |
-| 2 | Die Extension `codesystem-supplement-type` ist in keinem veröffentlichten Extensions-Paket definiert. Die Validierung der Supplements selbst meldet sie deshalb als unbekannt. Klärung bei HL7 International (Zulip oder Jira). | [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 3 |
+| 1 | Die Extension `codesystem-supplement-type` ist in keinem veröffentlichten Extensions-Paket definiert. Die Validierung der Supplements selbst meldet sie deshalb als unbekannt. Klärung bei HL7 International (Zulip oder Jira). | [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 3 |
 
 Die FSH-Dateien widersprechen sonst weder einander noch den mit HL7 Austria abgestimmten Übersetzungen. Gleiche englische
 Begriffe sind in allen 18 Supplements gleich übersetzt.
@@ -71,4 +70,5 @@ Begriffe sind in allen 18 Supplements gleich übersetzt.
 | observation-status einheitlich mit diagnostic-report-status und abgestimmt AT: `final` „Final“, `amended` „Überarbeitet“, `cancelled` „Abgebrochen“, `entered-in-error` „Fehleingabe“ | PR #3 |
 | device-nametype: `other` „Andere“, `patient-reported-name` „Patientenberichteter Name“ | PR #3 |
 | v2-0203 `RI` „Ressourcen-Identifikator“, v2-0373 `ACID` „Ansäuerung“, `RECA` „Rekalzifizierung“ | PR #3 |
+| v3-ObservationInterpretation `OBX`: „Bewertung in separaten OBX-Segmenten“ statt „Dolmetscherkennzeichen in separaten OBX Segmenten“. „Bewertung“ wie der deutsche v2-Begriff für OBX-8 („Bewertung des Ergebnisses“) | PR #3 |
 | Kopfdaten: Title v2-0203 „Typ des Identifiers“; Descriptions von data-absent-reason (Bedeutung und „Kodesystem“), quantity-comparator, request-priority, referencerange-meaning und device-nametype | PR #3 |

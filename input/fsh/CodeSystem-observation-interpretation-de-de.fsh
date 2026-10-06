@@ -210,7 +210,7 @@ Description: "Das Kodesystem Interpretation der Beobachtung (ObservationInterpre
 * #OBX
 * #OBX ^designation[0].language = #de-DE
 * #OBX ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
-* #OBX ^designation[0].value = "Dolmetscherkennzeichen in separaten OBX Segmenten"
+* #OBX ^designation[0].value = "Bewertung in separaten OBX-Segmenten"
 
 * #ObservationInterpretationDetection
 * #ObservationInterpretationDetection ^designation[0].language = #de-DE

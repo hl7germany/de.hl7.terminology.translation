@@ -10,7 +10,6 @@ Die Spalte *Übersetzungsvorschlag* ist die deutsche Bezeichnung (`^designation.
 
 94 Codes. Für 14 davon steht in der Spalte *Hinweis* ein eigener Vorschlag mit Begründung:
 11 Übersetzungen aus dem FSH sollten geändert werden, 3 Codes haben im FSH keine Übersetzung.
-Bei `OBX` ist die Übersetzung falsch, die neue Formulierung wird noch diskutiert.
 
 Geprüft wurde jede Übersetzung gegen
 
@@ -52,7 +51,7 @@ Geprüft wurde jede Übersetzung gegen
 | v3-ObservationInterpretation (4.0.0) | `HM` | Hold for Medical Review | Zur medizinischen Überprüfung zurückhalten | Code ist deprecated. |
 | v3-ObservationInterpretation (4.0.0) | `L<` | Significantly low | Signifikant niedrig | Entspricht `LU`, dort abgestimmt „Signifikant niedrig“. Code ist deprecated. |
 | v3-ObservationInterpretation (4.0.0) | `MS` | moderately susceptible | Mittlere Empfindlichkeit | Vorschlag: „Mäßig empfindlich“. Parallel zu `VS` „Sehr empfindlich“ und abgestimmt `S` „Empfindlich“, `NS` „Nicht empfindlich“. Code ist deprecated. |
-| v3-ObservationInterpretation (4.0.0) | `OBX` | Interpretation qualifiers in separate OBX segments | Dolmetscherkennzeichen in separaten OBX Segmenten | „Interpretation qualifiers“ sind keine Dolmetscher, die Übersetzung ist falsch. Die neue Formulierung wird noch diskutiert. Code ist deprecated. |
+| v3-ObservationInterpretation (4.0.0) | `OBX` | Interpretation qualifiers in separate OBX segments | Bewertung in separaten OBX-Segmenten | Code ist deprecated. |
 | v3-ObservationInterpretation (4.0.0) | `ObservationInterpretationDetection` | ObservationInterpretationDetection | Feststellungsinterpretation | Vorschlag: „Nachweisinterpretation“. Es geht um An- oder Abwesenheit eines Analyten. Untergeordnete Codes sind abgestimmt als „Nachgewiesen“ / „Nicht nachgewiesen“. |
 | v3-ObservationInterpretation (4.0.0) | `ObservationInterpretationExpectation` | ObservationInterpretationExpectation | Erwartungsinterpretation |  |
 | v3-ObservationInterpretation (4.0.0) | `QCF` | Quality control failure | Versagen der Qualitätskontrolle | Vorschlag: „Qualitätskontrolle fehlgeschlagen“. Üblichere Formulierung. Code ist deprecated. |

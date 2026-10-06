@@ -460,7 +460,7 @@
             "code": "preferredForLanguage",
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
           },
-          "value": "Dolmetscherkennzeichen in separaten OBX Segmenten"
+          "value": "Bewertung in separaten OBX-Segmenten"
         }
       ]
     },
