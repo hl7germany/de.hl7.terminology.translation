@@ -48,8 +48,8 @@ eine Fassung abgestimmt HL7 DE, ist das FSH bisher unverändert geblieben.
 | device-nametype | `user-friendly-name` | User Friendly name | Benutzerfreundlicher Name | – | Gebräuchlicher Name | ≠ HL7 DE |  |
 | device-nametype | `patient-reported-name` | Patient Reported name | Patientenberichteter Name | – | Von Patient:in angegebener Name | ≠ HL7 DE | in PR #3 geändert, vorher „PatientInberichteter Name“, Grund siehe Abschnitt 2; Änderungsvorschlag MIO: „Von Patient/Patientin angegebener Name (AT)“; Anm. 2 |
 | diagnostic-report-status | `final` | Final | Final | Final | Endgültig | AT ≠ HL7 DE | Anm. 4 |
-| v3-ObservationInterpretation | `<` | Off scale low | Messbereich unterschritten | Messbereich unterschritten | Unterhalb der analytischen Grenze | AT ≠ HL7 DE | in der CSV als `kleinerals` |
-| v3-ObservationInterpretation | `>` | Off scale high | Messbereich überschritten | Messbereich überschritten | Oberhalb der analytischen Grenze | AT ≠ HL7 DE | in der CSV als `größerals` |
+| v3-ObservationInterpretation | `<` | Off scale low | Messbereich unterschritten | Messbereich unterschritten | Unterhalb der analytischen Grenze | AT ≠ HL7 DE |  |
+| v3-ObservationInterpretation | `>` | Off scale high | Messbereich überschritten | Messbereich überschritten | Oberhalb der analytischen Grenze | AT ≠ HL7 DE |  |
 | v3-ObservationInterpretation | `A` | Abnormal | Auffällig | Auffällig | Abnorm | AT ≠ HL7 DE |  |
 | v3-ObservationInterpretation | `AA` | Critical abnormal | Kritisch auffällig | Kritisch auffällig | Kritisch abnorm | AT ≠ HL7 DE |  |
 | v3-ObservationInterpretation | `CAR` | Carrier | Träger | Träger | Anlageträger | AT ≠ HL7 DE |  |
@@ -198,7 +198,7 @@ abgestimmten Fassungen noch der Bedeutung der englischen Codes widerspricht.
 | `inactive` | Inactive | Inaktiv | Inaktiv | Inaktiv | gleich |  |
 | `remission` | Remission | Remission | Remission | Remission | gleich |  |
 | `resolved` | Resolved | Nicht mehr vorhanden | Nicht mehr vorhanden | Nicht mehr Vorhanden | Schreibweise |  |
-| `unknown` | Unknown | Unbekannt | – | Unbekannt | gleich | neu in PR #3, Grund siehe Abschnitt 2; in der CSV als `unkown` |
+| `unknown` | Unknown | Unbekannt | – | Unbekannt | gleich | neu in PR #3, Grund siehe Abschnitt 2 |
 
 ### Diagnosesicherheit (`condition-ver-status`)
 
@@ -272,8 +272,8 @@ abgestimmten Fassungen noch der Bedeutung der englischen Codes widerspricht.
 
 | Code | Englisch | FSH | abgestimmt AT | abgestimmt HL7 DE | Status | Hinweis |
 |---|---|---|---|---|---|---|
-| `<` | Off scale low | Messbereich unterschritten | Messbereich unterschritten | Unterhalb der analytischen Grenze | AT ≠ HL7 DE | in der CSV als `kleinerals` |
-| `>` | Off scale high | Messbereich überschritten | Messbereich überschritten | Oberhalb der analytischen Grenze | AT ≠ HL7 DE | in der CSV als `größerals` |
+| `<` | Off scale low | Messbereich unterschritten | Messbereich unterschritten | Unterhalb der analytischen Grenze | AT ≠ HL7 DE |  |
+| `>` | Off scale high | Messbereich überschritten | Messbereich überschritten | Oberhalb der analytischen Grenze | AT ≠ HL7 DE |  |
 | `A` | Abnormal | Auffällig | Auffällig | Abnorm | AT ≠ HL7 DE |  |
 | `AA` | Critical abnormal | Kritisch auffällig | Kritisch auffällig | Kritisch abnorm | AT ≠ HL7 DE |  |
 | `AC` | Anti-complementary substances present | Vorhandene antikomplementäre Substanzen | – | – | nicht abgestimmt | Vorschlag: „Antikomplementäre Substanzen vorhanden“; Code ist deprecated |
@@ -493,6 +493,6 @@ Begründungen aus der Spalte *Begründung* der CSV, wörtlich übernommen.
 - FSH: `input/fsh/*.fsh` im Stand von PR #3. Die Spalte „vorher“ in Abschnitt 2 ist der Stand auf `main`.
 - Englisch: Display aus der Version des CodeSystems, die das Supplement in `^supplements` angibt (`hl7.fhir.r4.core#4.0.1` bzw. `hl7.terminology.r4#7.4.0`).
 - abgestimmt AT: `HL7 Übersetzungen.xlsx`, Zuordnung über die Code-System-OID, Details in [abgleich-abgestimmt-at.md](abgleich-abgestimmt-at.md).
-- abgestimmt HL7 DE: `FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv`, Zuordnung über die CodeSystem-URL. In der CSV stehen `<` und `>` als `kleinerals` und `größerals` und `unknown` als `unkown`, diese Codes sind entsprechend zugeordnet. Details in [abgleich-abgestimmt-hl7de.md](abgleich-abgestimmt-hl7de.md).
+- abgestimmt HL7 DE: `FHIR CodeSystem Übersetzungen - FHIR CodeSystem Übersetzungen.csv`, Zuordnung über die CodeSystem-URL. Drei Codes sind in der CSV anders geschrieben und wurden trotzdem dem richtigen Code zugeordnet: `<` steht dort als „kleinerals“, `>` als „größerals“ und `unknown` als „unkown“. Details in [abgleich-abgestimmt-hl7de.md](abgleich-abgestimmt-hl7de.md).
 - de.basisprofil.r4 1.6.0 (neueste Version): enthält deutsche Bezeichnungen nur für v2-0203. Einziger Unterschied zum FSH ist `PLAC`, als Hinweis vermerkt.
 - Verglichen wurde wörtlich nach Entfernen von Leerzeichen am Anfang und Ende.
