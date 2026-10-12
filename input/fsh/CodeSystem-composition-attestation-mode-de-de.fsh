@@ -1,5 +1,3 @@
-Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
-
 CodeSystem: CompositionAttestationModedeDE
 Id: composition-attestation-mode-de-de
 Title: "Freigabetyp"
@@ -34,7 +32,6 @@ Description: "Das Kodesystem Freigabetyp (CompositionAttestationMode) beschreibt
 
 * #legal
 * #legal ^designation[0].language = #de-DE
-* #legal ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #legal ^designation[0].value = "Rechtliche Verantwortung"
 
 // official: keine deutsche Bezeichnung in der Quelldatei hinterlegt

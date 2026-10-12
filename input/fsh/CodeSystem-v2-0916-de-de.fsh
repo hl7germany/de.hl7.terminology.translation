@@ -1,5 +1,3 @@
-Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
-
 CodeSystem: RelevantClinicalInformationdeDE
 Id: v2-0916-de-de
 Title: "Nüchternstatus"
@@ -30,20 +28,16 @@ Description: "Das Kodesystem Nüchternstatus (RelevantClinicalInformation) besch
 
 * #F
 * #F ^designation[0].language = #de-DE
-* #F ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #F ^designation[0].value = "Nüchtern"
 
 * #FNA
 * #FNA ^designation[0].language = #de-DE
-* #FNA ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #FNA ^designation[0].value = "Aufforderung zur Nüchternheit nicht erfolgt"
 
 * #NF
 * #NF ^designation[0].language = #de-DE
-* #NF ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #NF ^designation[0].value = "Nicht nüchtern"
 
 * #NG
 * #NG ^designation[0].language = #de-DE
-* #NG ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #NG ^designation[0].value = "Nüchternstatus nicht abgefragt"

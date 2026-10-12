@@ -14,10 +14,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Verifizierende Person"
         }
       ]

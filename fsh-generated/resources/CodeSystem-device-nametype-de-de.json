@@ -14,10 +14,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "UDI Kennzeichnungsname"
         }
       ]
@@ -27,10 +23,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Benutzerfreundlicher Name"
         }
       ]
@@ -40,10 +32,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Patientenberichteter Name"
         }
       ]
@@ -53,10 +41,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Herstellername"
         }
       ]
@@ -66,10 +50,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Modellname"
         }
       ]
@@ -79,10 +59,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Andere"
         }
       ]

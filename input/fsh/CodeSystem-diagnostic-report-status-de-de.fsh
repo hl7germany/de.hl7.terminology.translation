@@ -1,5 +1,3 @@
-Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
-
 CodeSystem: DiagnosticReportStatusdeDE
 Id: diagnostic-report-status-de-de
 Title: "Status des Untersuchungsbefunds"
@@ -30,50 +28,40 @@ Description: "Das Kodesystem Status des Untersuchungsbefunds (DiagnosticReportSt
 
 * #registered
 * #registered ^designation[0].language = #de-DE
-* #registered ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #registered ^designation[0].value = "Registriert"
 
 * #partial
 * #partial ^designation[0].language = #de-DE
-* #partial ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #partial ^designation[0].value = "Unvollständig"
 
 * #preliminary
 * #preliminary ^designation[0].language = #de-DE
-* #preliminary ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #preliminary ^designation[0].value = "Vorläufig"
 
 * #final
 * #final ^designation[0].language = #de-DE
-* #final ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #final ^designation[0].value = "Final"
 
 * #amended
 * #amended ^designation[0].language = #de-DE
-* #amended ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #amended ^designation[0].value = "Überarbeitet"
 
 * #corrected
 * #corrected ^designation[0].language = #de-DE
-* #corrected ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #corrected ^designation[0].value = "Korrigiert"
 
 * #appended
 * #appended ^designation[0].language = #de-DE
-* #appended ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #appended ^designation[0].value = "Ergänzt"
 
 * #cancelled
 * #cancelled ^designation[0].language = #de-DE
-* #cancelled ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #cancelled ^designation[0].value = "Abgebrochen"
 
 * #entered-in-error
 * #entered-in-error ^designation[0].language = #de-DE
-* #entered-in-error ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #entered-in-error ^designation[0].value = "Fehleingabe"
 
 * #unknown
 * #unknown ^designation[0].language = #de-DE
-* #unknown ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #unknown ^designation[0].value = "Unbekannt"

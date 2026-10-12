@@ -14,10 +14,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Messbereich unterschritten"
         }
       ]
@@ -27,10 +23,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Messbereich überschritten"
         }
       ]
@@ -40,10 +32,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Auffällig"
         }
       ]
@@ -53,10 +41,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Kritisch auffällig"
         }
       ]
@@ -66,10 +50,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Vorhandene antikomplementäre Substanzen"
         }
       ]
@@ -79,10 +59,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Besser"
         }
       ]
@@ -92,10 +68,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Träger"
         }
       ]
@@ -105,10 +77,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Träger"
         }
       ]
@@ -118,10 +86,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Signifikanter Rückgang"
         }
       ]
@@ -131,10 +95,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Nachgewiesen"
         }
       ]
@@ -144,10 +104,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Uneindeutig"
         }
       ]
@@ -157,10 +113,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Außerhalb des Schwellenwerts"
         }
       ]
@@ -170,10 +122,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Erwartet"
         }
       ]
@@ -183,10 +131,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Hoch"
         }
       ]
@@ -196,10 +140,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Signifikant hoch"
         }
       ]
@@ -209,10 +149,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Kritisch hoch"
         }
       ]
@@ -222,10 +158,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Zur medizinischen Überprüfung zurückhalten"
         }
       ]
@@ -235,10 +167,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Signifikant hoch"
         }
       ]
@@ -248,10 +176,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Oberhalb des oberen Schwellenwerts"
         }
       ]
@@ -261,10 +185,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Intermediär"
         }
       ]
@@ -274,10 +194,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Evidenz unzureichend"
         }
       ]
@@ -287,10 +203,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Unbestimmbar"
         }
       ]
@@ -300,10 +212,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Niedrig"
         }
       ]
@@ -313,10 +221,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Signifikant niedrig"
         }
       ]
@@ -326,10 +230,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Kritisch niedrig"
         }
       ]
@@ -339,10 +239,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Signifikant niedrig"
         }
       ]
@@ -352,10 +248,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Unterhalb des unteren Schwellenwerts"
         }
       ]
@@ -365,10 +257,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Mittlere Empfindlichkeit"
         }
       ]
@@ -378,10 +266,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Kein CLSI definierter Grenzwert"
         }
       ]
@@ -391,10 +275,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Normal (nicht numerisch)"
         }
       ]
@@ -404,10 +284,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Nicht nachgewiesen"
         }
       ]
@@ -417,10 +293,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Negativ"
         }
       ]
@@ -430,10 +302,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Nicht reaktiv"
         }
       ]
@@ -443,10 +311,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Nicht empfindlich"
         }
       ]
@@ -456,10 +320,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Bewertung in separaten OBX-Segmenten"
         }
       ]
@@ -469,10 +329,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Feststellungsinterpretation"
         }
       ]
@@ -482,10 +338,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Erwartungsinterpretation"
         }
       ]
@@ -495,10 +347,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Positiv"
         }
       ]
@@ -508,10 +356,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Versagen der Qualitätskontrolle"
         }
       ]
@@ -521,10 +365,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Resistent"
         }
       ]
@@ -534,10 +374,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Reaktiv"
         }
       ]
@@ -547,10 +383,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Reaktivitätsinterpretation"
         }
       ]
@@ -560,10 +392,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Empfindlich"
         }
       ]
@@ -573,10 +401,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Dosis- / Konzentrationsabhängige Empfindlichkeit"
         }
       ]
@@ -586,10 +410,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Resistent gegenüber Substanzkombination"
         }
       ]
@@ -599,10 +419,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Empfindlich gegenüber Substanzkombination"
         }
       ]
@@ -612,10 +428,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Zytotoxische Substanz vorhanden"
         }
       ]
@@ -625,10 +437,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Signifikanter Anstieg"
         }
       ]
@@ -638,10 +446,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Unerwartet"
         }
       ]
@@ -651,10 +455,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Sehr empfindlich"
         }
       ]
@@ -664,10 +464,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Schlechter"
         }
       ]
@@ -677,10 +473,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Schwach reaktiv"
         }
       ]
@@ -690,10 +482,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Interpretation der genetischen Analyse"
         }
       ]
@@ -703,10 +491,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Änderungsverlauf"
         }
       ]
@@ -716,10 +500,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Ausnahmewertinterpretation"
         }
       ]
@@ -729,10 +509,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Normalitätsinterpretation"
         }
       ]
@@ -742,10 +518,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "preferredForLanguage",
-            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"
-          },
           "value": "Interpretation der antimikrobiellen Resistenztestung"
         }
       ]

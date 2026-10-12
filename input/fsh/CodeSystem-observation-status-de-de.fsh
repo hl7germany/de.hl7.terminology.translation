@@ -1,5 +1,3 @@
-Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
-
 CodeSystem: ObservationStatusdeDE
 Id: observation-status-de-de
 Title: "Status der Beobachtung"
@@ -30,40 +28,32 @@ Description: "Das Kodesystem Status der Beobachtung (ObservationStatus) beschrei
 
 * #registered
 * #registered ^designation[0].language = #de-DE
-* #registered ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #registered ^designation[0].value = "Registriert"
 
 * #preliminary
 * #preliminary ^designation[0].language = #de-DE
-* #preliminary ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #preliminary ^designation[0].value = "Vorläufig"
 
 * #final
 * #final ^designation[0].language = #de-DE
-* #final ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #final ^designation[0].value = "Final"
 
 * #amended
 * #amended ^designation[0].language = #de-DE
-* #amended ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #amended ^designation[0].value = "Überarbeitet"
 
 * #corrected
 * #corrected ^designation[0].language = #de-DE
-* #corrected ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #corrected ^designation[0].value = "Korrigiert"
 
 * #cancelled
 * #cancelled ^designation[0].language = #de-DE
-* #cancelled ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #cancelled ^designation[0].value = "Abgebrochen"
 
 * #entered-in-error
 * #entered-in-error ^designation[0].language = #de-DE
-* #entered-in-error ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #entered-in-error ^designation[0].value = "Fehleingabe"
 
 * #unknown
 * #unknown ^designation[0].language = #de-DE
-* #unknown ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #unknown ^designation[0].value = "Unbekannt"

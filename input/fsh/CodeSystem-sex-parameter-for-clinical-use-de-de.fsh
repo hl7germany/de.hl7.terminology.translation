@@ -1,5 +1,3 @@
-Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
-
 CodeSystem: SexParameterForClinicalUsedeDE
 Id: sex-parameter-for-clinical-use-de-de
 Title: "Geschlechtsparameter für die klinische Verwendung"
@@ -30,15 +28,12 @@ Description: "Das Kodesystem Geschlechtsparameter für die klinische Verwendung 
 
 * #female-typical
 * #female-typical ^designation[0].language = #de-DE
-* #female-typical ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #female-typical ^designation[0].value = "Anwendung eines frauentypischen Settings oder Referenzbereichs"
 
 * #male-typical
 * #male-typical ^designation[0].language = #de-DE
-* #male-typical ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #male-typical ^designation[0].value = "Anwendung eines männertypischen Settings oder Referenzbereichs"
 
 * #specified
 * #specified ^designation[0].language = #de-DE
-* #specified ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #specified ^designation[0].value = "Anwendung eines spezifischen Settings oder Referenzbereichs"

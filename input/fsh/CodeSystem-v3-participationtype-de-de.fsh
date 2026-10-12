@@ -1,5 +1,3 @@
-Alias: $hl7TermMaintInfra = http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra
-
 CodeSystem: ParticipationTypedeDE
 Id: v3-participationtype-de-de
 Title: "Art der Beteiligung"
@@ -30,5 +28,4 @@ Description: "Das Kodesystem Art der Beteiligung (ParticipationType) beschreibt 
 
 * #VRF
 * #VRF ^designation[0].language = #de-DE
-* #VRF ^designation[0].use = $hl7TermMaintInfra#preferredForLanguage
 * #VRF ^designation[0].value = "Verifizierende Person"
