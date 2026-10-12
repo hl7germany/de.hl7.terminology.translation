@@ -14,11 +14,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Autolysiert"
         }
       ]
@@ -28,11 +23,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Zentrifugiert"
         }
       ]
@@ -42,11 +32,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Verklumpt"
         }
       ]
@@ -56,11 +41,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Kontaminiert"
         }
       ]
@@ -70,11 +50,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Gekühlt"
         }
       ]
@@ -84,11 +59,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Gefroren"
         }
       ]
@@ -98,11 +68,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Hämolysiert"
         }
       ]
@@ -112,11 +77,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Lebendig"
         }
       ]
@@ -126,11 +86,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Raumtemperatur"
         }
       ]
@@ -140,11 +95,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Probe nicht erhalten"
         }
       ]
@@ -182,6 +132,10 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type",
+      "valueCode": "lang-pack"
     }
   ],
   "contact": [

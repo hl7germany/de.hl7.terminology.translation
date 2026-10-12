@@ -1,5 +1,3 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
-
 CodeSystem: ParticipationTypedeDE
 Id: v3-participationtype-de-de
 Title: "Art der Beteiligung"
@@ -22,6 +20,7 @@ Description: "Das Kodesystem Art der Beteiligung (ParticipationType) beschreibt 
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -29,5 +28,4 @@ Description: "Das Kodesystem Art der Beteiligung (ParticipationType) beschreibt 
 
 * #VRF
 * #VRF ^designation[0].language = #de-DE
-* #VRF ^designation[0].use = $designation-usage|4.2.0#display
 * #VRF ^designation[0].value = "Verifizierende Person"

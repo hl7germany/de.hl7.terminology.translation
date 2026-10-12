@@ -5,7 +5,7 @@
   "name": "DataAbsentReasondeDE",
   "id": "data-absent-reason-de-de",
   "title": "Begründung Nichtverfügbarkeit",
-  "description": "Das Codesystem Begründung Nichtverfügbarkeit (DataAbsentReason) dient zur standardisierten Angabe eines Grundes, warum ein erwarteter Datenwert nicht vorhanden ist und übermittelt werden kann.",
+  "description": "Das Kodesystem Begründung Nichtverfügbarkeit (DataAbsentReason) dient zur standardisierten Angabe eines Grundes, warum ein erwarteter Datenwert nicht vorhanden ist und nicht übermittelt werden kann.",
   "version": "0.1.0",
   "url": "http://fhir.de/CodeSystem/data-absent-reason-de-de",
   "concept": [
@@ -14,11 +14,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Unbekannt"
         }
       ]
@@ -28,11 +23,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Erfragt, aber unbekannt"
         }
       ]
@@ -42,11 +32,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Temporär unbekannt"
         }
       ]
@@ -56,11 +41,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Nicht erfragt"
         }
       ]
@@ -70,11 +50,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Erfragt, aber abgelehnt"
         }
       ]
@@ -84,11 +59,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Maskiert / vertraulich"
         }
       ]
@@ -98,11 +68,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Nicht anwendbar"
         }
       ]
@@ -112,11 +77,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Nicht unterstützt"
         }
       ]
@@ -126,11 +86,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Als Text"
         }
       ]
@@ -140,11 +95,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Fehler"
         }
       ]
@@ -154,11 +104,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Keine Zahl"
         }
       ]
@@ -168,11 +113,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Negativ unendlich"
         }
       ]
@@ -182,11 +122,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Positiv unendlich"
         }
       ]
@@ -196,11 +131,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Nicht durchgeführt"
         }
       ]
@@ -210,11 +140,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Nicht erlaubt"
         }
       ]
@@ -252,6 +177,10 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type",
+      "valueCode": "lang-pack"
     }
   ],
   "contact": [

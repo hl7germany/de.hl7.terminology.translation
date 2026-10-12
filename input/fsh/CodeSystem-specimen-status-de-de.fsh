@@ -1,5 +1,3 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
-
 CodeSystem: SpecimenStatusdeDE
 Id: specimen-status-de-de
 Title: "Status des Probenmaterials"
@@ -22,6 +20,7 @@ Description: "Das Kodesystem Status des Probenmaterials (SpecimenStatus) beschre
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -29,20 +28,16 @@ Description: "Das Kodesystem Status des Probenmaterials (SpecimenStatus) beschre
 
 * #available
 * #available ^designation[0].language = #de-DE
-* #available ^designation[0].use = $designation-usage|4.2.0#display
 * #available ^designation[0].value = "Verfügbar"
 
 * #unavailable
 * #unavailable ^designation[0].language = #de-DE
-* #unavailable ^designation[0].use = $designation-usage|4.2.0#display
 * #unavailable ^designation[0].value = "Nicht verfügbar"
 
 * #unsatisfactory
 * #unsatisfactory ^designation[0].language = #de-DE
-* #unsatisfactory ^designation[0].use = $designation-usage|4.2.0#display
 * #unsatisfactory ^designation[0].value = "Nicht geeignet"
 
 * #entered-in-error
 * #entered-in-error ^designation[0].language = #de-DE
-* #entered-in-error ^designation[0].use = $designation-usage|4.2.0#display
 * #entered-in-error ^designation[0].value = "Fehleingabe"

@@ -1,5 +1,3 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
-
 CodeSystem: ConditionVerificationStatusdeDE
 Id: condition-ver-status-de-de
 Title: "Diagnosesicherheit"
@@ -22,6 +20,7 @@ Description: "Das Kodesystem Diagnosesicherheit (ConditionVerificationStatus) be
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -29,30 +28,24 @@ Description: "Das Kodesystem Diagnosesicherheit (ConditionVerificationStatus) be
 
 * #unconfirmed
 * #unconfirmed ^designation[0].language = #de-DE
-* #unconfirmed ^designation[0].use = $designation-usage|4.2.0#display
 * #unconfirmed ^designation[0].value = "Unbestätigt"
 
 * #provisional
 * #provisional ^designation[0].language = #de-DE
-* #provisional ^designation[0].use = $designation-usage|4.2.0#display
 * #provisional ^designation[0].value = "Vorläufig"
 
 * #differential
 * #differential ^designation[0].language = #de-DE
-* #differential ^designation[0].use = $designation-usage|4.2.0#display
 * #differential ^designation[0].value = "Differenzial"
 
 * #confirmed
 * #confirmed ^designation[0].language = #de-DE
-* #confirmed ^designation[0].use = $designation-usage|4.2.0#display
 * #confirmed ^designation[0].value = "Bestätigt"
 
 * #refuted
 * #refuted ^designation[0].language = #de-DE
-* #refuted ^designation[0].use = $designation-usage|4.2.0#display
 * #refuted ^designation[0].value = "Ausgeschlossen"
 
 * #entered-in-error
 * #entered-in-error ^designation[0].language = #de-DE
-* #entered-in-error ^designation[0].use = $designation-usage|4.2.0#display
 * #entered-in-error ^designation[0].value = "Fehleingabe"

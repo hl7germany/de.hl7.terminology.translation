@@ -1,6 +1,6 @@
 # Übersetzungsvorschläge ohne Abstimmung mit HL7 Austria
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: Commit `05df569`
+Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 Die Tabelle enthält alle Codes aus den CodeSystem-Supplements unter `input/fsh/`, für die `HL7 Übersetzungen.xlsx`
 keine abgestimmte Übersetzung enthält. Die Zuordnung zum XLSX erfolgte über die Code-System-OID,
@@ -8,8 +8,8 @@ siehe [abgleich-abgestimmt-at.md](abgleich-abgestimmt-at.md).
 
 Die Spalte *Übersetzungsvorschlag* ist die deutsche Bezeichnung (`^designation.value`, `de-DE`) aus der FSH-Datei.
 
-92 Codes. Für 24 davon steht in der Spalte *Hinweis* ein eigener Vorschlag mit Begründung:
-21 Übersetzungen aus dem FSH sollten geändert werden, 3 Codes haben im FSH keine Übersetzung.
+94 Codes. Für 14 davon steht in der Spalte *Hinweis* ein eigener Vorschlag mit Begründung:
+11 Übersetzungen aus dem FSH sollten geändert werden, 3 Codes haben im FSH keine Übersetzung.
 
 Geprüft wurde jede Übersetzung gegen
 
@@ -23,6 +23,7 @@ Geprüft wurde jede Übersetzung gegen
 | composition-attestation-mode (4.0.1) | `professional` | Professional | *(keine Übersetzung im FSH)* | Vorschlag: „Beruflich“. Bestätigung in beruflicher Eigenschaft. |
 | composition-attestation-mode (4.0.1) | `legal` | Legal | Rechtliche Verantwortung |  |
 | composition-attestation-mode (4.0.1) | `official` | Official | *(keine Übersetzung im FSH)* | Vorschlag: „Offiziell“. Die Organisation bestätigt, dass der Inhalt ihren Richtlinien und Verfahren entspricht. |
+| condition-clinical (3.0.0) | `unknown` | Unknown | Unbekannt |  |
 | condition-ver-status (2.0.1) | `entered-in-error` | Entered in Error | Fehleingabe |  |
 | data-absent-reason (2.0.0) | `asked-unknown` | Asked But Unknown | Erfragt, aber unbekannt |  |
 | data-absent-reason (2.0.0) | `temp-unknown` | Temporarily Unknown | Temporär unbekannt |  |
@@ -40,17 +41,17 @@ Geprüft wurde jede Übersetzung gegen
 | data-absent-reason (2.0.0) | `not-permitted` | Not Permitted | Nicht erlaubt |  |
 | device-nametype (4.0.1) | `udi-label-name` | UDI Label name | UDI Kennzeichnungsname | Vorschlag: „UDI-Kennzeichnungsname“. Bindestrich bei Zusammensetzung mit Abkürzung. |
 | device-nametype (4.0.1) | `user-friendly-name` | User Friendly name | Benutzerfreundlicher Name |  |
-| device-nametype (4.0.1) | `patient-reported-name` | Patient Reported name | PatientInberichteter Name | Vorschlag: „Von Patient / Patientin angegebener Name“. Tippfehler im FSH. Doppelform wie im XLSX, z. B. „Autor / Autorin“. |
+| device-nametype (4.0.1) | `patient-reported-name` | Patient Reported name | Patientenberichteter Name |  |
 | device-nametype (4.0.1) | `manufacturer-name` | Manufacturer name | Herstellername |  |
 | device-nametype (4.0.1) | `model-name` | Model name | Modellname |  |
-| device-nametype (4.0.1) | `other` | other | Sonstige | Vorschlag: „Andere“. Im XLSX abgestimmt für `OTH` (NullFlavor) und `other` (AdministrativeGender, de-DE): „Andere“. |
+| device-nametype (4.0.1) | `other` | other | Andere |  |
 | v3-ObservationInterpretation (4.0.0) | `AC` | Anti-complementary substances present | Vorhandene antikomplementäre Substanzen | Vorschlag: „Antikomplementäre Substanzen vorhanden“. Satzbau wie bei `TOX` („Zytotoxische Substanz vorhanden“). Code ist deprecated. |
 | v3-ObservationInterpretation (4.0.0) | `Carrier` | Carrier | Träger | Wie abgestimmt für `CAR`. Code ist deprecated. |
 | v3-ObservationInterpretation (4.0.0) | `H>` | Significantly high | Signifikant hoch | Entspricht `HU`, dort abgestimmt „Signifikant hoch“. Code ist deprecated. |
 | v3-ObservationInterpretation (4.0.0) | `HM` | Hold for Medical Review | Zur medizinischen Überprüfung zurückhalten | Code ist deprecated. |
 | v3-ObservationInterpretation (4.0.0) | `L<` | Significantly low | Signifikant niedrig | Entspricht `LU`, dort abgestimmt „Signifikant niedrig“. Code ist deprecated. |
 | v3-ObservationInterpretation (4.0.0) | `MS` | moderately susceptible | Mittlere Empfindlichkeit | Vorschlag: „Mäßig empfindlich“. Parallel zu `VS` „Sehr empfindlich“ und abgestimmt `S` „Empfindlich“, `NS` „Nicht empfindlich“. Code ist deprecated. |
-| v3-ObservationInterpretation (4.0.0) | `OBX` | Interpretation qualifiers in separate OBX segments | Dolmetscherkennzeichen in separaten OBX Segmenten | Vorschlag: „Interpretationskennzeichen in separaten OBX-Segmenten“. „Interpretation qualifiers“ sind Interpretationskennzeichen, keine Dolmetscher. Code ist deprecated. |
+| v3-ObservationInterpretation (4.0.0) | `OBX` | Interpretation qualifiers in separate OBX segments | Bewertung in separaten OBX-Segmenten | Code ist deprecated. |
 | v3-ObservationInterpretation (4.0.0) | `ObservationInterpretationDetection` | ObservationInterpretationDetection | Feststellungsinterpretation | Vorschlag: „Nachweisinterpretation“. Es geht um An- oder Abwesenheit eines Analyten. Untergeordnete Codes sind abgestimmt als „Nachgewiesen“ / „Nicht nachgewiesen“. |
 | v3-ObservationInterpretation (4.0.0) | `ObservationInterpretationExpectation` | ObservationInterpretationExpectation | Erwartungsinterpretation |  |
 | v3-ObservationInterpretation (4.0.0) | `QCF` | Quality control failure | Versagen der Qualitätskontrolle | Vorschlag: „Qualitätskontrolle fehlgeschlagen“. Üblichere Formulierung. Code ist deprecated. |
@@ -64,11 +65,12 @@ Geprüft wurde jede Übersetzung gegen
 | v3-ObservationInterpretation (4.0.0) | `_ObservationInterpretationSusceptibility` | ObservationInterpretationSusceptibility | Interpretation der antimikrobiellen Resistenztestung |  |
 | observation-status (4.0.1) | `registered` | Registered | Registriert |  |
 | observation-status (4.0.1) | `preliminary` | Preliminary | Vorläufig |  |
-| observation-status (4.0.1) | `final` | Final | Abgeschlossen | Vorschlag: „Final“. Im XLSX abgestimmt für `final` in DiagnosticReportStatus und CompositionStatus. „Abgeschlossen“ ist im XLSX für `completed` vergeben (MedicationRequestStatus, MedicationStatusCodes). |
-| observation-status (4.0.1) | `amended` | Amended | Geändert | Vorschlag: „Überarbeitet“. Im XLSX abgestimmt für `amended` in DiagnosticReportStatus und CompositionStatus. |
+| observation-status (4.0.1) | `final` | Final | Final |  |
+| observation-status (4.0.1) | `amended` | Amended | Überarbeitet |  |
 | observation-status (4.0.1) | `corrected` | Corrected | Korrigiert |  |
-| observation-status (4.0.1) | `cancelled` | Cancelled | Storniert | Vorschlag: „Abgebrochen“. Laut Definition nicht begonnen oder nicht abgeschlossen („aborted“). Im XLSX abgestimmt für `cancelled` in DiagnosticReportStatus. |
-| observation-status (4.0.1) | `entered-in-error` | Entered in Error | Irrtümliche Eingabe | Vorschlag: „Fehleingabe“. Im XLSX durchgängig „Fehleingabe“ abgestimmt. |
+| observation-status (4.0.1) | `cancelled` | Cancelled | Abgebrochen |  |
+| observation-status (4.0.1) | `entered-in-error` | Entered in Error | Fehleingabe |  |
+| observation-status (4.0.1) | `unknown` | Unknown | Unbekannt |  |
 | quantity-comparator (4.0.1) | `<` | Less than | Kleiner als |  |
 | quantity-comparator (4.0.1) | `<=` | Less or Equal to | Kleiner oder gleich |  |
 | quantity-comparator (4.0.1) | `>=` | Greater or Equal to | Größer oder gleich |  |
@@ -88,14 +90,14 @@ Geprüft wurde jede Übersetzung gegen
 | v2-0203 (5.0.0) | `SID` | Specimen ID | Proben-ID |  |
 | v2-0203 (5.0.0) | `SNO` | Serial Number | Seriennummer |  |
 | v2-0203 (5.0.0) | `USID` | Unique Specimen ID | Eindeutige Proben-ID |  |
-| v2-0203 (5.0.0) | `RI` | Resource identifier | Identifier der Quelle | Vorschlag: „Ressourcen-Identifikator“. „Resource“ heißt Ressource, nicht Quelle. „Identifikator“ wie bei `FILL` und `PLAC`. |
-| v2-0373 (3.0.0) | `ACID` | Acidification | Aufsäuerung | Vorschlag: „Ansäuerung“. Fachbegriff ist „Ansäuerung“. |
+| v2-0203 (5.0.0) | `RI` | Resource identifier | Ressourcen-Identifikator |  |
+| v2-0373 (3.0.0) | `ACID` | Acidification | Ansäuerung |  |
 | v2-0373 (3.0.0) | `ALK` | Alkalization | Alkalisierung |  |
 | v2-0373 (3.0.0) | `DEFB` | Defibrination | Defibrinierung |  |
 | v2-0373 (3.0.0) | `FILT` | Filtration | Filtration |  |
 | v2-0373 (3.0.0) | `LDLP` | LDL Precipitation | LDL-Ausfällung |  |
 | v2-0373 (3.0.0) | `NEUT` | Neutralization | Neutralisierung |  |
-| v2-0373 (3.0.0) | `RECA` | Recalification | Rekalkifizierung | Vorschlag: „Rekalzifizierung“. Übliche Schreibweise (vgl. Rekalzifizierungszeit). |
+| v2-0373 (3.0.0) | `RECA` | Recalification | Rekalzifizierung |  |
 | v2-0373 (3.0.0) | `UFIL` | Ultrafiltration | Ultrafiltration |  |
 | v2-0493 (3.0.0) | `AUT` | Autolyzed | Autolysiert |  |
 | v2-0493 (3.0.0) | `CFU` | Centrifuged | Zentrifugiert |  |
@@ -115,4 +117,4 @@ Geprüft wurde jede Übersetzung gegen
 Der englische Display stammt aus der Version des CodeSystems, die das Supplement in `^supplements` angibt:
 
 - `hl7.fhir.r4.core#4.0.1`: composition-attestation-mode, device-nametype, observation-status, quantity-comparator, specimen-status
-- `hl7.terminology#7.4.0`: condition-ver-status, data-absent-reason, v3-ObservationInterpretation, referencerange-meaning, v2-0203, v2-0373, v2-0493, v2-0916
+- `hl7.terminology#7.4.0`: condition-clinical, condition-ver-status, data-absent-reason, v3-ObservationInterpretation, referencerange-meaning, v2-0203, v2-0373, v2-0493, v2-0916

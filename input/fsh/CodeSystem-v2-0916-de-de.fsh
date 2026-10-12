@@ -1,5 +1,3 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
-
 CodeSystem: RelevantClinicalInformationdeDE
 Id: v2-0916-de-de
 Title: "Nüchternstatus"
@@ -22,6 +20,7 @@ Description: "Das Kodesystem Nüchternstatus (RelevantClinicalInformation) besch
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -29,20 +28,16 @@ Description: "Das Kodesystem Nüchternstatus (RelevantClinicalInformation) besch
 
 * #F
 * #F ^designation[0].language = #de-DE
-* #F ^designation[0].use = $designation-usage|4.2.0#display
 * #F ^designation[0].value = "Nüchtern"
 
 * #FNA
 * #FNA ^designation[0].language = #de-DE
-* #FNA ^designation[0].use = $designation-usage|4.2.0#display
 * #FNA ^designation[0].value = "Aufforderung zur Nüchternheit nicht erfolgt"
 
 * #NF
 * #NF ^designation[0].language = #de-DE
-* #NF ^designation[0].use = $designation-usage|4.2.0#display
 * #NF ^designation[0].value = "Nicht nüchtern"
 
 * #NG
 * #NG ^designation[0].language = #de-DE
-* #NG ^designation[0].use = $designation-usage|4.2.0#display
 * #NG ^designation[0].value = "Nüchternstatus nicht abgefragt"

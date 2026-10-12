@@ -1,5 +1,3 @@
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
-
 CodeSystem: ObservationStatusdeDE
 Id: observation-status-de-de
 Title: "Status der Beobachtung"
@@ -22,6 +20,7 @@ Description: "Das Kodesystem Status der Beobachtung (ObservationStatus) beschrei
 * ^extension[=].valueContactDetail.name = "HL7 Deutschland e.V."
 * ^extension[=].valueContactDetail.telecom[0].system = #url
 * ^extension[=].valueContactDetail.telecom[0].value = "http://hl7.de"
+* insert LanguagePack
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@hl7.de"
 * ^contact[0].telecom[1].system = #url
@@ -29,35 +28,32 @@ Description: "Das Kodesystem Status der Beobachtung (ObservationStatus) beschrei
 
 * #registered
 * #registered ^designation[0].language = #de-DE
-* #registered ^designation[0].use = $designation-usage|4.2.0#display
 * #registered ^designation[0].value = "Registriert"
 
 * #preliminary
 * #preliminary ^designation[0].language = #de-DE
-* #preliminary ^designation[0].use = $designation-usage|4.2.0#display
 * #preliminary ^designation[0].value = "Vorläufig"
 
 * #final
 * #final ^designation[0].language = #de-DE
-* #final ^designation[0].use = $designation-usage|4.2.0#display
-* #final ^designation[0].value = "Abgeschlossen"
+* #final ^designation[0].value = "Final"
 
 * #amended
 * #amended ^designation[0].language = #de-DE
-* #amended ^designation[0].use = $designation-usage|4.2.0#display
-* #amended ^designation[0].value = "Geändert"
+* #amended ^designation[0].value = "Überarbeitet"
 
 * #corrected
 * #corrected ^designation[0].language = #de-DE
-* #corrected ^designation[0].use = $designation-usage|4.2.0#display
 * #corrected ^designation[0].value = "Korrigiert"
 
 * #cancelled
 * #cancelled ^designation[0].language = #de-DE
-* #cancelled ^designation[0].use = $designation-usage|4.2.0#display
-* #cancelled ^designation[0].value = "Storniert"
+* #cancelled ^designation[0].value = "Abgebrochen"
 
 * #entered-in-error
 * #entered-in-error ^designation[0].language = #de-DE
-* #entered-in-error ^designation[0].use = $designation-usage|4.2.0#display
-* #entered-in-error ^designation[0].value = "Irrtümliche Eingabe"
+* #entered-in-error ^designation[0].value = "Fehleingabe"
+
+* #unknown
+* #unknown ^designation[0].language = #de-DE
+* #unknown ^designation[0].value = "Unbekannt"

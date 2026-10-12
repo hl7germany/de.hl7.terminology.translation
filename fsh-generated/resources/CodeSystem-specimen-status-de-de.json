@@ -14,11 +14,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Verfügbar"
         }
       ]
@@ -28,11 +23,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Nicht verfügbar"
         }
       ]
@@ -42,11 +32,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Nicht geeignet"
         }
       ]
@@ -56,11 +41,6 @@
       "designation": [
         {
           "language": "de-DE",
-          "use": {
-            "code": "display",
-            "system": "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "version": "4.2.0"
-          },
           "value": "Fehleingabe"
         }
       ]
@@ -98,6 +78,10 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type",
+      "valueCode": "lang-pack"
     }
   ],
   "contact": [
