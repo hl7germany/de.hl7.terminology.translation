@@ -1,6 +1,6 @@
 # Technische Prüfung der Supplements
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
+Stand: 12.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 Ein CodeSystem-Supplement gilt nur für das CodeSystem in genau der Version, die in `^supplements` steht.
 Im R4-Kontext liegen viele CodeSystems doppelt vor: im Core (`hl7.fhir.r4.core#4.0.1`) mit Version 4.0.1 und in
@@ -21,7 +21,7 @@ Erwartete Zielversion:
 | Zielversion falsch, Supplement greift in R4 nie | keins mehr. quantity-comparator ist seit `05df569` korrigiert, siehe Abschnitt 1 |
 | Greift nur, wenn das verwendete THO-Release genau die Zielversion enthält | alle 10 THO-Supplements. Von den geprüften Releases enthalten nur `hl7.terminology.r4` 7.3.0 und 7.4.0 alle 10 Zielversionen |
 | Nicht als Language Pack markiert | keins mehr. Alle 18 sind mit PR #3 markiert, siehe Abschnitt 3 |
-| `designation.use` verweist auf ein CodeSystem, das es nur in THO 1.0.0 gab | keins mehr. Mit PR #3 auf `preferredForLanguage` umgestellt, siehe Abschnitt 4 |
+| `designation.use` verweist auf ein CodeSystem, das es nur in THO 1.0.0 gab | keins mehr. Mit PR #3 entfernt, siehe Abschnitt 4 |
 
 | Supplement | `^supplements` | Herkunft | Zielversion korrekt | Zielversion enthalten in `hl7.terminology.r4` | Language Pack |
 |---|---|---|---|---|---|
@@ -122,12 +122,12 @@ Hinweise zur Umsetzung:
   `hl7.fhir.uv.extensions.r4#5.3.0`. Validator und tx.fhir.org werten sie aus, die Validierung des Supplements selbst
   meldet sie aber als unbekannt („could not be found so is not allowed here“).
 
-## 4. `designation.use` (umgestellt mit PR #3)
+## 4. `designation.use` (entfernt mit PR #3)
 
 Bis PR #3 setzten alle 18 Supplements `^designation[0].use = $designation-usage|4.2.0#display` mit
-`Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage`. Mit PR #3 verwenden alle
-Designations `http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra#preferredForLanguage`, die zweite Variante unter
-„Korrekte Befüllung in R4“.
+`Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage`. Seit PR #3 haben die
+Designations kein `use` mehr, die erste Variante unter „Korrekte Befüllung in R4“. Je Code und Sprache gibt es genau
+eine Designation, eine bevorzugte muss deshalb nicht gekennzeichnet werden.
 
 Dieses CodeSystem gab es nur in HL7 Terminology 1.0.0 (Mai 2020): Version 4.2.0, Status `draft`, ein einziger Code
 `display`. Ab THO 2.0.0 ist es nicht mehr enthalten. Die Seiten für 2.0.0, 3.0.0 und 7.4.0 liefern 404, und in
@@ -149,12 +149,16 @@ Meldungen zu `designation.use`.
 | `designation.use` | Meldungen je Designation |
 |---|---|
 | `designation-usage\|4.2.0#display` (bis PR #3) | 1 Fehler („No definition could be found for URL value …“), 2 Warnungen |
-| `hl7TermMaintInfra#preferredForLanguage` (seit PR #3) | 1 Warnung: Code nicht im ValueSet `designation-use\|4.0.1` (Binding extensible) |
-| ohne `use` | keine |
+| `hl7TermMaintInfra#preferredForLanguage` | 1 Warnung: Code nicht im ValueSet `designation-use\|4.0.1` (Binding extensible) |
+| ohne `use` (seit PR #3) | keine |
 
 Laut Quellcode des Validators (`ValueSetValidator`) spielt `use` bei der Prüfung des Displays einer Instanz keine Rolle,
 maßgeblich ist nur `designation.language`. Für das Display einer Sprache in Expansionen bevorzugt der
 `ValueSetExpander` Designations mit `preferredForLanguage`, danach solche ohne `use`.
+
+Gegenprobe mit allen 18 Supplements ohne `use`, als Paket geladen: Instanzen mit `language = de-DE` und deutschen
+Displays validieren ohne Fehler, Instanzen mit englischen Displays ohne `language` oder mit `en-US` ebenfalls. Das
+Ergebnis ist dasselbe wie mit `preferredForLanguage`.
 
 ### Korrekte Befüllung in R4
 
@@ -187,7 +191,7 @@ und setzt SNOMED CT im Kontext voraus. Ein Fully specified name ist keine Displa
 FSH für die beiden Varianten:
 
 ```fsh
-// ohne use: die Zeilen mit ^designation[0].use und den Alias $designation-usage entfernen
+// ohne use (seit PR #3)
 * #active ^designation[0].language = #de-DE
 * #active ^designation[0].value = "Aktiv"
 

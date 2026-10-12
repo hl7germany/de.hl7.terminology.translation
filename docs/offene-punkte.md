@@ -1,6 +1,6 @@
 # Offene Punkte vor dem Release
 
-Stand: 06.10.2026 · geprüfter FSH-Stand: nach PR #3
+Stand: 12.10.2026 · geprüfter FSH-Stand: nach PR #3
 
 Sammlung der offenen Befunde aus den Prüfungen in diesem Ordner. Die Details stehen in den verlinkten Dokumenten.
 
@@ -61,9 +61,6 @@ Begriffe sind in allen 18 Supplements gleich übersetzt.
 - Die 10 THO-Supplements sind an eine bestimmte CodeSystem-Version gebunden. Alle 10 greifen nur mit
   `hl7.terminology.r4` 7.3.0 oder 7.4.0, siehe [technische-pruefung-supplements.md](technische-pruefung-supplements.md),
   Abschnitt 2.
-- `designation.use` ist `hl7TermMaintInfra#preferredForLanguage`. In R4 liegt der Code außerhalb des extensible
-  gebundenen ValueSets `designation-use|4.0.1`, der Validator gibt dazu je Designation eine Warnung aus. Siehe
-  [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 4.
 - device-nametype: Das Supplement ist für R4 korrekt. Ab R6 bindet `Device.name.type` an die THO-Fassung unter eigener
   URL, siehe [technische-pruefung-supplements.md](technische-pruefung-supplements.md), Abschnitt 6.
 
@@ -75,7 +72,7 @@ Begriffe sind in allen 18 Supplements gleich übersetzt.
 | `<` „Kleiner als“, `>` „Größer als“ (quantity-comparator), `entered-in-error` „Fehleingabe“ (specimen-status) | Commit `05df569` |
 | `fsh-generated` passt wieder zu `input/fsh` | Commit `00b0a53`, danach in PR #3 neu erzeugt |
 | Alle 18 Supplements als Language Pack markiert | PR #3 |
-| `designation.use` von `designation-usage\|4.2.0#display` auf `hl7TermMaintInfra#preferredForLanguage` umgestellt | PR #3 |
+| `designation.use` (`designation-usage\|4.2.0#display`) entfernt, die Designations haben kein `use` mehr | PR #3 |
 | `unknown` in condition-clinical und observation-status als „Unbekannt“ übersetzt | PR #3 |
 | `N` in v3-ObservationInterpretation an abgestimmt AT angeglichen: „Normal (nicht numerisch)“ | PR #3 |
 | Name und Titel des Supplements für sex-parameter-for-clinical-use: `SexParameterForClinicalUsedeDE`, „Geschlechtsparameter für die klinische Verwendung“ (vorher „Kollektivbezug der Richtgrenze“) | PR #3 |
